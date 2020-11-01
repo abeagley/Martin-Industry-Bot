@@ -2,17 +2,17 @@
 Creating a discord bot that handles Corporation industry needs
 
 Need:
-[ ] Command handler 
+[ ] - Command handler 
 
 Commands for: 
-  [ ] Ore Purchase
-  [ ] PR Purchase
-  [ ] Ore and PR Quotes
+  [ ] - Ore Purchase
+  [ ] - PR Purchase
+  [ ] - Ore and PR Quotes
   
   
 Further projects
-  [ ] Accounting System
-  [ ] Production Line system
+  [ ] - Accounting System
+  [ ] - Production Line system
   
   
 Planned Process for Ore Purchase: 
