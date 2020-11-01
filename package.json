@@ -1,11 +1,12 @@
 {
-  "name": "EE-Industry-Bot",
+  "name": "ee-industry-bot",
   "version": "1.0.0",
   "description": "Creating a discord bot that handles Corporation industry needs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
