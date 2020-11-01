@@ -16,7 +16,7 @@ Further projects
   
   
 Planned Process for Ore Purchase: 
-
+```
 Input by player: 
   !ore vel=200 sco=3000 pyr=4000 || !ore veldspar=200 || !ore vel 200 sco 3000 || !ore veldspar 2000
   
@@ -66,7 +66,7 @@ Output by bot:
     Total: Ore#, Total isk
     @Player: Ore#, isk received
     @Industry-Officer: isk sent
-    
+  ```
   Manual Inputs
     Ore Deposit Contract
     Check
