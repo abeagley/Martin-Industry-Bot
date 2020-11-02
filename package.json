@@ -1,29 +1,19 @@
 {
-  "name": "ee-industry-bot",
+  "name": "discord-bots",
   "version": "1.0.0",
-  "description": "Creating a discord bot that handles Corporation industry needs",
+  "description": "bots for discord",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src/",
     "start": "node src/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Econmartin/EE-Industry-Bot.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "Econmartin",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Econmartin/EE-Industry-Bot/issues"
-  },
-  "homepage": "https://github.com/Econmartin/EE-Industry-Bot#readme",
   "dependencies": {
-    "discord.js": "^12.4.1",
+    "discord.js": "^12.3.1",
     "node.js": "0.0.1-security"
   },
   "devDependencies": {
-    "eslint": "^7.12.1"
+    "eslint": "^7.11.0"
   }
 }

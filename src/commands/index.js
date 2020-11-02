@@ -1,20 +1,17 @@
-//Require Commands
+const ping = require('./ping.js');
 const quote = require('./quote.js');
 const ore = require('./ore.js');
-const ping = require('./ping');
 
-//Test Discord ID
+
 const guildID = '766431988302348349';
 const channelID = '766433728716341248';
 
-//Commands List
 const commands = {
+    ping,
     quote,
-    ore,
-    ping
+    ore
 }
  
-// Command sorter
 module.exports = async (message) => {
     console.log(message);
     if (message.guild.id === guildID && message.channel.id === channelID) {
@@ -24,7 +21,5 @@ module.exports = async (message) => {
         if (Object.keys(commands).includes(command)) {
             commands[command](message, args);
         }
-    }
-    
-    else console.log('uh oh');
+	}
 }
