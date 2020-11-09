@@ -78,46 +78,49 @@ module.exports = (message, args) =>  {
 		await msg.react(agree1)
 		await msg.react(disagree1)
 				
-		const disagreeFilter = (reaction, user) => reaction.emoji.name === '❌' && reaction.message.guild.member(user).roles.cache.has('773244425291300896');
-		const agreeFilter1 = (reaction, user) => reaction.emoji.name === '☑️'  && reaction.message.guild.member(user).roles.cache.has('773244425291300896');;
-				
-		const disagreeR1 = msg.createReactionCollector(disagreeFilter);
-		const agreeR1 = msg.createReactionCollector(agreeFilter1);
+		
+		const agreeDisagree = (reaction, user) =>  reaction.message.guild.member(user).roles.cache.has('773244425291300896');;
+		const agreeOrDisagree = msg.createReactionCollector(agreeDisagree);
 		
 		
-		//disagree1 = Incorrect Ore
-		disagreeR1.on('collect', r => {
-			let oreInvoice = new Discord.MessageEmbed()
-				.setTitle('Status: Rejected(Incorrect Ore)')
-				.setAuthor(message.author.username, message.author.avatarURL())
-				.setColor(15158332)
-				.addFields({ name: args, value: '----------', inline: true},
-					{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
-				)
-				.setTimestamp()
-				.setFooter("Ore contract didn't match discord")
-			msg.edit(oreInvoice)
-			msg.reactions.removeAll()
-			message.reply('Looks like you entered the incorrect type or amount of ore. Please check your contract and submit again.')
-		});
+		
+		agreeOrDisagree.on('collect', (reaction) => {
+			
+			//disagree1 = Incorrect Ore
+			switch (reaction.emoji.name)  {
+				// ore incorrect
+				case '❌': 
+					oreInvoice = new Discord.MessageEmbed()
+					.setTitle('Status: Rejected(Incorrect Ore)')
+					.setAuthor(message.author.username, message.author.avatarURL())
+					.setColor(15158332)
+					.addFields({ name: args, value: '----------', inline: true},
+						{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
+					)
+					.setTimestamp()
+					.setFooter("Ore contract didn't match discord")
+				msg.edit(oreInvoice)
+				msg.reactions.removeAll()
+				message.reply('Looks like you entered the incorrect type or amount of ore. Please check your contract and submit again.')
+				break;
 
-		//agree1 = Ore Correct
-		agreeR1.on('collect', r => {
-			let oreInvoice = new Discord.MessageEmbed()
-				.setTitle('Status: Ore Accepted')
-				.setDescription('Ore Accepted ☑️')
-				.setAuthor(message.author.username, message.author.avatarURL())
-				.setColor(11027200)
-				.addFields({ name: args, value: '----------', inline: true},
-					{ name: 'Total isk', value: formatMoney(quoteOutputTWo)}
-				)
-				.setTimestamp()
-				.setFooter('Has contract requesting isk been sent?')
-			msg.edit(oreInvoice)
-			msg.reactions.cache.get("❌").remove()
-			msg.reactions.cache.get("☑️").remove()
-			msg.react(agree2).then( async r => {
-			message.channel.send(`Please send contract to Econmartin requesting ${formatMoney(quoteOutputTwo)} isk then press ✅`)
+				//ore correct
+				case '☑️':
+					oreInvoice = new Discord.MessageEmbed()
+					.setTitle('Status: Ore Accepted')
+					.setDescription('Ore Accepted ☑️')
+					.setAuthor(message.author.username, message.author.avatarURL())
+					.setColor(11027200)
+					.addFields({ name: args, value: '----------', inline: true},
+						{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
+					)
+					.setTimestamp()
+					.setFooter('Has contract requesting isk been sent?')
+				msg.edit(oreInvoice)
+				msg.reactions.cache.get("❌").remove()
+				msg.reactions.cache.get("☑️").remove()
+				msg.react(agree2).then( async r => {
+				message.channel.send(`Please send contract to Econmartin requesting ${formatMoney(quoteOutputTwo)} isk then press ✅`)
 			
 			
 			const agreeFilter2 = (reaction, user) => reaction.emoji.name === '✅'  && user.id === message.author.id;
