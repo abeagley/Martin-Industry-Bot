@@ -167,7 +167,7 @@ module.exports = (message, args) =>  {
 				})
 		})
 		})
-	})
+	}})
 	})
 		
 	
