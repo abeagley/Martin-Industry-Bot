@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 
-const orePrices = [
+const orePricesTwo = [
     ['veldspar',6],
     ['scordite',14],
     ['pyroxeres',340],
@@ -20,7 +20,7 @@ const orePrices = [
     ['mercoxit',0],
 ];
 
-let quoteTotal = [];
+let quoteTotalTwo = [];
 let oreArray = [];
 let oreNumber = [];
 
@@ -35,11 +35,11 @@ module.exports = (message, args) =>  {
 	else {
 
 		for (let i = 0; i < args.length; i++) {
-			for (let j = 0; j < orePrices.length; j++) {
-				if (args[i] === orePrices[j][0]) {
-					quoteTotal.push(args[i+1] * orePrices[j][1]);
+			for (let j = 0; j < orePricesTwo.length; j++) {
+				if (args[i] === orePricesTwo[j][0]) {
+					quoteTotalTwo.push(args[i+1] * orePricesTwo[j][1]);
 				}
-				console.log(quoteTotal);
+				console.log(quoteTotalTwo);
 			}  
 		};
 		
@@ -53,7 +53,7 @@ module.exports = (message, args) =>  {
 		}
 		console.log(oreNumber);
 	
-		const quoteOutput = quoteTotal.reduce((a,b) => a+b,0);
+		const quoteOutputTwo = quoteTotalTwo.reduce((a,b) => a+b,0);
 		
 		const disagree1 = "❌";
 		const agree1 = "☑️";
@@ -65,7 +65,7 @@ module.exports = (message, args) =>  {
 	.setAuthor(message.author.username, message.author.avatarURL())
 	.setColor(9807270) 
 	.addFields({ name: args, value: '----------', inline: true},
-		{ name: 'Total isk', value: formatMoney(quoteOutput)}
+		{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
 		
 	)
 
@@ -93,7 +93,7 @@ module.exports = (message, args) =>  {
 				.setAuthor(message.author.username, message.author.avatarURL())
 				.setColor(15158332)
 				.addFields({ name: args, inline: true},
-					{ name: 'Total isk', value: formatMoney(quoteOutput)}
+					{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
 				)
 				.setTimestamp()
 				.setFooter("Ore contract didn't match discord")
@@ -110,7 +110,7 @@ module.exports = (message, args) =>  {
 				.setAuthor(message.author.username, message.author.avatarURL())
 				.setColor(11027200)
 				.addFields({ name: args, inline: true},
-					{ name: 'Total isk', value: formatMoney(quoteOutput)}
+					{ name: 'Total isk', value: formatMoney(quoteOutputTWo)}
 				)
 				.setTimestamp()
 				.setFooter('Has contract requesting isk been sent?')
@@ -118,7 +118,7 @@ module.exports = (message, args) =>  {
 			msg.reactions.cache.get("❌").remove()
 			msg.reactions.cache.get("☑️").remove()
 			msg.react(agree2).then( async r => {
-			message.channel.send(`Please send contract to Econmartin requesting ${formatMoney(quoteOutput)} isk then press ✅`)
+			message.channel.send(`Please send contract to Econmartin requesting ${formatMoney(quoteOutputTwo)} isk then press ✅`)
 			
 			
 			const agreeFilter2 = (reaction, user) => reaction.emoji.name === '✅'  && user.id === message.author.id;
@@ -133,7 +133,7 @@ module.exports = (message, args) =>  {
 					.setAuthor(message.author.username, message.author.avatarURL())
 					.setColor(15105570)
 					.addFields({ name: args, inline: true},
-						{ name: 'Total isk', value: formatMoney(quoteOutput)}
+						{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
 					)
 					.setTimestamp()
 					.setFooter('Has contract been paid?')
@@ -153,7 +153,7 @@ module.exports = (message, args) =>  {
 						.setAuthor(message.author.username, message.author.avatarURL())
 						.setColor(3066993)
 						.addFields({ name: args, inline: true},
-							{ name: 'Total isk', value: formatMoney(quoteOutput)}
+							{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
 						)
 						.setTimestamp()
 						.setFooter('Thankyou for doing business with Hell To Pay Industries')
