@@ -37,6 +37,7 @@ module.exports = async (message, args) => {
     }
     const quoteOutput = quoteTotal.reduce((a,b) => a+b,0);
     await message.reply(formatMoney(quoteOutput));
-    let quoteTotal = [];
+    
 }
+quoteTotal = [];
 }

@@ -170,5 +170,5 @@ module.exports = (message, args) =>  {
 		
 	
 }
-let quoteTotalTwo = [];
+quoteTotalTwo = [];
 };
