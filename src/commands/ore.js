@@ -92,7 +92,7 @@ module.exports = (message, args) =>  {
 				.setTitle('Status: Rejected(Incorrect Ore)')
 				.setAuthor(message.author.username, message.author.avatarURL())
 				.setColor(15158332)
-				.addFields({ name: args, inline: true},
+				.addFields({ name: args, value: '----------', inline: true},
 					{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
 				)
 				.setTimestamp()
@@ -109,7 +109,7 @@ module.exports = (message, args) =>  {
 				.setDescription('Ore Accepted ☑️')
 				.setAuthor(message.author.username, message.author.avatarURL())
 				.setColor(11027200)
-				.addFields({ name: args, inline: true},
+				.addFields({ name: args, value: '----------', inline: true},
 					{ name: 'Total isk', value: formatMoney(quoteOutputTWo)}
 				)
 				.setTimestamp()
@@ -132,7 +132,7 @@ module.exports = (message, args) =>  {
 					.setDescription('Ore Accepted ☑️' + ' Payment Contract Sent ✅ ')
 					.setAuthor(message.author.username, message.author.avatarURL())
 					.setColor(15105570)
-					.addFields({ name: args, inline: true},
+					.addFields({ name: args, value: '----------', inline: true},
 						{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
 					)
 					.setTimestamp()
@@ -152,7 +152,7 @@ module.exports = (message, args) =>  {
 						.setDescription('Ore Accepted ✅' + ' Payment Contract Sent ☑️ ' + 'Contract Paid 👍')
 						.setAuthor(message.author.username, message.author.avatarURL())
 						.setColor(3066993)
-						.addFields({ name: args, inline: true},
+						.addFields({ name: args, value: '----------', inline: true},
 							{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
 						)
 						.setTimestamp()
