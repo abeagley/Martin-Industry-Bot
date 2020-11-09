@@ -15,7 +15,8 @@ Further projects
 - [ ] Accounting System
 - [ ] Production Line system
   
-  
+LETS HOPE THIS WORKS
+
 Planned Process for Ore Purchase: 
 ```
 Input by player: 
