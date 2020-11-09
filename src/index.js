@@ -10,4 +10,4 @@ client.once('ready', () => {
 
 client.on('message', commandHandler);
 
-client.login(token);
+client.login(process.env.TOKEN);
