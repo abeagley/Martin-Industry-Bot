@@ -13,7 +13,7 @@ const orePricesTwo = [
     ['hedbergite',744],
     ['spodumain',723],
     ['darkochre',368],
-    ['gniess',291],
+    ['gneiss',291],
     ['crokite',2633],
     ['bistot',2723],
     ['arkonor',2423],
