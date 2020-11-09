@@ -66,25 +66,19 @@ module.exports = (message, args) =>  {
 	.setColor(9807270) 
 	.addFields({ name: args, value: '----------', inline: true},
 		{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
-		
 	)
-
 	.setTimestamp()
 	.setFooter('Does the ore contract match the above?')
 	;
 	
-	
 	message.channel.send(oreInvoice).then( async msg => {
-		await msg.react(agree1)
-		await msg.react(disagree1)
+		msg.react(agree1)
+		msg.react(disagree1)
 				
-		
-		const agreeDisagree = (reaction, user) =>  reaction.message.guild.member(user).roles.cache.has('773244425291300896');;
+		const agreeDisagree = (reaction, user) =>  reaction.message.guild.member(user).roles.cache.has('773244425291300896');
 		const agreeOrDisagree = msg.createReactionCollector(agreeDisagree);
 		
-		
-		
-		agreeOrDisagree.on('collect', (reaction) => {
+		agreeOrDisagree.on('collect', reaction => {
 			
 			//disagree1 = Incorrect Ore
 			switch (reaction.emoji.name)  {
@@ -119,6 +113,7 @@ module.exports = (message, args) =>  {
 				msg.edit(oreInvoice)
 				msg.reactions.cache.get("❌").remove()
 				msg.reactions.cache.get("☑️").remove()
+				
 				msg.react(agree2).then( async r => {
 				message.channel.send(`Please send contract to Econmartin requesting ${formatMoney(quoteOutputTwo)} isk then press ✅`)
 			
