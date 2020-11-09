@@ -17,7 +17,7 @@ const orePrices = [
     ['mercoxit',0],
 ];
 
-let quoteTotal = [];
+const quoteTotal = [];
 
 function formatMoney(number) {
     return number.toLocaleString('en-US', { style: 'decimal', currency: 'USD' });
