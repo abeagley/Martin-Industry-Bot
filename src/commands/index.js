@@ -1,4 +1,3 @@
-const ping = require('./ping.js');
 const quote = require('./quote.js');
 const ore = require('./ore.js');
 
@@ -7,7 +6,6 @@ const guildID = '766431988302348349';
 const channelID = '766433728716341248';
 
 const commands = {
-    ping,
     quote,
     ore
 }
