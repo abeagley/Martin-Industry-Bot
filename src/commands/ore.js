@@ -60,7 +60,7 @@ module.exports = (message, args) =>  {
 		const agree2 = "✅";
 		const agree3 = "👍";
 
-	const oreInvoice = new Discord.MessageEmbed()
+	let oreInvoice = new Discord.MessageEmbed()
 	.setTitle('Status: Sell Ore Request')
 	.setAuthor(message.author.username, message.author.avatarURL())
 	.setColor(9807270) 
