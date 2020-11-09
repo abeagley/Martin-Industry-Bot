@@ -160,6 +160,7 @@ module.exports = (message, args) =>  {
 					msg.edit(oreInvoice)
 					msg.reactions.cache.get("👍").remove()
 					msg.edit(oreInvoice)
+					
 				})
 				})
 		})
@@ -169,4 +170,5 @@ module.exports = (message, args) =>  {
 		
 	
 }
+let quoteTotalTwo = [];
 };
