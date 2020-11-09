@@ -1,0 +1,19 @@
+{
+  "name": "discord-bots",
+  "version": "1.0.0",
+  "description": "bots for discord",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/",
+    "start": "node src/index.js"
+  },
+  "author": "Econmartin",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.4.1",
+    "node.js": "0.0.1-security"
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0"
+  }
+}
