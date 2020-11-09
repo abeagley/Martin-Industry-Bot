@@ -2,22 +2,22 @@ const Discord = require('discord.js');
 
 
 const orePrices = [
-    ['veldspar',4],
-    ['scordite',10],
-    ['pyroxeres',240],
-    ['plagioclase',17],
-    ['omber',38],
-    ['kernite',85],
-    ['jaspet',1050],
-    ['hemorphite',910],
-    ['hedbergite',563],
-    ['spodumain',512],
-    ['darkochre',240],
-    ['gniess',272],
-    ['crokite',1400],
-    ['bistot',1750],
-    ['arkonor',1470],
-    ['mercoxit',1820],
+    ['veldspar',6],
+    ['scordite',14],
+    ['pyroxeres',340],
+    ['plagioclase',20],
+    ['omber',43],
+    ['kernite',89],
+    ['jaspet',1465],
+    ['hemorphite',955],
+    ['hedbergite',744],
+    ['spodumain',723],
+    ['darkochre',368],
+    ['gniess',291],
+    ['crokite',2633],
+    ['bistot',2723],
+    ['arkonor',2423],
+    ['mercoxit',0],
 ];
 
 let quoteTotal = [];

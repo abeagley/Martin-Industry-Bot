@@ -2,8 +2,8 @@ const quote = require('./quote.js');
 const ore = require('./ore.js');
 
 
-const guildID = '766431988302348349';
-const channelID = '766433728716341248';
+const guildID = '612667368744812563';
+const channelID = '756565959073857679';
 
 const commands = {
     quote,
