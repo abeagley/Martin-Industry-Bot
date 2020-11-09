@@ -84,8 +84,7 @@ module.exports = (message, args) =>  {
 		const disagreeR1 = msg.createReactionCollector(disagreeFilter);
 		const agreeR1 = msg.createReactionCollector(agreeFilter1);
 		
-		await (disagreeR1 || agreeR1) ;
-
+		
 		//disagree1 = Incorrect Ore
 		disagreeR1.on('collect', r => {
 			let oreInvoice = new Discord.MessageEmbed()
