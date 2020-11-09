@@ -78,8 +78,8 @@ module.exports = (message, args) =>  {
 		await msg.react(agree1)
 		await msg.react(disagree1)
 				
-		const disagreeFilter = (reaction, user) => reaction.emoji.name === '❌' && reaction.message.guild.member(user).roles.cache.has('774708898761670697');
-		const agreeFilter1 = (reaction, user) => reaction.emoji.name === '☑️'  && reaction.message.guild.member(user).roles.cache.has('774708898761670697');;
+		const disagreeFilter = (reaction, user) => reaction.emoji.name === '❌' && reaction.message.guild.member(user).roles.cache.has('773244425291300896');
+		const agreeFilter1 = (reaction, user) => reaction.emoji.name === '☑️'  && reaction.message.guild.member(user).roles.cache.has('773244425291300896');;
 				
 		const disagreeR1 = msg.createReactionCollector(disagreeFilter);
 		const agreeR1 = msg.createReactionCollector(agreeFilter1);
@@ -141,7 +141,7 @@ module.exports = (message, args) =>  {
 				msg.reactions.cache.get("✅").remove()
 				msg.react(agree3).then( async r => {
 
-				const agreeFilter3 = (reaction, user) => reaction.emoji.name === '👍'  && reaction.message.guild.member(user).roles.cache.has('774708898761670697');;
+				const agreeFilter3 = (reaction, user) => reaction.emoji.name === '👍'  && reaction.message.guild.member(user).roles.cache.has('773244425291300896');;
 				const agreeR3 = msg.createReactionCollector(agreeFilter3);
 
 				await agreeR3;
