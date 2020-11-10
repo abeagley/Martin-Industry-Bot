@@ -71,7 +71,7 @@ module.exports = (message, args) =>  {
 	.setFooter('Does the ore contract match the above?')
 	;
 	
-	message.channel.send(oreInvoice).then( async msg => {
+	message.channel.send(oreInvoice).then( msg => {
 		msg.react(agree1)
 		msg.react(disagree1)
 				
@@ -114,14 +114,14 @@ module.exports = (message, args) =>  {
 				msg.reactions.cache.get("❌").remove()
 				msg.reactions.cache.get("☑️").remove()
 				
-				msg.react(agree2).then( async r => {
+				msg.react(agree2).then( r => {
 				message.channel.send(`Please send contract to Econmartin requesting ${formatMoney(quoteOutputTwo)} isk then press ✅`)
 			
 			
 			const agreeFilter2 = (reaction, user) => reaction.emoji.name === '✅'  && user.id === message.author.id;
 			const agreeR2 = msg.createReactionCollector(agreeFilter2);
 
-			await agreeR2;
+			
 
 			agreeR2.on('collect', r => {
 				let oreInvoice = new Discord.MessageEmbed()
@@ -136,13 +136,12 @@ module.exports = (message, args) =>  {
 					.setFooter('Has contract been paid?')
 				msg.edit(oreInvoice)
 				msg.reactions.cache.get("✅").remove()
-				msg.react(agree3).then( async r => {
+				msg.react(agree3).then(  r => {
 
 				const agreeFilter3 = (reaction, user) => reaction.emoji.name === '👍'  && reaction.message.guild.member(user).roles.cache.has('773244425291300896');;
 				const agreeR3 = msg.createReactionCollector(agreeFilter3);
 
-				await agreeR3;
-						
+									
 				agreeR3.on('collect', r => {
 					let oreInvoice = new Discord.MessageEmbed()
 						.setTitle('Status: Complete')
