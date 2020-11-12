@@ -30,6 +30,7 @@ function formatMoney(number) {
 
 
 module.exports = (message, args) =>  {
+		
 
 		if (args.length < 2) {return message.reply("No Values Input :pensive: Try '!ore veldspar 1000 scordite 1000...'")}
 	else {
@@ -118,7 +119,7 @@ module.exports = (message, args) =>  {
 				message.channel.send(`Please send contract to Econmartin requesting ${formatMoney(quoteOutputTwo)} isk then press ✅`)
 			
 			
-			const agreeFilter2 = (reaction, user) => reaction.emoji.name === '✅'  && user.id === message.author.id;
+			const agreeFilter2 = (reaction, user) => reaction.emoji.name === '✅'  && user.id === message.author.id || reaction.message.guild.member(user).roles.cache.has('773244425291300896');
 			const agreeR2 = msg.createReactionCollector(agreeFilter2);
 
 			
