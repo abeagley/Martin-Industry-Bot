@@ -37,7 +37,7 @@ module.exports = (message, args) =>  {
 
 		for (let i = 0; i < args.length; i++) {
 			for (let j = 0; j < orePricesTwo.length; j++) {
-				if (args[i] === orePricesTwo[j][0]) {
+				if (args[i].toLowerCase() === orePricesTwo[j][0]) {
 					quoteTotalTwo.push(args[i+1] * orePricesTwo[j][1]);
 				}
 				console.log(quoteTotalTwo);
