@@ -74,7 +74,7 @@ module.exports = (message, args) =>  {
 	message.channel.send(oreInvoice).then( msg => {
 		msg.react(agree1)
 		msg.react(disagree1)
-		message.channel.reply(`Please send contract with ore to Econmartin requesting ${formatMoney(quoteOutputTwo)} isk`)
+		message.reply(`Please send contract with ore to Econmartin requesting ${formatMoney(quoteOutputTwo)} isk`)
 				
 		const agreeDisagree = (reaction, user) =>  reaction.message.guild.member(user).roles.cache.has('773244425291300896');
 		const agreeOrDisagree = msg.createReactionCollector(agreeDisagree);
