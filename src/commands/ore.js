@@ -62,7 +62,7 @@ module.exports = (message, args) =>  {
 
 	let oreInvoice = new Discord.MessageEmbed()
 	.setTitle('Status: Sell Ore Request')
-	.setAuthor(message.author, message.author.avatarURL())
+	.setAuthor(message.author.username, message.author.avatarURL())
 	.setColor(15105570) 
 	.addFields({ name: args, value: '----------', inline: true},
 		{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
@@ -74,7 +74,7 @@ module.exports = (message, args) =>  {
 	message.channel.send(oreInvoice).then( msg => {
 		msg.react(agree1)
 		msg.react(disagree1)
-		message.channel.send(`Please send contract with ore to Econmartin requesting ${formatMoney(quoteOutputTwo)} isk`)
+		message.channel.reply(`Please send contract with ore to Econmartin requesting ${formatMoney(quoteOutputTwo)} isk`)
 				
 		const agreeDisagree = (reaction, user) =>  reaction.message.guild.member(user).roles.cache.has('773244425291300896');
 		const agreeOrDisagree = msg.createReactionCollector(agreeDisagree);
@@ -87,7 +87,7 @@ module.exports = (message, args) =>  {
 				case '❌': 
 					oreInvoice = new Discord.MessageEmbed()
 					.setTitle('Status: Rejected(Incorrect Ore)')
-					.setAuthor(message.author, message.author.avatarURL())
+					.setAuthor(message.author.username, message.author.avatarURL())
 					.setColor(15158332)
 					.addFields({ name: args, value: '----------', inline: true},
 						{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
@@ -104,7 +104,7 @@ module.exports = (message, args) =>  {
 					oreInvoice = new Discord.MessageEmbed()
 					.setTitle('Status: Complete')
 					.setDescription('Ore Accepted ☑️')
-					.setAuthor(message.author, message.author.avatarURL())
+					.setAuthor(message.author.tag, message.author.avatarURL())
 					.setColor(3066993)
 					.addFields({ name: args, value: '----------', inline: true},
 						{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
