@@ -58,23 +58,23 @@ module.exports = (message, args) =>  {
 		
 		const disagree1 = "❌";
 		const agree1 = "☑️";
-		const agree2 = "✅";
-		const agree3 = "👍";
+
 
 	let oreInvoice = new Discord.MessageEmbed()
 	.setTitle('Status: Sell Ore Request')
-	.setAuthor(message.author.username, message.author.avatarURL())
-	.setColor(9807270) 
+	.setAuthor(message.author, message.author.avatarURL())
+	.setColor(15105570) 
 	.addFields({ name: args, value: '----------', inline: true},
 		{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
 	)
 	.setTimestamp()
-	.setFooter('Does the ore contract match the above?')
+	.setFooter('Send contract with ore to Ecomartin requesting isk amount below')
 	;
 	
 	message.channel.send(oreInvoice).then( msg => {
 		msg.react(agree1)
 		msg.react(disagree1)
+		message.channel.send(`Please send contract with ore to Econmartin requesting ${formatMoney(quoteOutputTwo)} isk`)
 				
 		const agreeDisagree = (reaction, user) =>  reaction.message.guild.member(user).roles.cache.has('773244425291300896');
 		const agreeOrDisagree = msg.createReactionCollector(agreeDisagree);
@@ -87,7 +87,7 @@ module.exports = (message, args) =>  {
 				case '❌': 
 					oreInvoice = new Discord.MessageEmbed()
 					.setTitle('Status: Rejected(Incorrect Ore)')
-					.setAuthor(message.author.username, message.author.avatarURL())
+					.setAuthor(message.author, message.author.avatarURL())
 					.setColor(15158332)
 					.addFields({ name: args, value: '----------', inline: true},
 						{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
@@ -102,67 +102,20 @@ module.exports = (message, args) =>  {
 				//ore correct
 				case '☑️':
 					oreInvoice = new Discord.MessageEmbed()
-					.setTitle('Status: Ore Accepted')
+					.setTitle('Status: Complete')
 					.setDescription('Ore Accepted ☑️')
-					.setAuthor(message.author.username, message.author.avatarURL())
-					.setColor(11027200)
+					.setAuthor(message.author, message.author.avatarURL())
+					.setColor(3066993)
 					.addFields({ name: args, value: '----------', inline: true},
 						{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
 					)
 					.setTimestamp()
-					.setFooter('Has contract requesting isk been sent?')
+					.setFooter('Thanks for doing business with HTP')
 				msg.edit(oreInvoice)
 				msg.reactions.cache.get("❌").remove()
 				msg.reactions.cache.get("☑️").remove()
-				
-				msg.react(agree2).then( r => {
-				message.channel.send(`Please send contract to Econmartin requesting ${formatMoney(quoteOutputTwo)} isk then press ✅`)
-			
-			
-			const agreeFilter2 = (reaction, user) => reaction.emoji.name === '✅'  && user.id === message.author.id || reaction.message.guild.member(user).roles.cache.has('773244425291300896');
-			const agreeR2 = msg.createReactionCollector(agreeFilter2);
-
-			
-
-			agreeR2.on('collect', r => {
-				let oreInvoice = new Discord.MessageEmbed()
-					.setTitle('Status: Payment Contract Sent')
-					.setDescription('Ore Accepted ☑️' + ' Payment Contract Sent ✅ ')
-					.setAuthor(message.author.username, message.author.avatarURL())
-					.setColor(15105570)
-					.addFields({ name: args, value: '----------', inline: true},
-						{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
-					)
-					.setTimestamp()
-					.setFooter('Has contract been paid?')
-				msg.edit(oreInvoice)
-				msg.reactions.cache.get("✅").remove()
-				msg.react(agree3).then(  r => {
-
-				const agreeFilter3 = (reaction, user) => reaction.emoji.name === '👍'  && reaction.message.guild.member(user).roles.cache.has('773244425291300896');;
-				const agreeR3 = msg.createReactionCollector(agreeFilter3);
-
-									
-				agreeR3.on('collect', r => {
-					let oreInvoice = new Discord.MessageEmbed()
-						.setTitle('Status: Complete')
-						.setDescription('Ore Accepted ✅' + ' Payment Contract Sent ☑️ ' + 'Contract Paid 👍')
-						.setAuthor(message.author.username, message.author.avatarURL())
-						.setColor(3066993)
-						.addFields({ name: args, value: '----------', inline: true},
-							{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
-						)
-						.setTimestamp()
-						.setFooter('Thankyou for doing business with Hell To Pay Industries')
-					msg.edit(oreInvoice)
-					msg.reactions.cache.get("👍").remove()
-					msg.edit(oreInvoice)
-					
-				})
-				})
+			}
 		})
-		})
-	}})
 	})
 		
 	
