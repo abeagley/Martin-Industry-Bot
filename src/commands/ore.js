@@ -104,7 +104,7 @@ module.exports = (message, args) =>  {
 					oreInvoice = new Discord.MessageEmbed()
 					.setTitle('Status: Complete')
 					.setDescription('Ore Accepted ☑️')
-					.setAuthor(message.author.tag, message.author.avatarURL())
+					.setAuthor(message.member.nickname, message.author.avatarURL())
 					.setColor(3066993)
 					.addFields({ name: args, value: '----------', inline: true},
 						{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
