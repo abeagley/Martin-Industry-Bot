@@ -1,5 +1,6 @@
 const quote = require('./quote.js');
 const ore = require('./ore.js');
+const pis = require('./pi.js');
 
 
 const guildID = '612667368744812563';
@@ -8,7 +9,8 @@ const piChannelID = '758978691509780481';
 
 const commands = {
     quote,
-    ore
+    ore,
+    pis
 }
  
 module.exports = async (message) => {
