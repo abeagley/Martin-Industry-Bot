@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const oreChannelID = '756565959073857679';
 
 
 const orePricesTwo = [
@@ -31,7 +32,7 @@ function formatMoney(number) {
 
 module.exports = (message, args) =>  {
 		
-
+	if (message.channel.id === oreChannelID) {
 		if (args.length < 2) {return message.reply("No Values Input :pensive: Try '!ore veldspar 1000 scordite 1000...'")}
 	else {
 
@@ -125,4 +126,5 @@ module.exports = (message, args) =>  {
 	
 }
 quoteTotalTwo = [];
+}
 };

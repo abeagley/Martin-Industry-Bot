@@ -3,7 +3,8 @@ const ore = require('./ore.js');
 
 
 const guildID = '612667368744812563';
-const channelID = '756565959073857679';
+const oreChannelID = '756565959073857679';
+const piChannelID = '758978691509780481';
 
 const commands = {
     quote,
@@ -12,7 +13,7 @@ const commands = {
  
 module.exports = async (message) => {
     console.log(message);
-    if (message.guild.id === guildID && message.channel.id === channelID) {
+    if (message.guild.id === guildID && message.channel.id === oreChannelID || piChannelID) {
         const args = message.content.split(' ');
         if (args.length == 0 || args[0].charAt(0) !== '!') return;
         const command = args.shift().substr(1);
