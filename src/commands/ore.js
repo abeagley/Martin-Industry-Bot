@@ -78,6 +78,9 @@ module.exports = (message, args) =>  {
 				
 		const agreeDisagree = (reaction, user) =>  reaction.message.guild.member(user).roles.cache.has('773244425291300896');
 		const agreeOrDisagree = msg.createReactionCollector(agreeDisagree);
+
+		msg.awaitReactions(agreeDisagree)
+			.then(
 		
 		agreeOrDisagree.on('collect', reaction => {
 			
@@ -116,7 +119,8 @@ module.exports = (message, args) =>  {
 				msg.reactions.cache.get("☑️").remove()
 			}
 		})
-	})
+	
+	)})
 		
 	
 }
