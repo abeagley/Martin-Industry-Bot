@@ -62,7 +62,7 @@ module.exports = (message, args) =>  {
 
 	let oreInvoice = new Discord.MessageEmbed()
 	.setTitle('Status: Sell Ore Request')
-	.setAuthor(message.author.username, message.author.avatarURL())
+	.setAuthor(message.member.nickname, message.author.avatarURL())
 	.setColor(15105570) 
 	.addFields({ name: args, value: '----------', inline: true},
 		{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
@@ -87,7 +87,7 @@ module.exports = (message, args) =>  {
 				case '❌': 
 					oreInvoice = new Discord.MessageEmbed()
 					.setTitle('Status: Rejected(Incorrect Ore)')
-					.setAuthor(message.author.username, message.author.avatarURL())
+					.setAuthor(message.member.nickname, message.author.avatarURL())
 					.setColor(15158332)
 					.addFields({ name: args, value: '----------', inline: true},
 						{ name: 'Total isk', value: formatMoney(quoteOutputTwo)}
