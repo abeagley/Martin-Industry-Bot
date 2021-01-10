@@ -72,20 +72,20 @@ module.exports = (message, args) =>  {
 
 
 			let orderInvoice = new Discord.MessageEmbed()
-				.setTitle('Status: Sell Ore Request')
+				.setTitle('Status: Buy Mats Request')
 				.setAuthor(message.member.nickname, message.author.avatarURL())
 				.setColor(15105570) 
 				.addFields({ name: args, value: '----------', inline: true},
 					{ name: 'Total isk', value: formatMoney(quoteOutputThree)}
 				)
 				.setTimestamp()
-				.setFooter('Send contract with ore to Ecomartin requesting isk amount below')
+				.setFooter('Donate isk to corp and await mats')
 	;
 	
 			message.channel.send(orderInvoice).then( msg => {
 				msg.react(agree1);
 				msg.react(disagree1);
-				message.reply(`Please send contract with ore to Econmartin requesting ${formatMoney(quoteOutputThree)} isk`);
+				message.reply(`Please donate ${formatMoney(quoteOutputThree)} to corp`);
 				
 				const agreeDisagree = (reaction, user) =>  reaction.message.guild.member(user).roles.cache.has('773244425291300896');
 				const agreeOrDisagree = msg.createReactionCollector(agreeDisagree);
@@ -100,7 +100,7 @@ module.exports = (message, args) =>  {
 							// order incorrect
 							case '❌': 
 								orderInvoice = new Discord.MessageEmbed()
-									.setTitle('Status: Rejected(Incorrect Ore)')
+									.setTitle('Status: Rejected(Incorrect Order)')
 									.setAuthor(message.member.nickname, message.author.avatarURL())
 									.setColor(15158332)
 									.addFields({ name: args, value: '----------', inline: true},
