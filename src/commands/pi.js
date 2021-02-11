@@ -23,7 +23,7 @@ const piPrices = [
 	['toxicmetals',302],
 	['reactivegas',96],
 	['noblegas',450],
-	['industrialfibers',750],
+	['industrialfibers',450],
 	['supertensileplastics',150],
 	['polyaramids',128],
 	['coolant',450],
