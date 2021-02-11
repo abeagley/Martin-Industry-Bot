@@ -16,4 +16,5 @@ client.once('ready', () => {
 client.on('message', commandHandler);
 
 client.login(process.env.token);
+
 mongoose.connect(process.env.mongoose1);

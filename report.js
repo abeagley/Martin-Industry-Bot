@@ -3,7 +3,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-unused-vars */
 /* eslint-disable linebreak-style */
-
+const Discord = require('discord.js');
 const mongoose = require('mongoose');
 
 const reportSchema = mongoose.Schema({
