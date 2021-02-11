@@ -1,10 +1,10 @@
 /* eslint-disable linebreak-style */
 const nsfwID = '809473664265355346';
 
-module.exports = async (message, user) => {
+module.exports = (message) => {
 
-	if (message.channel.id === nsfwID && message.guild.member(user).roles.cache.has('773244425291300896')) {
-		message.reply(`"Thank you for reporting " + ${message.mentions.users} + " for being a bitch!"`);
+	if (message.channel.id === nsfwID) {
+		message.reply(`"Thank you for reporting " + ${message.mentions.members.first()} + " for being a little bitch!"`);
 	}
 
 };
