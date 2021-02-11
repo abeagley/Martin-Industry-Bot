@@ -3,7 +3,7 @@ const quote = require('./quote.js');
 const ore = require('./ore.js');
 const pis = require('./pi.js');
 const order = require('./order.js');
-const reportbitch = require('./reportbitch');
+const reportbitch = require('./reportbitch.js');
 
 
 const guildID = '612667368744812563';
