@@ -1,7 +1,12 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable no-unused-vars */
+/* eslint-disable linebreak-style */
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
+const mongoose = require('mongoose');
+const { prefix, token, mongoose1 } = require('./config.json');
 const client = new Discord.Client();
 const commandHandler = require('./commands');
+
 
 
 client.once('ready', () => {
@@ -11,3 +16,4 @@ client.once('ready', () => {
 client.on('message', commandHandler);
 
 client.login(process.env.token);
+mongoose.connect(process.env.mongoose1);

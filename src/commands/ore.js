@@ -1,6 +1,12 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable indent */
+/* eslint-disable linebreak-style */
+/* eslint-disable no-mixed-spaces-and-tabs */
+/* eslint-disable linebreak-style */
 const Discord = require('discord.js');
 const oreChannelID = '756565959073857679';
+const mongoose = require('mongoose');
+const Report = require('../Models/report.js');
 
 
 const orePricesTwo = [
@@ -78,6 +84,21 @@ module.exports = (message, args) =>  {
 				msg.react(disagree1);
 				message.reply(`Please send contract with ore to Econmartin requesting ${formatMoney(quoteOutputTwo)} isk`);
 				
+				let rUser = message.member;
+        		let rAuthor = message.author;
+    
+        		const report = new Report({
+            	_id: mongoose.Types.ObjectId(),
+				time: message.createdTimestamp,
+            	nickname: rUser.nickname,
+            	username: rAuthor.username,
+            	userID: rUser.id,
+            	isk: quoteOutputTwo,
+        		});
+
+        		report.save();
+
+
 				const agreeDisagree = (reaction, user) =>  reaction.message.guild.member(user).roles.cache.has('773244425291300896');
 				const agreeOrDisagree = msg.createReactionCollector(agreeDisagree);
 
