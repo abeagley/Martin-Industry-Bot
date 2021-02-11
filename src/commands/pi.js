@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 const Discord = require('discord.js');
-const piChannelID = '758978691509780481';
+const piChannelID = '756565959073857679';
 
 
 const piPrices = [

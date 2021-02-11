@@ -7,7 +7,7 @@ const order = require('./order.js');
 
 const guildID = '612667368744812563';
 const oreChannelID = '756565959073857679';
-const piChannelID = '758978691509780481';
+const piChannelID = '756565959073857679';
 const orderChannelID = '757717773010075649';
 
 const commands = {
