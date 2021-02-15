@@ -29,6 +29,7 @@ const orderPrices = [
 	['noblemetals',209],
 	['reactivemetals',407],
 	['toxicmetals',371],
+	['plasmoids',2465],
 ];
 
 let quoteTotalThree = [];
