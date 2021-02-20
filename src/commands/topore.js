@@ -9,7 +9,7 @@ function formatMoney(number) {
 	return number.toLocaleString('en-US', { style: 'decimal', currency: 'USD' });
 }
 
-module.exports = async (message, args) =>  {
+module.exports = async (message) =>  {
 	if (message.channel.id === oreChannelID) {
 		try{
 			let result = await report.aggregate([
@@ -27,4 +27,5 @@ module.exports = async (message, args) =>  {
 			console.log(err);
 		}
 	}
+	else(console.log('Not worked'));
 };
