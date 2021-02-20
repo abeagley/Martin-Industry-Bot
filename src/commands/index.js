@@ -4,7 +4,7 @@ const ore = require('./ore.js');
 const pis = require('./pi.js');
 const order = require('./order.js');
 const nsfw = require('./nsfw.js');
-const topore = require('./topore');
+const topore = require('./topore.js');
 
 
 const guildID = '612667368744812563';
