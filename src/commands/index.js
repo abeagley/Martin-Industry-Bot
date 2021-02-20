@@ -4,6 +4,7 @@ const ore = require('./ore.js');
 const pis = require('./pi.js');
 const order = require('./order.js');
 const nsfw = require('./nsfw.js');
+const topore = require('./topore');
 
 
 const guildID = '612667368744812563';
@@ -18,6 +19,7 @@ const commands = {
 	pis,
 	order,
 	nsfw,
+	topore
 };
  
 module.exports = async (message) => {
