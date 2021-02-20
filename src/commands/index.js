@@ -19,7 +19,7 @@ const commands = {
 	pis,
 	order,
 	nsfw,
-	topore
+	topore,
 };
  
 module.exports = async (message) => {
