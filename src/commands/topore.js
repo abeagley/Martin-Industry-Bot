@@ -3,7 +3,7 @@
 const Discord = require('discord.js');
 const mongoose = require('mongoose');
 const report = require('../report');
-const oreChannelID = '757717773010075649';
+const oreChannelID = '756565959073857679';
 
 function formatMoney(number) {
 	return number.toLocaleString('en-US', { style: 'decimal', currency: 'USD' });
