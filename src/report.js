@@ -15,4 +15,4 @@ const reportSchema = mongoose.Schema({
     isk: Number,
 });
 
-module.exports = mongoose.model('orevalues', reportSchema);
+module.exports = mongoose.model('orevaluesMarch', reportSchema);
