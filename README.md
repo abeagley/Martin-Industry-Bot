@@ -1,81 +1,14 @@
 # EE-Industry-Bot
 Creating a discord bot that handles Corporation industry needs
 
-Need:
-- [x] Command handler 
+Current Commands
+!ore - To sell ore to corp. Enter !ore followed by ore name then quantity, with 1 space in between.
+!pis - To sell pi to corp. Enter !pis followed by pi name then quantity, with 1 space in between.
+!order - To order minerals and pi from corp. Enter !order followed by pi/mineral name and then quantity, with 1 space in between.
+!quote - To get a quote for minerals/ore/pi. Enter !quote followed by pi/mineral name and then quantity, with 1 space in between.
 
-Commands for: 
-- [x] Ore Purchase
-- [ ] PR Purchase
-- [x] Ore Quotes
-- [ ] PI Quotes
+!nsfw - Replys with a funny quote in the nsfw channel
   
-  
-Further projects
-- [ ] Accounting System
-- [ ] Production Line system
-  
-LETS HOPE THIS WORKS
 
-Planned Process for Ore Purchase: 
-```
-Input by player: 
-  !ore vel=200 sco=3000 pyr=4000 || !ore veldspar=200 || !ore vel 200 sco 3000 || !ore veldspar 2000
-  
-Output by bot:
-  Embeded message: 
-    Job#1
-    Status: Sale Request
-    Ore: Veldspar 200  Scordite 3000 Pyroxeres 4000
-    @Industry-Officer: Ore deposited [tick] [cross]
-    
-  [cross] > Edit-message-output
-  Job#1
-  Status: Closed (Incorrect Ore Value)
-  @player: Please chack quantity and resubmit
-  
-  ||
-  
-  [tick] > Edit-message-ouput
-  Job#1
-  Status: Deposit Confirmed
-  Ore: Veldspar 200  Scordite 3000 Pyroxeres 4000
-  @Industry-Officer: Ore Deposited [ticked]
-  @Player: Send @Accountant contract requesting ($$$ ISK Calculated)
-  Contract Sent? [Ticked/ Unticked]
-  
-  [Tick] > Edit-message-output
-  Job#1
-  Status: Contract Sent
-  Ore: Veldspar 200  Scordite 3000 Pyroxeres 4000
-  @Industry-Officer: Ore Deposited? [ticked]
-  @Player: Send @Accountant contract requesting ($$$ ISK Calculated)
-  Contract Sent? [ticked]
-  @Accountant Contract Paid [ticked / unticked]
-  
-  [tick]: Edit-message-ouput
-  Job#
-  Status: Complete
-   Ore: Veldspar 200  Scordite 3000 Pyroxeres 4000
-  @Industry-Officer: Ore Deposited? [ticked]
-  @Player: Send @Accountant contract requesting ($$$ ISK Calculated)
-  Contract Sent? [ticked]
-  @Accountant Contract Paid [ticked]
-  
-  
-  Quants to track digitally
-    Job#: Status, Ore#, isk, @user sent, @user received 
-    Total: Ore#, Total isk
-    @Player: Ore#, isk received
-    @Industry-Officer: isk sent
-  ```
-  Manual Inputs
-    Ore Deposit Contract
-    Check
-    Isk Contract
-    Check
-
-  Future data > Accounting
-  
   
   
