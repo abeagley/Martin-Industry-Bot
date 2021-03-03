@@ -1,7 +1,10 @@
 /* eslint-disable linebreak-style */
+
+// Set requirements
 const Discord = require('discord.js');
 const orderChannelID = '757717773010075649';
 
+// Set Prices
 const orderPrices = [
 	['tritanium',3],
 	['pyerite',21],
@@ -32,21 +35,28 @@ const orderPrices = [
 	['plasmoids',2635],
 ];
 
+// Make sure needed arrays are empty
 let quoteTotalThree = [];
 let orderArray = [];
 let orderNumber = [];
 
+// Function to have isk value with commas 
 function formatMoney(number) {
 	return number.toLocaleString('en-US', { style: 'decimal', currency: 'USD' });
 }
 
 
+// Ore Command
 module.exports = (message, args) =>  {
 		
+	// Check bot is in the right channel
 	if (message.channel.id === orderChannelID) {
+
+		// Check that they have entered values
 		if (args.length < 2) {return message.reply('No Values Input :pensive: Try \'!order tritanium 1000 pyerite 1000...\'');}
 		else {
 
+			// Loop through message for matching terms and add them to quoteTotal
 			for (let i = 0; i < args.length; i++) {
 				for (let j = 0; j < orderPrices.length; j++) {
 					if (args[i].toLowerCase() === orderPrices[j][0]) {
@@ -56,6 +66,7 @@ module.exports = (message, args) =>  {
 				}  
 			}
 		
+			
 			for (let l = 0; l < args.length; l+=2) {
 				orderArray.push(args[l]);
 			}
