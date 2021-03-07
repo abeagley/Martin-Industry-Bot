@@ -1,7 +1,8 @@
 /* eslint-disable linebreak-style */
 
 // Require Commands
-const quote = require('./quote.js');
+const buyquote = require('./buyquote.js');
+const sellquote = require('./sellquote.js');
 const ore = require('./ore.js');
 const pis = require('./pi.js');
 const order = require('./order.js');
@@ -17,12 +18,13 @@ const nsfwID = '809473664265355346';
 
 // Commands
 const commands = {
-	quote,
+	buyquote,
 	ore,
 	pis,
 	order,
 	nsfw,
 	topore,
+	sellquote,
 };
  
 // Command Handler
