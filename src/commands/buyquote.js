@@ -60,4 +60,5 @@ module.exports = async (message, args) => {
     
 	}
 	quoteTotal = [];
+	quoteList = [];
 };
