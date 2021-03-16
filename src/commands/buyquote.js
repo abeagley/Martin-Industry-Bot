@@ -31,6 +31,7 @@ const orePrices = [
 ];
 
 let quoteTotal = [];
+let quoteList = [];
 
 function formatMoney(number) {
 	return number.toLocaleString('en-US', { style: 'decimal', currency: 'USD' });
@@ -43,13 +44,17 @@ module.exports = async (message, args) => {
 			for (let j = 0; j < orePrices.length; j++) {
 				if (args[i] === orePrices[j][0]) {
 					quoteTotal.push(args[i+1] * orePrices[j][1]);
+					quoteList.push([args[i],args[i+1],args[i+1] * orePrices[j][1]]);
                 
 				}
 				console.log(quoteTotal);
 			}  
 		}
 		const quoteOutput = quoteTotal.reduce((a,b) => a+b,0);
-		await message.reply(formatMoney(quoteOutput));
+		await message.reply(
+			quoteList +
+			'Total:' + formatMoney(quoteOutput)
+		);
     
 	}
 	quoteTotal = [];
