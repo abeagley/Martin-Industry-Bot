@@ -51,11 +51,10 @@ module.exports = async (message, args) => {
 			}  
 		}
 		const quoteOutput = quoteTotal.reduce((a,b) => a+b,0);
-		const quoteListOutput = quoteList.forEach(listItem => {
-			'Item: ' + listItem[0] + ' ' + 'Quantity: ' + listItem[1] + ' ' + 'Subtotal' + listItem[2] + '\n' ;
-		});
 		await message.reply(
-			quoteListOutput +
+			quoteList.forEach(listItem => {
+				return 'Item: ' + listItem[0] + ' ' + 'Quantity: ' + listItem[1] + ' ' + 'Subtotal' + listItem[2] + '\n' ;
+			}) +
 			'\n' + 'Total: ' + formatMoney(quoteOutput)
 		);
     
