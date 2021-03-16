@@ -55,7 +55,7 @@ module.exports = async (message, args) => {
 			quoteList.forEach(listItem => {
 				return ('Item: ' + listItem[0] + ' ' + 'Quantity: ' + listItem[1] + ' ' + 'Subtotal' + listItem[2] + '\n');
 			}) +
-			'\n' + 'Total: ' + formatMoney(quoteOutput)
+			'\n' + 'Total: test ' + formatMoney(quoteOutput)
 		);
     
 	}
