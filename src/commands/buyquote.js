@@ -48,13 +48,16 @@ module.exports = async (message, args) => {
                 
 				}
 				console.log(quoteTotal);
+				console.log(quoteList);
 			}  
 		}
 		const quoteOutput = quoteTotal.reduce((a,b) => a+b,0);
+		const quoteListOutput = quoteList.forEach(listItem => {
+			return ('Item: ' + listItem[0] + ' ' + 'Quantity: ' + listItem[1] + ' ' + 'Subtotal' + listItem[2] + '\n');
+		});
+		console.log(quoteListOutput);
 		await message.reply(
-			quoteList.forEach(listItem => {
-				return ('Item: ' + listItem[0] + ' ' + 'Quantity: ' + listItem[1] + ' ' + 'Subtotal' + listItem[2] + '\n');
-			}) +
+			quoteListOutput +
 			'\n' + 'Total: test ' + formatMoney(quoteOutput)
 		);
     
