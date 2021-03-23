@@ -1,8 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable indent */
-/* eslint-disable linebreak-style */
-/* eslint-disable no-mixed-spaces-and-tabs */
-/* eslint-disable linebreak-style */
 const Discord = require('discord.js');
 const oreChannelID = '756565959073857679';
 const mongoose = require('mongoose');
@@ -12,19 +7,19 @@ const Report = require('../report.js');
 const orePricesTwo = [
 	['veldspar',6],
 	['scordite',15],
-	['pyroxeres',264],
-	['plagioclase',24],
-	['omber',27],
-	['kernite',104],
-	['jaspet',917],
-	['hemorphite',494],
-	['hedbergite',635],
-	['spodumain',829],
-	['darkochre',230],
-	['gneiss',332],
-	['crokite',1569],
-	['bistot',1799],
-	['arkonor',1498],
+	['pyroxeres',254],
+	['plagioclase',22],
+	['omber',26],
+	['kernite',94],
+	['jaspet',913],
+	['hemorphite',538],
+	['hedbergite',630],
+	['spodumain',800],
+	['darkochre',227],
+	['gneiss',307],
+	['crokite',1652],
+	['bistot',1871],
+	['arkonor',1571],
 	['mercoxit',0],
 ];
 

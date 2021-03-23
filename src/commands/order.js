@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 
 // Set requirements
 const Discord = require('discord.js');
@@ -7,32 +6,32 @@ const orderChannelID = '757717773010075649';
 // Set Prices
 const orderPrices = [
 	['tritanium',3],
-	['pyerite',21],
-	['mexallon',30],
-	['isogen',84],
-	['nocxium',811],
-	['zydrine',1020],
-	['megacyte',2125],
+	['pyerite',20],
+	['mexallon',26],
+	['isogen',83],
+	['nocxium',801],
+	['zydrine',1190],
+	['megacyte',2295],
 	['morphite',0],
 	// Pi Below
-	['lusteringalloy',327],
-	['sheencompound',201],
-	['gleamingalloy',322],
-	['condensedalloy',128],
-	['preciousalloy',426],
-	['motleycompound',278],
-	['fibercomposite',105],
-	['lucentcompound',326],
-	['opulentcompound',530],
-	['glossycompound',139],
-	['crystalcompound',283],
-	['darkcompound',209],
-	['basemetals',741],
-	['heavymetals',291],
-	['noblemetals',287],
-	['reactivemetals',589],
-	['toxicmetals',361],
-	['plasmoids',2475],
+	['lusteringalloy',127],
+	['sheencompound',233],
+	['gleamingalloy',303],
+	['condensedalloy',190],
+	['preciousalloy',411],
+	['motleycompound',212],
+	['fibercomposite',110],
+	['lucentcompound',284],
+	['opulentcompound',217],
+	['glossycompound',129],
+	['crystalcompound',264],
+	['darkcompound',282],
+	['basemetals',286],
+	['heavymetals',298],
+	['noblemetals',328],
+	['reactivemetals',726],
+	['toxicmetals',313],
+	['plasmoids',3060],
 ];
 
 // Make sure needed arrays are empty
