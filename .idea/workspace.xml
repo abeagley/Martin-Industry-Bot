@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/buyquote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/buyquote.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616853913328</updated>
       <workItem from="1616853914728" duration="1240000" />
-      <workItem from="1616855244518" duration="820000" />
+      <workItem from="1616855244518" duration="1141000" />
     </task>
     <task id="LOCAL-00001" summary="Added buyPrices list">
       <created>1616855513108</created>
@@ -73,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616855759178</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adjusted require buyPrices, trying to reference buyPrices">
+      <created>1616856119394</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616856119394</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +112,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added buyPrices list" />
     <MESSAGE value="adjusted require buyPrices" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted require buyPrices" />
+    <MESSAGE value="adjusted require buyPrices, trying to reference buyPrices" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted require buyPrices, trying to reference buyPrices" />
   </component>
 </project>

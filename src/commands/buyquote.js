@@ -1,4 +1,4 @@
-require('../prices/pilotBuyPrices');
+const prices = require('../prices/pilotBuyPrices');
 
 let quoteTotal = [];
 
