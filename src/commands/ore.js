@@ -3,25 +3,8 @@ const oreChannelID = '756565959073857679';
 const mongoose = require('mongoose');
 const Report = require('../report.js');
 
-
-const orePricesTwo = [
-	['veldspar',6],
-	['scordite',15],
-	['pyroxeres',254],
-	['plagioclase',22],
-	['omber',26],
-	['kernite',94],
-	['jaspet',913],
-	['hemorphite',538],
-	['hedbergite',630],
-	['spodumain',800],
-	['darkochre',227],
-	['gneiss',307],
-	['crokite',1652],
-	['bistot',1871],
-	['arkonor',1571],
-	['mercoxit',0],
-];
+// Set Sell Prices
+let sellPrices = require('../prices/pilotSellPrices');
 
 let quoteTotalTwo = [];
 let oreArray = [];
@@ -39,9 +22,9 @@ module.exports = (message, args) =>  {
 		else {
 
 			for (let i = 0; i < args.length; i++) {
-				for (let j = 0; j < orePricesTwo.length; j++) {
-					if (args[i].toLowerCase() === orePricesTwo[j][0]) {
-						quoteTotalTwo.push(args[i+1] * orePricesTwo[j][1]);
+				for (let j = 0; j < sellPrices.length; j++) {
+					if (args[i].toLowerCase() === sellPrices[j][0]) {
+						quoteTotalTwo.push(args[i+1] * sellPrices[j][1]);
 					}
 					console.log(quoteTotalTwo);
 				}  

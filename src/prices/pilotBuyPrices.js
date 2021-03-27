@@ -27,3 +27,5 @@ let buyPrices = [
     ['toxicmetals',313],
     ['plasmoids',3060],
 ];
+
+module.exports = buyPrices;
