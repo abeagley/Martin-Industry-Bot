@@ -16,6 +16,7 @@ function formatMoney(number) {
 
 module.exports = (message, args) =>  {
 	let sellPrices = require('../prices/pilotSellPrices');
+	console.log(sellPrices);
 	if (message.channel.id === oreChannelID) {
 		if (args.length < 2) {return message.reply('No Values Input :pensive: Try \'!ore veldspar 1000 scordite 1000...\'');}
 		else {

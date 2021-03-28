@@ -8,6 +8,7 @@ module.exports = async (message) =>  {
 
         let sellPrices = require('../prices/pilotSellPrices')
         let stringP = sellPrices.toString()
+        console.log(stringP)
         await message.reply(stringP);
     }
     else {
