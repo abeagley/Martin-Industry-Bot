@@ -3,7 +3,7 @@ const orderChannelID = '757717773010075649';
 const econID = '722877594709524501'
 const mongoose = require('mongoose');
 
-async function updatePrices(message) {
+module.exports = async (message) =>  {
     if (message.channel.id === orderChannelID && message.author.id === econID ) {
 
         await require('../database/getMineralPrices');
@@ -20,5 +20,3 @@ async function updatePrices(message) {
         }
     }
 }
-
-updatePrices();
