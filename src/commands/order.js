@@ -3,36 +3,8 @@
 const Discord = require('discord.js');
 const orderChannelID = '757717773010075649';
 
-// Set Prices
-const orderPrices = [
-	['tritanium',3],
-	['pyerite',20],
-	['mexallon',26],
-	['isogen',83],
-	['nocxium',801],
-	['zydrine',1190],
-	['megacyte',2295],
-	['morphite',0],
-	// Pi Below
-	['lusteringalloy',127],
-	['sheencompound',233],
-	['gleamingalloy',303],
-	['condensedalloy',190],
-	['preciousalloy',411],
-	['motleycompound',212],
-	['fibercomposite',110],
-	['lucentcompound',284],
-	['opulentcompound',217],
-	['glossycompound',129],
-	['crystalcompound',264],
-	['darkcompound',282],
-	['basemetals',286],
-	['heavymetals',298],
-	['noblemetals',328],
-	['reactivemetals',726],
-	['toxicmetals',313],
-	['plasmoids',3060],
-];
+// Set Buy Prices
+let buyPrices = require('../prices/pilotBuyPrices')
 
 // Make sure needed arrays are empty
 let quoteTotalThree = [];
@@ -57,9 +29,9 @@ module.exports = (message, args) =>  {
 
 			// Loop through message for matching terms and add them to quoteTotal
 			for (let i = 0; i < args.length; i++) {
-				for (let j = 0; j < orderPrices.length; j++) {
-					if (args[i].toLowerCase() === orderPrices[j][0]) {
-						quoteTotalThree.push(args[i+1] * orderPrices[j][1]);
+				for (let j = 0; j < buyPrices.length; j++) {
+					if (args[i].toLowerCase() === buyPrices[j][0]) {
+						quoteTotalThree.push(args[i+1] * buyPrices[j][1]);
 					}
 					console.log(quoteTotalThree);
 				}  

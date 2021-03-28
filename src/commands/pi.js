@@ -1,44 +1,8 @@
 const Discord = require('discord.js');
 const piChannelID = '756565959073857679';
 
-
-const piPrices = [
-	['lusteringalloy',112],
-	['sheencompound',206],
-	['gleamingalloy',284],
-	['condensedalloy',167],
-	['preciousalloy',362],
-	['motleycompound',187],
-	['fibercomposite',97],
-	['lucentcompound',266],
-	['opulentcompound',203],
-	['glossycompound',114],
-	['crystalcompound',233],
-	['darkcompound',265],
-	['basemetals',268],
-	['heavymetals',263],
-	['noblemetals',290],
-	['reactivemetals',681],
-	['toxicmetals',293],
-	['reactivegas',334],
-	['noblegas',470],
-	['industrialfibers',676],
-	['supertensileplastics',900],
-	['polyaramids',393],
-	['coolant',516],
-	['condensates',590],
-	['constructionblocks',900],
-	['nanites',627],
-	['silicateglass',710],
-	['smartfabunits',489],
-	['heavywater',8],
-	['suspendedplasma',21],
-	['liquidozone',87],
-	['ionicsolutions',236],
-	['oxygenisotopes',1575],
-	['plasmoids',2700],
-];
-
+//Set sell prices
+let sellPrices = require('../prices/pilotSellPrices');
 
 let piTotal = [];
 let piArray = [];
@@ -56,9 +20,9 @@ module.exports = (message, args) =>  {
 		else {
 
 			for (let i = 0; i < args.length; i++) {
-				for (let j = 0; j < piPrices.length; j++) {
-					if (args[i].toLowerCase() === piPrices[j][0]) {
-						piTotal.push(args[i+1] * piPrices[j][1]);
+				for (let j = 0; j < sellPrices.length; j++) {
+					if (args[i].toLowerCase() === sellPrices[j][0]) {
+						piTotal.push(args[i+1] * sellPrices[j][1]);
 					}
 					console.log(piTotal);
 				}  

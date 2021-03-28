@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
-const MineralReport = require('../models/mineralPrice');
-const PiReport = require('../models/piPilotBuyPrice')
+const OreReport = require('../models/orePilotSellPrice');
+const PiReport = require('../models/piPilotSellPrice')
 
 async function getOrePrice() {
 
     function getOreValues(callback) {
-        MineralReport.findOne().sort({createdAt: -1}).limit(1).exec((err, getOreResult) => {
+        OreReport.findOne().sort({createdAt: -1}).limit(1).exec((err, getOreResult) => {
             if (err) callback(err, null);
             else callback(null, getOreResult);
         })
@@ -34,9 +34,9 @@ async function getOrePrice() {
                 console.log(getPiResult2);
                 let pi1Prices = getPiResult2.prices;
                 console.log(pi1Prices);
-                let buyPrices = ore1Prices.concat(pi1Prices);
-                console.log(buyPrices);
-                module.exports = buyPrices;
+                let sellPrices = ore1Prices.concat(pi1Prices);
+                console.log(sellPrices);
+                module.exports = sellPrices;
             }
         })
     })

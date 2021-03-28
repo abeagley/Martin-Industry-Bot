@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-
 // Require Commands
 const buyquote = require('./buyquote.js');
 const sellquote = require('./sellquote.js');
@@ -8,6 +6,7 @@ const pis = require('./pi.js');
 const order = require('./order.js');
 const nsfw = require('./nsfw.js');
 const topore = require('./topore.js');
+const priceupdate = require('./priceupdate.js')
 
 // Channel IDs
 const guildID = '612667368744812563';
@@ -25,6 +24,7 @@ const commands = {
 	nsfw,
 	topore,
 	sellquote,
+	priceupdate,
 };
  
 // Command Handler
