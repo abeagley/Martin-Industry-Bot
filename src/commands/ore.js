@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const Report = require('../models/report.js');
 
 // Set Sell Prices
-let sellPrices = require('../prices/pilotSellPrices');
 
 let quoteTotalTwo = [];
 let oreArray = [];
@@ -16,7 +15,7 @@ function formatMoney(number) {
 
 
 module.exports = (message, args) =>  {
-		
+	let sellPrices = require('../prices/pilotSellPrices');
 	if (message.channel.id === oreChannelID) {
 		if (args.length < 2) {return message.reply('No Values Input :pensive: Try \'!ore veldspar 1000 scordite 1000...\'');}
 		else {

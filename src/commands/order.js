@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 const orderChannelID = '757717773010075649';
 
 // Set Buy Prices
-let buyPrices = require('../prices/pilotBuyPrices')
+
 
 // Make sure needed arrays are empty
 let quoteTotalThree = [];
@@ -19,7 +19,7 @@ function formatMoney(number) {
 
 // Ore Command
 module.exports = (message, args) =>  {
-		
+	let buyPrices = require('../prices/pilotBuyPrices')
 	// Check bot is in the right channel
 	if (message.channel.id === orderChannelID) {
 

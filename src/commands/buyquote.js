@@ -1,5 +1,5 @@
 // Set prices
-let buyPrices = require('../prices/pilotBuyPrices');
+
 
 let quoteTotal = [];
 
@@ -8,6 +8,7 @@ function formatMoney(number) {
 }
 
 module.exports = async (message, args) => {
+	let buyPrices = require('../prices/pilotBuyPrices');
 	if (args.length < 2) {return message.reply('No Values Input :pensive: Try \'!quote veldspar 1000 scordite 1000...\'');}
 	else {
 		for (let i = 0; i < args.length; i++) {
