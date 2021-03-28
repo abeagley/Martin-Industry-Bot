@@ -1,6 +1,5 @@
-
 // Set prices
-let buyPrices = require('../prices/pilotBuyPrices')
+let buyPrices = require('../prices/pilotBuyPrices');
 
 let quoteTotal = [];
 
