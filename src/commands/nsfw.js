@@ -1,4 +1,4 @@
-/* eslint-disable linebreak-style */
+
 const nsfwID = '809473664265355346';
 
 module.exports = (message) => {

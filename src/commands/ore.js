@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const oreChannelID = '756565959073857679';
 const mongoose = require('mongoose');
-const Report = require('../report.js');
+const Report = require('../models/report.js');
 
 // Set Sell Prices
 let sellPrices = require('../prices/pilotSellPrices');
