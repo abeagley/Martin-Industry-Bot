@@ -10,13 +10,9 @@ module.exports = async (message) =>  {
         await require('../database/getOrePrices');
         await require('../database/getPiPrices');
 
-        module.exports = async (message) => {
-            await message.reply("Prices Updated");
-        }
+        await message.reply("Prices Updated");
     }
     else {
-        module.exports = async (message) => {
-            await message.reply("Incorrect ID or Channel");
-        }
+        await message.reply("Incorrect ID or Channel");
     }
 }
