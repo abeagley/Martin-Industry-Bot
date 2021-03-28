@@ -4,7 +4,6 @@
     <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/ore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/ore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/prices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/prices.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +150,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616971444671</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="check prices as string">
+      <created>1616971913784</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1616971913784</updated>
+    </task>
+    <task id="LOCAL-00015" summary="check prices as string">
+      <created>1616972138526</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1616972138526</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +207,7 @@
     <MESSAGE value="removed second module export" />
     <MESSAGE value="moved sellprices inside module.export" />
     <MESSAGE value="add price check" />
-    <option name="LAST_COMMIT_MESSAGE" value="add price check" />
+    <MESSAGE value="check prices as string" />
+    <option name="LAST_COMMIT_MESSAGE" value="check prices as string" />
   </component>
 </project>

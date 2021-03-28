@@ -16,6 +16,8 @@ module.exports = async (message, args) => {
 			for (let j = 0; j < sellPrices.length; j++) {
 				if (args[i] === sellPrices[j][0]) {
 					quoteTotal.push(args[i+1] * sellPrices[j][1]);
+					console.log(sellPrices[j][1])
+					console.log(sellPrices[j][0])
                 
 				}
 				console.log(quoteTotal);

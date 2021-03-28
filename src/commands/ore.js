@@ -25,6 +25,8 @@ module.exports = (message, args) =>  {
 					if (args[i].toLowerCase() === sellPrices[j][0]) {
 						quoteTotalTwo.push(args[i+1] * sellPrices[j][1]);
 					}
+					console.log(sellPrices[j][0])
+					console.log(sellPrices[j][1])
 					console.log(quoteTotalTwo);
 				}  
 			}
