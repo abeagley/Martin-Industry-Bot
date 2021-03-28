@@ -19,7 +19,6 @@ module.exports = (message, args) =>  {
 	if (message.channel.id === oreChannelID) {
 		if (args.length < 2) {return message.reply('No Values Input :pensive: Try \'!ore veldspar 1000 scordite 1000...\'');}
 		else {
-
 			for (let i = 0; i < args.length; i++) {
 				for (let j = 0; j < sellPrices.length; j++) {
 					if (args[i].toLowerCase() === sellPrices[j][0]) {

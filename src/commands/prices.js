@@ -7,7 +7,8 @@ module.exports = async (message) =>  {
     if (message.channel.id === orderChannelID && message.author.id === econID ) {
 
         let sellPrices = require('../prices/pilotSellPrices')
-        await message.reply(sellPrices);
+        let stringP = sellPrices.toString()
+        await message.reply(stringP);
     }
     else {
         await message.reply("Incorrect ID or Channel");

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="" />
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/ore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/ore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/prices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/prices.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +137,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616971160701</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add price check">
+      <created>1616971398470</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616971398470</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add price check">
+      <created>1616971444671</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1616971444671</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +193,7 @@
     <MESSAGE value="removed function from price update" />
     <MESSAGE value="removed second module export" />
     <MESSAGE value="moved sellprices inside module.export" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved sellprices inside module.export" />
+    <MESSAGE value="add price check" />
+    <option name="LAST_COMMIT_MESSAGE" value="add price check" />
   </component>
 </project>
