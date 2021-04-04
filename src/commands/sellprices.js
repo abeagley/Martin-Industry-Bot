@@ -10,7 +10,7 @@ module.exports = async (message) =>  {
         let stringP = sellPrices.toString()
         console.log(stringP)
         let priceOutput = "";
-        for (let i = 0; i < sellPrices.prices.length; i++) {
+        for (let i = 0; i < sellPrices.length; i++) {
             priceOutput += `${sellPrices[i]}\n`
         }
         console.log(priceOutput);
