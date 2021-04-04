@@ -23,19 +23,19 @@ async function getOrePrice() {
         if (err) {
             console.log(err);
         } else {
-            //console.log(getOreResult2);
+            console.log(getOreResult2);
             ore1Prices = getOreResult2.prices;
-            //console.log(ore1Prices);
+            console.log(ore1Prices);
         }
         await getPiValues( function( err, getPiResult2){
             if (err) {
                 console.log(err);
             } else {
-                //console.log(getPiResult2);
+                console.log(getPiResult2);
                 let pi1Prices = getPiResult2.prices;
-                //console.log(pi1Prices);
+                console.log(pi1Prices);
                 let sellPrices = ore1Prices.concat(pi1Prices);
-                //console.log(sellPrices);
+                console.log(sellPrices);
                 module.exports = sellPrices;
             }
         })
