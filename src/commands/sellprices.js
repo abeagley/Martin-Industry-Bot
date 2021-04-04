@@ -10,9 +10,10 @@ module.exports = async (message) =>  {
         let stringP = sellPrices.toString()
         console.log(stringP)
         let stringPSplit = stringP.match(/[^,]+,[^,]+/g);
-        await message.reply(stringPSplit);
+        console.log(stringPSplit)
+        await message.reply('wtf' + stringPSplit);
 
-        let sellPriceMessage = new Discord.MessageEmbed()
+        /*let sellPriceMessage = new Discord.MessageEmbed()
             .setTitle('Current Sell to Corp Prices')
             .setColor(15105570)
             .addFields({ name: args, value: '----------', inline: true},
@@ -21,7 +22,7 @@ module.exports = async (message) =>  {
             .setTimestamp()
             .setFooter('Thanks for doing business with HTP')
         ;
-
+*/
         //await message.channel.send(sellPriceMessage);
 
     }
