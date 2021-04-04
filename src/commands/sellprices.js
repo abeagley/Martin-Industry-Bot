@@ -9,24 +9,20 @@ module.exports = async (message) =>  {
         let sellPrices = require('../prices/pilotSellPrices')
         let stringP = sellPrices.toString()
         console.log(stringP)
-        let priceOutput = "";
-        for (let i = 0; i < sellPrices.length; i++) {
-            priceOutput += `${sellPrices[i]}\n`
-        }
-        console.log(priceOutput);
-        await message.reply(priceOutput);
-
-        /*let sellPriceMessage = new Discord.MessageEmbed()
+        let sellPriceMessage = new Discord.MessageEmbed()
             .setTitle('Current Sell to Corp Prices')
             .setColor(15105570)
-            .addFields({ name: args, value: '----------', inline: true},
-                { name: 'Total isk', value: formatMoney(quoteOutputThree)}
+            .addFields({ name: 'Prices', value: stringP, inline: true}
             )
             .setTimestamp()
             .setFooter('Thanks for doing business with HTP')
         ;
-*/
-        //await message.channel.send(sellPriceMessage);
+        await message.channel.send(sellPriceMessage);
+
+
+
+
+
 
     }
     else {
