@@ -11,7 +11,7 @@ module.exports = async (message) =>  {
         console.log(stringP)
         let stringPSplit = stringP.match(/[^,]+,[^,]+/g);
         console.log(stringPSplit)
-        await message.reply('wtf' + stringPSplit);
+        await message.reply(sellPrices + stringPSplit);
 
         /*let sellPriceMessage = new Discord.MessageEmbed()
             .setTitle('Current Sell to Corp Prices')
