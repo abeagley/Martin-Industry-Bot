@@ -7,8 +7,9 @@ module.exports = async (message) =>  {
     if (message.channel.id === orderChannelID && message.author.id === econID ) {
 
         let sellPrices = require('../prices/pilotSellPrices')
-        let stringP = sellPrices.toString()
+        let stringP = sellPrices.toString();
         console.log(stringP)
+
         let sellPriceMessage = new Discord.MessageEmbed()
             .setTitle('Current Sell to Corp Prices')
             .setColor(15105570)
