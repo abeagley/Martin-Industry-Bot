@@ -9,9 +9,12 @@ module.exports = async (message) =>  {
         let sellPrices = require('../prices/pilotSellPrices')
         let stringP = sellPrices.toString()
         console.log(stringP)
-        let stringPSplit = stringP.match(/[^,]+,[^,]+/g);
-        console.log(stringPSplit)
-        await message.reply(sellPrices.prices);
+        let priceOutput = "";
+        for (let i = 0; i < sellPrices.prices.length; i++) {
+            priceOutput += `${sellPrices[i]}\n`
+        }
+        console.log(priceOutput);
+        await message.reply(priceOutput);
 
         /*let sellPriceMessage = new Discord.MessageEmbed()
             .setTitle('Current Sell to Corp Prices')
