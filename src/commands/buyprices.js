@@ -7,7 +7,7 @@ module.exports = async (message) =>  {
     if (message.channel.id === orderChannelID && message.author.id === econID ) {
 
         let buyPrices = require('../prices/pilotBuyPrices')
-        let stringP = buyPrices.toString()
+        let stringP = buyPrices.prices;
         console.log(stringP)
         await message.reply(stringP);
     }
