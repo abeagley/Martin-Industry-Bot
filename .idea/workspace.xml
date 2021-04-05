@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="" />
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/buyquote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/buyquote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/sellquote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/sellquote.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -319,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617643558272</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="add mongoose connection to sellquote and buyquote">
+      <created>1617643985418</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1617643985418</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +361,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed async on second price function" />
     <MESSAGE value="removed function from price update" />
     <MESSAGE value="removed second module export" />
     <MESSAGE value="moved sellprices inside module.export" />
@@ -375,6 +385,7 @@
     <MESSAGE value="added connection close command to index" />
     <MESSAGE value="small changes to sellquote to get it to work" />
     <MESSAGE value="remove await from buyquote and sellquote" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove await from buyquote and sellquote" />
+    <MESSAGE value="add mongoose connection to sellquote and buyquote" />
+    <option name="LAST_COMMIT_MESSAGE" value="add mongoose connection to sellquote and buyquote" />
   </component>
 </project>

@@ -1,5 +1,5 @@
+// Set prices
 
-const mongo = require('../mongo');
 
 let quoteTotal = [];
 
@@ -8,31 +8,22 @@ function formatMoney(number) {
 }
 
 module.exports = async (message, args) => {
-	await mongo().then(mongoose => {
-		try {
-
-
-			let buyPrices = require('../prices/pilotBuyPrices');
-			if (args.length < 2) {
-				return message.reply('No Values Input :pensive: Try \'!quote veldspar 1000 scordite 1000...\'');
-			} else {
-				for (let i = 0; i < args.length; i++) {
-					for (let j = 0; j < buyPrices.length; j++) {
-						if (args[i] === buyPrices[j][0]) {
-							quoteTotal.push(args[i + 1] * buyPrices[j][1]);
-						}
-						console.log(quoteTotal);
-					}
+	let buyPrices = require('../prices/pilotBuyPrices');
+	if (args.length < 2) {return message.reply('No Values Input :pensive: Try \'!quote veldspar 1000 scordite 1000...\'');}
+	else {
+		for (let i = 0; i < args.length; i++) {
+			for (let j = 0; j < buyPrices.length; j++) {
+				if (args[i] === buyPrices[j][0]) {
+					quoteTotal.push(args[i+1] * buyPrices[j][1]);
 				}
-				const quoteOutput = quoteTotal.reduce((a, b) => a + b, 0);
-
-
-				message.reply(formatMoney(quoteOutput));
-
+				console.log(quoteTotal);
 			}
-			quoteTotal = [];
-		} finally {
-			mongoose.connection.close();
 		}
-	})
+		const quoteOutput = quoteTotal.reduce((a,b) => a+b,0);
+
+
+		message.reply(formatMoney(quoteOutput));
+
+	}
+	quoteTotal = [];
 };
