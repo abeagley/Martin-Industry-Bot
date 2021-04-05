@@ -2,7 +2,7 @@
 
 let mongo = require('../mongo')
 let quoteTotal = [];
-let quoteOutput = "";
+let quoteOutput = 0;
 
 function formatMoney(number) {
 	return number.toLocaleString('en-US', { style: 'decimal', currency: 'USD' });
