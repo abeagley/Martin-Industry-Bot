@@ -17,7 +17,7 @@ module.exports = async (message, args) => {
 		for (let i = 0; i < args.length; i++) {
 			for (let j = 0; j < sellPrices.length; j++) {
 				if (args[i].toLowerCase() === sellPrices[j][0]) {
-					argTotal.push([args[i],args[i]* sellPrices[j][1]]);
+					argTotal.push(args[i],args[i]* sellPrices[j][1]);
 					quoteTotal.push(args[i+1] * sellPrices[j][1]);
 
 				}
@@ -35,7 +35,7 @@ module.exports = async (message, args) => {
 				{ name: 'Total isk', value: formatMoney(quoteOutput)}
 			)
 			.setTimestamp()
-			.setFooter('Send contract with ore to Ecomartin requesting isk amount below')
+			.setFooter('Oh look it worked')
 		;
 
 		message.channel.send(sellQuote)
