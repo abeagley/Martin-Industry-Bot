@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 //Set Prices
 let quoteTotal = [];
-let argTotal = [];
+//let argTotal = [];
 
 function formatMoney(number) {
 	return number.toLocaleString('en-US', { style: 'decimal', currency: 'USD' });
@@ -17,7 +17,7 @@ module.exports = async (message, args) => {
 		for (let i = 0; i < args.length; i++) {
 			for (let j = 0; j < sellPrices.length; j++) {
 				if (args[i].toLowerCase() === sellPrices[j][0]) {
-					argTotal.push(args[i],args[i]* sellPrices[j][1]);
+					//argTotal.push(args[i],args[i]* sellPrices[j][1]);
 					quoteTotal.push(args[i+1] * sellPrices[j][1]);
 
 				}
@@ -31,7 +31,8 @@ module.exports = async (message, args) => {
 			.setTitle('Quote')
 			.setAuthor(message.member.nickname, message.author.avatarURL())
 			.setColor(15105570)
-			.addFields({ name: 'Items:', value: argTotal},
+			.addFields(
+				//{name: 'Items:', value: argTotal},
 				{ name: 'Total isk', value: formatMoney(quoteOutput)}
 			)
 			.setTimestamp()
