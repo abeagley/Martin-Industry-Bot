@@ -10,7 +10,7 @@ async function updatePrices(message) {
         await require('../database/getOrePrices');
         await require('../database/getPiPrices');
 
-        module.exports = async (message) => {
+        await module.exports = async (message) => {
             await message.reply("Prices Updated");
         }
     }
