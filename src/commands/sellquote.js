@@ -1,6 +1,6 @@
 
 //Set Prices
-
+let mongo = require('../mongo')
 let quoteTotal = [];
 
 function formatMoney(number) {
@@ -8,6 +8,7 @@ function formatMoney(number) {
 }
 
 module.exports = async (message, args) => {
+	await mongo();
 	let sellPrices = require('../prices/pilotSellPrices');
 	if (args.length < 2) {return message.reply('No Values Input :pensive: Try \'!quote veldspar 1000 scordite 1000...\'');}
 	else {
