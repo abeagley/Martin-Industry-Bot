@@ -41,11 +41,11 @@ async function getPrices() {
             });
 
             await report.save()
-                console.log("minerals saved")
                 .catch(function (error) {
                     // handle error
                     console.log(error);
                 })
+        console.log("minerals saved")
     })
 }
 getPrices()

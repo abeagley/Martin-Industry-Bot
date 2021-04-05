@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/sellquote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/sellquote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/priceupdate3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/priceupdate3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/getMineralPrices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/getMineralPrices.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/getOrePrices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/getOrePrices.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/getPiPrices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/getPiPrices.js" afterDir="false" />
@@ -40,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/commands" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -283,7 +283,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617577597679</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="removed individual connection closes from price update functions">
+      <created>1617640773023</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1617640773023</updated>
+    </task>
+    <task id="LOCAL-00033" summary="seperated out price update functions. mongoose only closes on last one">
+      <created>1617641258502</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1617641258502</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,8 +328,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adjusted require buyPrices" />
-    <MESSAGE value="adjusted require buyPrices, trying to reference buyPrices" />
     <MESSAGE value="adjusted require buyPrices, trying to reference prices as buyprices" />
     <MESSAGE value="adjusted require buyPrices, trying to reference prices = require" />
     <MESSAGE value="adjusted require buyPrices, trying to reference buyprices = buyprices" />
@@ -339,6 +351,8 @@
     <MESSAGE value="attempt buyPrices.prices" />
     <MESSAGE value="attempt for loop for string prices" />
     <MESSAGE value="adding console.logs backin" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding console.logs backin" />
+    <MESSAGE value="removed individual connection closes from price update functions" />
+    <MESSAGE value="seperated out price update functions. mongoose only closes on last one" />
+    <option name="LAST_COMMIT_MESSAGE" value="seperated out price update functions. mongoose only closes on last one" />
   </component>
 </project>

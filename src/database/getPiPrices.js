@@ -82,11 +82,11 @@ async function getPrices() {
                 })
 
             await piSellReportUpload.save()
-            console.log("pi saved")
                 .catch(function (error) {
                     // handle error
                     console.log(error);
                 })
+            console.log("pi saved")
     })
 }
 getPrices()

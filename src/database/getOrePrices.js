@@ -102,11 +102,11 @@ async function getOre() {
                     });
 
                     await oreReportUpload.save()
-                    console.log("ore saved")
                         .catch(function (error) {
                             // handle error
                             console.log(error);
                         })
+                    console.log("ore saved")
                 }
             });
 
