@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/priceupdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/priceupdate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/getMineralPrices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/getMineralPrices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/getOrePrices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/getOrePrices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/getPiPrices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/getPiPrices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/prices/pilotBuyPrices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prices/pilotBuyPrices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/prices/pilotSellPrices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prices/pilotSellPrices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/index.js" afterDir="false" />
     </list>
+=======
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="" />
+>>>>>>> 6d842f0b1c455b7e0b632bf423a589e16819a912
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,6 +116,16 @@
       <option name="project" value="LOCAL" />
       <updated>1616857495518</updated>
     </task>
+<<<<<<< HEAD
+    <task id="LOCAL-00008" summary="added await to priceupdate">
+      <created>1617630888707</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617630888707</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+=======
     <task id="LOCAL-00008" summary="removed async on second price function">
       <created>1616969389384</created>
       <option name="number" value="00008" />
@@ -287,6 +295,7 @@
       <updated>1617577597679</updated>
     </task>
     <option name="localTasksCounter" value="32" />
+>>>>>>> 6d842f0b1c455b7e0b632bf423a589e16819a912
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +332,10 @@
     <MESSAGE value="adjusted require buyPrices, trying to reference prices = require" />
     <MESSAGE value="adjusted require buyPrices, trying to reference buyprices = buyprices" />
     <MESSAGE value="adjusted require buyPrices, trying to reference buyprices = require buyprices, added modules.exports" />
+<<<<<<< HEAD
+    <MESSAGE value="added await to priceupdate" />
+    <option name="LAST_COMMIT_MESSAGE" value="added await to priceupdate" />
+=======
     <MESSAGE value="removed async on second price function" />
     <MESSAGE value="removed function from price update" />
     <MESSAGE value="removed second module export" />
@@ -343,5 +356,6 @@
     <MESSAGE value="attempt for loop for string prices" />
     <MESSAGE value="adding console.logs backin" />
     <option name="LAST_COMMIT_MESSAGE" value="adding console.logs backin" />
+>>>>>>> 6d842f0b1c455b7e0b632bf423a589e16819a912
   </component>
 </project>
