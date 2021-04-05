@@ -44,7 +44,6 @@ let piPilotBuyPrices = [];
 let piPilotSellPrices = [];
 async function getPrices() {
     await mongo().then(async mongoose => {
-        try {
 
             for (let i = 0; i < pi.length; i++) {
                 await axios.get('https://api.eve-echoes-market.com/market-stats/' + pi[i][1])
@@ -83,14 +82,11 @@ async function getPrices() {
                 })
 
             await piSellReportUpload.save()
+            console.log("pi saved")
                 .catch(function (error) {
                     // handle error
                     console.log(error);
                 })
-        }
-        finally {
-            mongoose.connection.close();
-        }
     })
 }
 getPrices()

@@ -6,7 +6,6 @@ const OreReport = require('../models/orePilotSellPrice');
 
 async function getOre() {
     await mongo().then(async mongoose => {
-        try {
 
             let tritanium = 0;
             let pyerite = 0;
@@ -103,15 +102,14 @@ async function getOre() {
                     });
 
                     await oreReportUpload.save()
+                    console.log("ore saved")
                         .catch(function (error) {
                             // handle error
                             console.log(error);
                         })
                 }
             });
-        } finally {
-            mongoose.connection.close();
-        }
+
     })
 }
 

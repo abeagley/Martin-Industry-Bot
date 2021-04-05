@@ -12,6 +12,7 @@ module.exports = async (message, args) => {
 	let sellPrices = require('../prices/pilotSellPrices');
 	if (args.length < 2) {return message.reply('No Values Input :pensive: Try \'!quote veldspar 1000 scordite 1000...\'');}
 	else {
+		console.log("Starting Calc")
 		for (let i = 0; i < args.length; i++) {
 			for (let j = 0; j < sellPrices.length; j++) {
 				if (args[i] === sellPrices[j][0]) {
@@ -27,5 +28,6 @@ module.exports = async (message, args) => {
 		await message.reply(formatMoney(quoteOutput));
     
 	}
+
 	quoteTotal = [];
 };

@@ -16,7 +16,6 @@ let minerals = [
 let mineralPrices = [];
 async function getPrices() {
     await mongo().then(async mongoose => {
-        try {
 
             for (let i = 0; i < minerals.length; i++) {
                 await axios.get('https://api.eve-echoes-market.com/market-stats/' + minerals[i][1])
@@ -42,14 +41,11 @@ async function getPrices() {
             });
 
             await report.save()
+                console.log("minerals saved")
                 .catch(function (error) {
                     // handle error
                     console.log(error);
                 })
-
-        } finally {
-            mongoose.connection.close()
-        }
     })
 }
 getPrices()
