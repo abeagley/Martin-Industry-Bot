@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/buyquote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/buyquote.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617646494319</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="attempt res callback for sellquote">
+      <created>1617647271421</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1617647271421</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +380,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="moved sellprices inside module.export" />
     <MESSAGE value="add price check" />
     <MESSAGE value="check prices as string" />
     <MESSAGE value="debug selling" />
@@ -399,6 +404,7 @@
     <MESSAGE value="add mongoose connection to sellquote and buyquote" />
     <MESSAGE value="removed mongoose connection from buy and sellquote" />
     <MESSAGE value="add mongo to sell and buyquote" />
-    <option name="LAST_COMMIT_MESSAGE" value="add mongo to sell and buyquote" />
+    <MESSAGE value="attempt res callback for sellquote" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempt res callback for sellquote" />
   </component>
 </project>
