@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/sellquote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/sellquote.js" afterDir="false" />
-    </list>
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,13 +60,6 @@
       <workItem from="1616853914728" duration="1240000" />
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
-    </task>
-    <task id="LOCAL-00003" summary="adjusted require buyPrices, trying to reference buyPrices">
-      <created>1616856119394</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1616856119394</updated>
     </task>
     <task id="LOCAL-00004" summary="adjusted require buyPrices, trying to reference prices as buyprices">
       <created>1616856422439</created>
@@ -407,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617653597898</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="attempt sellquote">
+      <created>1617656734324</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1617656734325</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,7 +435,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=".prices did not work. reverting" />
     <MESSAGE value="try embed for sell prices" />
     <MESSAGE value="try fix sell prices to string" />
     <MESSAGE value="attempt buyPrices.prices" />
@@ -463,6 +459,7 @@
     <MESSAGE value="remove attempt to push args in sellquote" />
     <MESSAGE value="remove further argoutputs in sellquote" />
     <MESSAGE value="remove async" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove async" />
+    <MESSAGE value="attempt sellquote" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempt sellquote" />
   </component>
 </project>
