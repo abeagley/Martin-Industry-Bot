@@ -1,7 +1,7 @@
 const axios = require('axios');
-const mongoose = require('mongoose');
 const PiBuyReport = require('../models/piPilotBuyPrice');
 const PiSellReport = require('../models/piPilotSellPrice');
+const mongo = require('../mongo');
 
 let pi = [
     ['lusteringalloy',42001000000],
@@ -43,49 +43,55 @@ let pi = [
 let piPilotBuyPrices = [];
 let piPilotSellPrices = [];
 async function getPrices() {
+    await mongo().then(async mongoose => {
+        try {
 
-    for (let i = 0; i < pi.length; i++) {
-        await axios.get('https://api.eve-echoes-market.com/market-stats/' + pi[i][1])
-            .then(function (response) {
-                // handle success
-                console.log(response['data'][response['data'].length - 1].sell);
-                let piPilotSellResponse = (Math.round((response['data'][response['data'].length - 1].sell) * 0.75))
-                let piPilotBuyResponse = (Math.round((response['data'][response['data'].length - 1].sell) * 0.85))
-                piPilotSellPrices.push([pi[i][0],piPilotSellResponse])
-                piPilotBuyPrices.push([pi[i][0],piPilotBuyResponse])
-                console.log("SellRes: " + piPilotSellResponse)
-                console.log("BuyRes: " + piPilotBuyResponse)
-            })
-            .catch(function (error) {
-                // handle error
-                console.log(error);
-            })
-    }
+            for (let i = 0; i < pi.length; i++) {
+                await axios.get('https://api.eve-echoes-market.com/market-stats/' + pi[i][1])
+                    .then(function (response) {
+                        // handle success
+                        console.log(response['data'][response['data'].length - 1].sell);
+                        let piPilotSellResponse = (Math.round((response['data'][response['data'].length - 1].sell) * 0.75))
+                        let piPilotBuyResponse = (Math.round((response['data'][response['data'].length - 1].sell) * 0.85))
+                        piPilotSellPrices.push([pi[i][0], piPilotSellResponse])
+                        piPilotBuyPrices.push([pi[i][0], piPilotBuyResponse])
+                        console.log("SellRes: " + piPilotSellResponse)
+                        console.log("BuyRes: " + piPilotBuyResponse)
+                    })
+                    .catch(function (error) {
+                        // handle error
+                        console.log(error);
+                    })
+            }
 
-    console.log(piPilotBuyPrices)
-    console.log(piPilotSellPrices)
+            console.log(piPilotBuyPrices)
+            console.log(piPilotSellPrices)
 
-    const piBuyReportUpload = new PiBuyReport({
-        _id: mongoose.Types.ObjectId(),
-        prices: piPilotBuyPrices,
-    });
-    const piSellReportUpload = new PiSellReport({
-        _id: mongoose.Types.ObjectId(),
-        prices: piPilotSellPrices,
-    });
+            const piBuyReportUpload = new PiBuyReport({
+                _id: mongoose.Types.ObjectId(),
+                prices: piPilotBuyPrices,
+            });
+            const piSellReportUpload = new PiSellReport({
+                _id: mongoose.Types.ObjectId(),
+                prices: piPilotSellPrices,
+            });
 
-    await piBuyReportUpload.save()
-        .catch(function (error) {
-            // handle error
-            console.log(error);
-        })
+            await piBuyReportUpload.save()
+                .catch(function (error) {
+                    // handle error
+                    console.log(error);
+                })
 
-    await piSellReportUpload.save()
-        .catch(function (error) {
-            // handle error
-            console.log(error);
-        })
-
+            await piSellReportUpload.save()
+                .catch(function (error) {
+                    // handle error
+                    console.log(error);
+                })
+        }
+        finally {
+            mongoose.connection.close();
+        }
+    })
 }
 getPrices()
     .catch(function (error) {
