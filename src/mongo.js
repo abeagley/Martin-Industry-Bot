@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const { MONGODB_URI } = require('./config.json')
 
 module.exports = async () => {
-    await mongoose.connect(MONGODB_URI, {
+    await mongoose.connect(process.env.MONGODB_URI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
