@@ -7,10 +7,9 @@ module.exports = async (message) => {
     mongo().then(async mongoose => {
         try {
             if (message.channel.id === orderChannelID && message.author.id === econID) {
-                await require('../database/getMineralPrices');
-                await require('../database/getOrePrices');
+
                 await require('../database/getPiPrices');
-                await message.reply("Prices Updated");
+                await message.reply("Pi prices Updated, All prices should be updated");
             } else {
                 await message.reply("Incorrect ID or Channel");
             }

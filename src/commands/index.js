@@ -6,7 +6,9 @@ const pis = require('./pi.js');
 const order = require('./order.js');
 const nsfw = require('./nsfw.js');
 const topore = require('./topore.js');
-const priceupdate = require('./priceupdate.js');
+const priceupdate1 = require('./priceupdate1.js');
+const priceupdate2 = require('./priceupdate2.js');
+const priceupdate3 = require('./priceupdate3.js');
 const sellprices = require('./sellprices');
 const buyprices = require('./buyprices');
 
@@ -26,7 +28,9 @@ const commands = {
 	nsfw,
 	topore,
 	sellquote,
-	priceupdate,
+	priceupdate1,
+	priceupdate2,
+	priceupdate3,
 	sellprices,
 	buyprices
 };
