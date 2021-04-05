@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="" />
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +61,7 @@
       <workItem from="1616853914728" duration="1240000" />
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
+      <workItem from="1617618217195" duration="805000" />
     </task>
     <task id="LOCAL-00001" summary="Added buyPrices list">
       <created>1616855513108</created>
@@ -277,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617577597679</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="delete changes">
+      <created>1617577781605</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1617577781605</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +318,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adjusted require buyPrices" />
     <MESSAGE value="adjusted require buyPrices, trying to reference buyPrices" />
     <MESSAGE value="adjusted require buyPrices, trying to reference prices as buyprices" />
     <MESSAGE value="adjusted require buyPrices, trying to reference prices = require" />
@@ -333,6 +342,7 @@
     <MESSAGE value="attempt buyPrices.prices" />
     <MESSAGE value="attempt for loop for string prices" />
     <MESSAGE value="adding console.logs backin" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding console.logs backin" />
+    <MESSAGE value="delete changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete changes" />
   </component>
 </project>
