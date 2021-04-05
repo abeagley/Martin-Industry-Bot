@@ -8,7 +8,7 @@ function formatMoney(number) {
 	return number.toLocaleString('en-US', { style: 'decimal', currency: 'USD' });
 }
 
-module.exports = async (message, args) => {
+module.exports = (message, args) => {
 	let sellPrices = require('../prices/pilotSellPrices');
 	console.log(sellPrices);
 	if (args.length < 2) {return message.reply('No Values Input :pensive: Try \'!quote veldspar 1000 scordite 1000...\'');}

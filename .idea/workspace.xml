@@ -38,6 +38,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -59,13 +60,6 @@
       <workItem from="1616853914728" duration="1240000" />
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
-    </task>
-    <task id="LOCAL-00001" summary="Added buyPrices list">
-      <created>1616855513108</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1616855513108</updated>
     </task>
     <task id="LOCAL-00002" summary="adjusted require buyPrices">
       <created>1616855759178</created>
@@ -389,7 +383,28 @@
       <option name="project" value="LOCAL" />
       <updated>1617652866458</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="remove brackets try again in sellquote">
+      <created>1617653235909</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1617653235909</updated>
+    </task>
+    <task id="LOCAL-00049" summary="remove attempt to push args in sellquote">
+      <created>1617653388762</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1617653388762</updated>
+    </task>
+    <task id="LOCAL-00050" summary="remove further argoutputs in sellquote">
+      <created>1617653426548</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1617653426553</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,9 +435,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="check split in sellprices isnt empty" />
-    <MESSAGE value="try print sell prices array" />
-    <MESSAGE value="try print sell prices array, add .prices" />
     <MESSAGE value="put sell prices in string for reply" />
     <MESSAGE value=".prices did not work. reverting" />
     <MESSAGE value="try embed for sell prices" />
@@ -445,6 +457,9 @@
     <MESSAGE value="try timeout on runOnce in buyquote.js" />
     <MESSAGE value="turn sellquote into embed" />
     <MESSAGE value="add require discord" />
-    <option name="LAST_COMMIT_MESSAGE" value="add require discord" />
+    <MESSAGE value="remove brackets try again in sellquote" />
+    <MESSAGE value="remove attempt to push args in sellquote" />
+    <MESSAGE value="remove further argoutputs in sellquote" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove further argoutputs in sellquote" />
   </component>
 </project>
