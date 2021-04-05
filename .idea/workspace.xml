@@ -61,13 +61,6 @@
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
     </task>
-    <task id="LOCAL-00004" summary="adjusted require buyPrices, trying to reference prices as buyprices">
-      <created>1616856422439</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1616856422439</updated>
-    </task>
     <task id="LOCAL-00005" summary="adjusted require buyPrices, trying to reference prices = require">
       <created>1616856707947</created>
       <option name="number" value="00005" />
@@ -404,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617656734325</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="attempt sellquote with await">
+      <created>1617657032244</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1617657032244</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +435,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="try embed for sell prices" />
     <MESSAGE value="try fix sell prices to string" />
     <MESSAGE value="attempt buyPrices.prices" />
     <MESSAGE value="attempt for loop for string prices" />
@@ -460,6 +459,7 @@
     <MESSAGE value="remove further argoutputs in sellquote" />
     <MESSAGE value="remove async" />
     <MESSAGE value="attempt sellquote" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempt sellquote" />
+    <MESSAGE value="attempt sellquote with await" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempt sellquote with await" />
   </component>
 </project>

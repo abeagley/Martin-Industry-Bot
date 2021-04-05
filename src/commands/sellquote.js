@@ -44,6 +44,6 @@ module.exports = async (message, args) => {
 		}
 	}
 	await one();
-	message.channel.send(sellQuote);
+	message.channel.send(sellquote);
 };
 quoteTotal = [];
