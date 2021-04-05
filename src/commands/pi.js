@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const piChannelID = '756565959073857679';
 
 //Set sell prices
-let sellPrices = require('../prices/pilotSellPrices');
+
 
 let piTotal = [];
 let piArray = [];
@@ -14,7 +14,7 @@ function formatMoney(number) {
 
 
 module.exports = (message, args) =>  {
-		
+	let sellPrices = require('../prices/pilotSellPrices');
 	if (message.channel.id === piChannelID) {
 		if (args.length < 2) {return message.reply('No Values Input :pensive: Try \'!pi lusteringalloy 10000 gleamingalloy 10000...\'');}
 		else {

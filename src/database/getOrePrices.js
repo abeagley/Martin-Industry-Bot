@@ -2,36 +2,37 @@ const mongoose = require('mongoose');
 const Report = require('../models/mineralPrice');
 const OreReport = require('../models/orePilotSellPrice');
 
-let tritanium = 0;
-let pyerite = 0;
-let mexallon = 0;
-let isogen = 0;
-let nocxium = 0;
-let zydrine = 0;
-let megacyte = 0;
-let morphite = 0;
-
-let veldspar = 0;
-let scordite = 0;
-let plagioclase = 0;
-let omber = 0;
-let kernite = 0;
-let pyroxeres = 0;
-let darkOchre = 0;
-let gneiss = 0;
-let spodumain = 0;
-let hemorphite = 0;
-let hedbergite = 0;
-let jaspet = 0;
-let crokite = 0;
-let bistot = 0;
-let arkonor = 0;
-let mercoxit = 0;
-
-let orePricesForUpload = [];
 
 
 async function getOre() {
+
+    let tritanium = 0;
+    let pyerite = 0;
+    let mexallon = 0;
+    let isogen = 0;
+    let nocxium = 0;
+    let zydrine = 0;
+    let megacyte = 0;
+    let morphite = 0;
+
+    let veldspar = 0;
+    let scordite = 0;
+    let plagioclase = 0;
+    let omber = 0;
+    let kernite = 0;
+    let pyroxeres = 0;
+    let darkOchre = 0;
+    let gneiss = 0;
+    let spodumain = 0;
+    let hemorphite = 0;
+    let hedbergite = 0;
+    let jaspet = 0;
+    let crokite = 0;
+    let bistot = 0;
+    let arkonor = 0;
+    let mercoxit = 0;
+
+    let orePricesForUpload = [];
 
     //let oreResultValues = [];
     function getOreValues(callback) {

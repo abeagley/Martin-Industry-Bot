@@ -6,7 +6,9 @@ const pis = require('./pi.js');
 const order = require('./order.js');
 const nsfw = require('./nsfw.js');
 const topore = require('./topore.js');
-const priceupdate = require('./priceupdate.js')
+const priceupdate = require('./priceupdate.js');
+const sellprices = require('./sellprices');
+const buyprices = require('./buyprices');
 
 // Channel IDs
 const guildID = '612667368744812563';
@@ -25,6 +27,8 @@ const commands = {
 	topore,
 	sellquote,
 	priceupdate,
+	sellprices,
+	buyprices
 };
  
 // Command Handler

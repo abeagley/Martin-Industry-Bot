@@ -6,11 +6,10 @@ const mongoose = require('mongoose');
 module.exports = async (message) =>  {
     if (message.channel.id === orderChannelID && message.author.id === econID ) {
 
-        await require('../database/getMineralPrices');
-        await require('../database/getOrePrices');
-        await require('../database/getPiPrices');
-
-        await message.reply("Prices Updated");
+        let buyPrices = require('../prices/pilotBuyPrices')
+        let stringP = buyPrices.toString()
+        console.log(stringP)
+        await message.reply(stringP);
     }
     else {
         await message.reply("Incorrect ID or Channel");

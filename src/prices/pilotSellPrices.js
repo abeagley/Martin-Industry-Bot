@@ -27,7 +27,7 @@ async function getOrePrice() {
             ore1Prices = getOreResult2.prices;
             console.log(ore1Prices);
         }
-        await getPiValues(async function( err, getPiResult2){
+        await getPiValues( function( err, getPiResult2){
             if (err) {
                 console.log(err);
             } else {
