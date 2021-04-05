@@ -22,7 +22,7 @@ module.exports = async (message, args) => {
 
 				}
 				console.log(quoteTotal);
-				console.log(argTotal);
+				//console.log(argTotal);
 			}
 		}
 		const quoteOutput = quoteTotal.reduce((a,b) => a+b,0);
@@ -44,5 +44,5 @@ module.exports = async (message, args) => {
 	}
 
 	quoteTotal = [];
-	argTotal = [];
+	//argTotal = [];
 };
