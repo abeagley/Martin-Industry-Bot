@@ -16,13 +16,28 @@ const mongoose = require('mongoose');
 // see Procfile for heroku worker startup
 const { prefix, token, MONGODB_URI } = require('./config.json');
 
+// require mongo
+const mongo = require('./mongo')
+
 // connect to discord
-const client = new Discord.Client();
+const client = new Discord.Client({ partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
 // connect to command handler
 const commandHandler = require('./commands');
 
-client.once('ready', () => {
+client.once('ready', async () => {
 	console.log('Ready!');
+	await mongo().then(mongoose => {
+		try {
+			console.log("Connected to Mongo DB")
+		}
+		catch(e) {
+			console.log(e)
+		}
+		finally {
+			mongoose.connection.close()
+			console.log("Connection to Mongo DB Closed")
+		}
+	})
 });
 
 client.on('message', commandHandler);
@@ -30,10 +45,12 @@ client.on('message', commandHandler);
 // login to discord bot
 client.login(process.env.token);
 // connect to database
+/*
 mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
 	console.log('we\'re connected!');
 });
+ */
 

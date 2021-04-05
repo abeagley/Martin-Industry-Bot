@@ -1,6 +1,6 @@
 const axios = require('axios');
-const mongoose = require('mongoose');
 const Report = require('../models/mineralPrice');
+const mongo = require('../mongo')
 
 let minerals = [
     ['tritanium',41000000000],
@@ -15,36 +15,42 @@ let minerals = [
 
 let mineralPrices = [];
 async function getPrices() {
-    for (let i = 0; i < minerals.length; i++) {
-        await axios.get('https://api.eve-echoes-market.com/market-stats/' + minerals[i][1])
-            .then(function (response) {
-                // handle success
-                console.log(response['data'][response['data'].length - 1].sell);
-                let mineralResponse = (Math.round((response['data'][response['data'].length - 1].sell) * 0.85))
-                mineralPrices.push([minerals[i][0],mineralResponse])
-                console.log("mineralRes:" + mineralResponse)
-                console.log("mineralPrices:" + mineralPrices)
-            })
-            .catch(function (error) {
-                // handle error
-                console.log(error);
-            })
-    }
+    await mongo().then(async mongoose => {
+        try {
 
-    console.log(mineralPrices)
+            for (let i = 0; i < minerals.length; i++) {
+                await axios.get('https://api.eve-echoes-market.com/market-stats/' + minerals[i][1])
+                    .then(function (response) {
+                        // handle success
+                        console.log(response['data'][response['data'].length - 1].sell);
+                        let mineralResponse = (Math.round((response['data'][response['data'].length - 1].sell) * 0.85))
+                        mineralPrices.push([minerals[i][0], mineralResponse])
+                        console.log("mineralRes:" + mineralResponse)
+                        console.log("mineralPrices:" + mineralPrices)
+                    })
+                    .catch(function (error) {
+                        // handle error
+                        console.log(error);
+                    })
+            }
 
-    const report = new Report({
-        _id: mongoose.Types.ObjectId(),
-        prices: mineralPrices,
-    });
+            console.log(mineralPrices)
 
-    await report.save()
-        .catch(function (error) {
-            // handle error
-            console.log(error);
-        })
+            const report = new Report({
+                _id: mongoose.Types.ObjectId(),
+                prices: mineralPrices,
+            });
 
+            await report.save()
+                .catch(function (error) {
+                    // handle error
+                    console.log(error);
+                })
 
+        } finally {
+            mongoose.connection.close()
+        }
+    })
 }
 getPrices()
     .catch(function (error) {
