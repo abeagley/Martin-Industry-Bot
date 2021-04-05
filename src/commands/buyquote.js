@@ -23,7 +23,7 @@ module.exports = async (message, args) => {
 	
 
 	
-		await message.reply(formatMoney(quoteOutput));
+		message.reply(formatMoney(quoteOutput));
     
 	}
 	quoteTotal = [];
