@@ -12,22 +12,25 @@ function formatMoney(number) {
 module.exports = async (message, args) => {
 	let sellPrices = require('../prices/pilotSellPrices');
 	console.log(sellPrices);
-	function one() {
+	async function one() {
 		if (args.length < 2) {
 			return message.reply('No Values Input :pensive: Try \'!quote veldspar 1000 scordite 1000...\'');
 		} else {
 			console.log("Starting Calc")
-			for (let i = 0; i < args.length; i++) {
-				for (let j = 0; j < sellPrices.length; j++) {
-					if (args[i].toLowerCase() === sellPrices[j][0]) {
-						//argTotal.push(args[i],args[i]* sellPrices[j][1]);
-						quoteTotal.push(args[i + 1] * sellPrices[j][1]);
+			function forLoop() {
+				for (let i = 0; i < args.length; i++) {
+					for (let j = 0; j < sellPrices.length; j++) {
+						if (args[i].toLowerCase() === sellPrices[j][0]) {
+							//argTotal.push(args[i],args[i]* sellPrices[j][1]);
+							quoteTotal.push(args[i + 1] * sellPrices[j][1]);
 
+						}
+						console.log(quoteTotal);
+						//console.log(argTotal);
 					}
-					console.log(quoteTotal);
-					//console.log(argTotal);
 				}
 			}
+			await forLoop();
 			const quoteOutput = quoteTotal.reduce((a, b) => a + b, 0);
 
 			sellquote = new Discord.MessageEmbed()
@@ -42,8 +45,8 @@ module.exports = async (message, args) => {
 				.setFooter('Oh look it worked')
 			;
 		}
+		message.channel.send(sellquote);
 	}
-	await one();
-	message.channel.send(sellquote);
+	await one()
 };
 quoteTotal = [];
