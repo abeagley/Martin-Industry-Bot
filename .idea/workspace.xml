@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="" />
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/buyprices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/buyprices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/sellquote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/sellquote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/getOrePrices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/getOrePrices.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,20 +65,6 @@
       <workItem from="1616853914728" duration="1240000" />
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
-    </task>
-    <task id="LOCAL-00005" summary="adjusted require buyPrices, trying to reference prices = require">
-      <created>1616856707947</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1616856707947</updated>
-    </task>
-    <task id="LOCAL-00006" summary="adjusted require buyPrices, trying to reference buyprices = buyprices">
-      <created>1616857172615</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1616857172615</updated>
     </task>
     <task id="LOCAL-00007" summary="adjusted require buyPrices, trying to reference buyprices = require buyprices, added modules.exports">
       <created>1616857495518</created>
@@ -404,7 +395,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617657032244</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="fix sellquote">
+      <created>1617657126081</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1617657126081</updated>
+    </task>
+    <task id="LOCAL-00055" summary="rearange async for sellquote">
+      <created>1617657586271</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1617657586271</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,8 +440,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="try fix sell prices to string" />
-    <MESSAGE value="attempt buyPrices.prices" />
     <MESSAGE value="attempt for loop for string prices" />
     <MESSAGE value="adding console.logs backin" />
     <MESSAGE value="removed individual connection closes from price update functions" />
@@ -460,6 +463,8 @@
     <MESSAGE value="remove async" />
     <MESSAGE value="attempt sellquote" />
     <MESSAGE value="attempt sellquote with await" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempt sellquote with await" />
+    <MESSAGE value="fix sellquote" />
+    <MESSAGE value="rearange async for sellquote" />
+    <option name="LAST_COMMIT_MESSAGE" value="rearange async for sellquote" />
   </component>
 </project>

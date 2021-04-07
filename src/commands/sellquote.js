@@ -30,7 +30,7 @@ module.exports = async (message, args) => {
 					}
 				}
 			}
-			await forLoop();
+			await forLoop()
 			const quoteOutput = quoteTotal.reduce((a, b) => a + b, 0);
 
 			sellquote = new Discord.MessageEmbed()

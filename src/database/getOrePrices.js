@@ -22,7 +22,7 @@ async function getOre() {
             let omber = 0;
             let kernite = 0;
             let pyroxeres = 0;
-            let darkOchre = 0;
+            let darkochre = 0;
             let gneiss = 0;
             let spodumain = 0;
             let hemorphite = 0;
@@ -65,7 +65,7 @@ async function getOre() {
                     omber = (Math.round(((3.6 * tritanium) + (0.456 * pyerite) + (0.33 * mexallon)) * 0.90));
                     kernite = (Math.round(((1.596 * tritanium) + (2.88 * mexallon) + (0.288 * isogen)) * 0.90));
                     pyroxeres = (Math.round(((10.53 * tritanium) + (3.36 * pyerite) + (1.5 * mexallon) + (0.18 * nocxium)) * 0.90));
-                    darkOchre = (Math.round(((5.76 * tritanium) + (0.336 * isogen) + (0.258 * nocxium)) * 0.90));
+                    darkochre = (Math.round(((5.76 * tritanium) + (0.336 * isogen) + (0.258 * nocxium)) * 0.90));
                     gneiss = (Math.round(((5.28 * pyerite) + (5.52 * mexallon) + (1.104 * isogen)) * 0.90));
                     spodumain = (Math.round(((118.2 * tritanium) + (22.44 * pyerite) + (2.16 * mexallon) + (0.36 * isogen)) * 0.90));
                     hemorphite = (Math.round(((33 * tritanium) + (0.96 * isogen) + (0.078 * nocxium) + (0.3 * zydrine)) * 0.90));
@@ -83,7 +83,7 @@ async function getOre() {
                         ['omber', omber],
                         ['kernite', kernite],
                         ['pyroxeres', pyroxeres],
-                        ['darkOchre', darkOchre],
+                        ['darkochre', darkochre],
                         ['gneiss', gneiss],
                         ['spodumain', spodumain],
                         ['hemorphite', hemorphite],
