@@ -60,21 +60,7 @@
       <workItem from="1616853914728" duration="1240000" />
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
-      <workItem from="1617883560793" duration="3153000" />
-    </task>
-    <task id="LOCAL-00009" summary="removed function from price update">
-      <created>1616969845653</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1616969845653</updated>
-    </task>
-    <task id="LOCAL-00010" summary="removed second module export">
-      <created>1616970479057</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1616970479057</updated>
+      <workItem from="1617883560793" duration="3589000" />
     </task>
     <task id="LOCAL-00011" summary="moved sellprices inside module.export">
       <created>1616971160701</created>
@@ -405,7 +391,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617918219626</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="added brackets to await">
+      <created>1617918414775</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1617918414775</updated>
+    </task>
+    <task id="LOCAL-00059" summary="loop then message then send attempt">
+      <created>1617918802947</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1617918802947</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,8 +436,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed individual connection closes from price update functions" />
-    <MESSAGE value="seperated out price update functions. mongoose only closes on last one" />
     <MESSAGE value="removed connection close from pi. added connection close command" />
     <MESSAGE value="added connection close command to index" />
     <MESSAGE value="small changes to sellquote to get it to work" />
@@ -461,6 +459,8 @@
     <MESSAGE value="rearange async for sellquote" />
     <MESSAGE value="fix darkOchre to darkochre" />
     <MESSAGE value="attempt await then in sellquote" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempt await then in sellquote" />
+    <MESSAGE value="added brackets to await" />
+    <MESSAGE value="loop then message then send attempt" />
+    <option name="LAST_COMMIT_MESSAGE" value="loop then message then send attempt" />
   </component>
 </project>
