@@ -9,13 +9,14 @@ function formatMoney(number) {
 	return number.toLocaleString('en-US', { style: 'decimal', currency: 'USD' });
 }
 
-module.exports =  (message, args) => {
-	let sellPrices = require('../prices/pilotSellPrices');
+module.exports = async (message, args) => {
+	let sellPrices = await require('../prices/pilotSellPrices');
 	console.log(sellPrices);
-	async function one() {
-		if (args.length < 2) {
-			return message.reply('No Values Input :pensive: Try \'!quote veldspar 1000 scordite 1000...\'');
-		} else {
+
+	if (args.length < 2) {
+		return message.reply('No Values Input :pensive: Try \'!quote veldspar 1000 scordite 1000...\'');
+		}
+	else {
 			console.log("Starting Calc")
 			let loop = async function() {
 				for (let i = 0; i < args.length; i++) {
@@ -30,6 +31,7 @@ module.exports =  (message, args) => {
 					}
 				}
 			}
+
 
 			let message1 = async function() {
 				const quoteOutput = quoteTotal.reduce((a, b) => a + b, 0);
@@ -47,13 +49,8 @@ module.exports =  (message, args) => {
 				;
 			}
 
-			let send = async function() {
-				await message.channel.send(sellquote)
-			}
-
-			await loop().then(message1().then(send()));
-		}
+			await loop().then(await message1().then(message.channel.send(sellquote)))
 	}
-	one()
-};
+}
+
 quoteTotal = [];
