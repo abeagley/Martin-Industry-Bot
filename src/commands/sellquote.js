@@ -9,7 +9,7 @@ function formatMoney(number) {
 	return number.toLocaleString('en-US', { style: 'decimal', currency: 'USD' });
 }
 
-module.exports = async (message, args) => {
+module.exports =  (message, args) => {
 	let sellPrices = require('../prices/pilotSellPrices');
 	console.log(sellPrices);
 	async function one() {
@@ -30,23 +30,30 @@ module.exports = async (message, args) => {
 					}
 				}
 			}
-			const quoteOutput = quoteTotal.reduce((a, b) => a + b, 0);
 
-			sellquote = new Discord.MessageEmbed()
-				.setTitle('Quote')
-				.setAuthor(message.member.nickname, message.author.avatarURL())
-				.setColor(15105570)
-				.addFields(
-					//{name: 'Items:', value: argTotal},
-					{name: 'Total isk', value: formatMoney(quoteOutput)}
-				)
-				.setTimestamp()
-				.setFooter('Oh look it worked')
-			;
+			let message = async function() {
+				const quoteOutput = quoteTotal.reduce((a, b) => a + b, 0);
 
-			await loop().then(message.channel.send(sellquote));
+				sellquote = new Discord.MessageEmbed()
+					.setTitle('Quote')
+					.setAuthor(message.member.nickname, message.author.avatarURL())
+					.setColor(15105570)
+					.addFields(
+						//{name: 'Items:', value: argTotal},
+						{name: 'Total isk', value: formatMoney(quoteOutput)}
+					)
+					.setTimestamp()
+					.setFooter('Oh look it worked')
+				;
+			}
+
+			let send = async function() {
+				await message.channel.send(sellquote)
+			}
+
+			await loop().then(message().then(send()));
 		}
 	}
-	await one()
+	one()
 };
 quoteTotal = [];
