@@ -44,7 +44,7 @@ module.exports = async (message, args) => {
 				.setFooter('Oh look it worked')
 			;
 
-			await loop.then(message.channel.send(sellquote));
+			await loop().then(message.channel.send(sellquote));
 		}
 	}
 	await one()

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/sellquote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/sellquote.js" afterDir="false" />
-    </list>
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,14 +60,7 @@
       <workItem from="1616853914728" duration="1240000" />
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
-      <workItem from="1617883560793" duration="2798000" />
-    </task>
-    <task id="LOCAL-00008" summary="removed async on second price function">
-      <created>1616969389384</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1616969389384</updated>
+      <workItem from="1617883560793" duration="3153000" />
     </task>
     <task id="LOCAL-00009" summary="removed function from price update">
       <created>1616969845653</created>
@@ -408,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617804476691</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="attempt await then in sellquote">
+      <created>1617918219626</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1617918219626</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +436,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adding console.logs backin" />
     <MESSAGE value="removed individual connection closes from price update functions" />
     <MESSAGE value="seperated out price update functions. mongoose only closes on last one" />
     <MESSAGE value="removed connection close from pi. added connection close command" />
@@ -464,6 +460,7 @@
     <MESSAGE value="fix sellquote" />
     <MESSAGE value="rearange async for sellquote" />
     <MESSAGE value="fix darkOchre to darkochre" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix darkOchre to darkochre" />
+    <MESSAGE value="attempt await then in sellquote" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempt await then in sellquote" />
   </component>
 </project>
