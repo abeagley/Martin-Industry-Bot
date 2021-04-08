@@ -17,7 +17,7 @@ module.exports = async (message, args) => {
 			return message.reply('No Values Input :pensive: Try \'!quote veldspar 1000 scordite 1000...\'');
 		} else {
 			console.log("Starting Calc")
-			function forLoop() {
+			let loop = async function() {
 				for (let i = 0; i < args.length; i++) {
 					for (let j = 0; j < sellPrices.length; j++) {
 						if (args[i].toLowerCase() === sellPrices[j][0]) {
@@ -30,7 +30,6 @@ module.exports = async (message, args) => {
 					}
 				}
 			}
-			await forLoop()
 			const quoteOutput = quoteTotal.reduce((a, b) => a + b, 0);
 
 			sellquote = new Discord.MessageEmbed()
@@ -44,8 +43,9 @@ module.exports = async (message, args) => {
 				.setTimestamp()
 				.setFooter('Oh look it worked')
 			;
+
+			await loop.then(message.channel.send(sellquote));
 		}
-		message.channel.send(sellquote);
 	}
 	await one()
 };
