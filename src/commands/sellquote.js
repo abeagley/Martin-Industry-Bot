@@ -29,25 +29,32 @@ module.exports = async (message, args) => {
 						//console.log(argTotal);
 					}
 				}
+				return quoteTotal
 			}
 
-			let message1 = async function() {
-				const quoteOutput = await quoteTotal.reduce((a, b) => a + b, 0);
+			await loop().then( async (quoteTotal) => {
 
-				sellquote = new Discord.MessageEmbed()
-					.setTitle('Quote')
-					.setAuthor(message.member.nickname, message.author.avatarURL())
-					.setColor(15105570)
-					.addFields(
-						//{name: 'Items:', value: argTotal},
-						{name: 'Total isk', value: formatMoney(quoteOutput)}
-					)
-					.setTimestamp()
-					.setFooter('Oh look it worked')
-				;
+				let message1 = async function() {
+					const quoteOutput = await quoteTotal.reduce((a, b) => a + b, 0);
 
-			}
-			await loop().then(await message1().then(console.log(sellquote)))
+					sellquote = new Discord.MessageEmbed()
+						.setTitle('Quote')
+						.setAuthor(message.member.nickname, message.author.avatarURL())
+						.setColor(15105570)
+						.addFields(
+							//{name: 'Items:', value: argTotal},
+							{name: 'Total isk', value: formatMoney(quoteOutput)}
+						)
+						.setTimestamp()
+						.setFooter('Oh look it worked')
+					;
+					return sellquote
+				}
+
+				await message1().then( async (sellquote) => {
+					await console.log(sellquote)
+				})
+			})
 
 		}
 		catch {}
