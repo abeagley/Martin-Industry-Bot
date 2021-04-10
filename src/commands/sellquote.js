@@ -10,19 +10,15 @@ function formatMoney(number) {
 }
 
 module.exports = async (message, args) => {
-	let sellPrices = require('../prices/pilotSellPrices');
 	const getP = async () => {
-		await console.log(sellPrices);
-	}
-	await getP().then( async () => {
-
-	const getSell = async () => {
 		let sellPrices = require('../prices/pilotSellPrices');
 		await console.log(sellPrices);
-
-		try {
+		return sellPrices
+	}
+	await getP()
+		.then( async (sellPrices) => {
 			console.log("Starting Calc")
-			let loop = async function() {
+			let loop = async function () {
 				for (let i = 0; i < args.length; i++) {
 					for (let j = 0; j < sellPrices.length; j++) {
 						if (args[i].toLowerCase() === sellPrices[j][0]) {
@@ -34,41 +30,33 @@ module.exports = async (message, args) => {
 						//console.log(argTotal);
 					}
 				}
+				return quoteTotal
 			}
-			await loop();
-		}
-		catch {}
-	}
+			await loop()
+				.then(async (quoteTotal) => {
+					let message1 = async function () {
+						const quoteOutput = await quoteTotal.reduce((a, b) => a + b, 0);
 
-	await getSell().then( async () => {
-		const getLoop = async () => {
-			try {
-				let message1 = async function () {
-					const quoteOutput = await quoteTotal.reduce((a, b) => a + b, 0);
-
-					sellquote = new Discord.MessageEmbed()
-						.setTitle('Quote')
-						.setAuthor(message.member.nickname, message.author.avatarURL())
-						.setColor(15105570)
-						.addFields(
-							//{name: 'Items:', value: argTotal},
-							{name: 'Total isk', value: formatMoney(quoteOutput)}
-						)
-						.setTimestamp()
-						.setFooter('Oh look it worked')
-					;
-				}
-				await message1();
-			} catch {
-
-			}
-		}
-
-		await getLoop().then( async () => {
-			await console.log(sellquote)
+						sellquote = new Discord.MessageEmbed()
+							.setTitle('Quote')
+							.setAuthor(message.member.nickname, message.author.avatarURL())
+							.setColor(15105570)
+							.addFields(
+								//{name: 'Items:', value: argTotal},
+								{name: 'Total isk', value: formatMoney(quoteOutput)}
+							)
+							.setTimestamp()
+							.setFooter('Oh look it worked')
+						;
+						return sellquote
+					}
+					await message1()
+						.then(async (sellquote) => {
+							console.log(sellquote)
+							await message.channel.send(sellquote)
+						})
+				})
 		})
-	})
-	})
 }
 
 quoteTotal = [];
