@@ -16,7 +16,7 @@ module.exports = async (message, args) => {
 		return sellPrices
 	}
 	await getP()
-		.then( async (sellPrices) => {
+		.then( async (sellPrices,err) => {
 			if (err) {
 				console.log(err)
 			}
@@ -37,7 +37,7 @@ module.exports = async (message, args) => {
 					return quoteTotal
 				}
 				await loop()
-					.then(async (quoteTotal) => {
+					.then(async (quoteTotal,err) => {
 						if (err) {
 							console.log(err)
 						}
@@ -59,12 +59,13 @@ module.exports = async (message, args) => {
 							return sellquote
 						}
 							await message1()
-								.then((sellquote) => {
+								.then((sellquote,err) => {
 									if (err) {
 										console.log(err)
 									}
 									else {
 										console.log(sellquote)
+										message.channel.send(sellquote)
 									}
 								})}
 
