@@ -52,8 +52,7 @@ module.exports = async (message, args) => {
 		}
 		catch {}
 	}
-	await getSell()
-	await console.log(sellquote)
+	await getSell().then(console.log(sellquote))
 
 }
 
