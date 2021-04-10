@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/commands/sellquote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/sellquote.js" afterDir="false" />
-    </list>
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,14 +61,7 @@
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
       <workItem from="1617883560793" duration="6735000" />
-      <workItem from="1618088896366" duration="2560000" />
-    </task>
-    <task id="LOCAL-00018" summary="debug selling">
-      <created>1616974561034</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1616974561034</updated>
+      <workItem from="1618088896366" duration="2859000" />
     </task>
     <task id="LOCAL-00019" summary="debug selling">
       <created>1616974668244</created>
@@ -408,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618092767600</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="move message back into try, await loop() first">
+      <created>1618093057697</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1618093057697</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +437,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add mongo to sell and buyquote" />
     <MESSAGE value="attempt res callback for sellquote" />
     <MESSAGE value="attempt res callback for buyquote" />
     <MESSAGE value="change empty string to 0" />
@@ -464,6 +461,7 @@
     <MESSAGE value="removed brackets from await sellprices and await the console log" />
     <MESSAGE value="Attempt to rebuild in heroku without await require" />
     <MESSAGE value="move message send into function and await both" />
-    <option name="LAST_COMMIT_MESSAGE" value="move message send into function and await both" />
+    <MESSAGE value="move message back into try, await loop() first" />
+    <option name="LAST_COMMIT_MESSAGE" value="move message back into try, await loop() first" />
   </component>
 </project>

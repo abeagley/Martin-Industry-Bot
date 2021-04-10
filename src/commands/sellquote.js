@@ -32,7 +32,7 @@ module.exports = async (message, args) => {
 			}
 
 			let message1 = async function() {
-				const quoteOutput = quoteTotal.reduce((a, b) => a + b, 0);
+				const quoteOutput = await quoteTotal.reduce((a, b) => a + b, 0);
 
 				sellquote = new Discord.MessageEmbed()
 					.setTitle('Quote')
@@ -48,11 +48,12 @@ module.exports = async (message, args) => {
 
 			}
 			await loop()
-			message1().then(message.channel.send(sellquote))
+			await message1()
 		}
 		catch {}
 	}
 	await getSell()
+	await console.log(sellquote)
 
 }
 
