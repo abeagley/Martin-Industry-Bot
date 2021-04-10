@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/sellquote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/sellquote.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,14 +63,8 @@
       <workItem from="1616853914728" duration="1240000" />
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
-      <workItem from="1617883560793" duration="4266000" />
-    </task>
-    <task id="LOCAL-00012" summary="add price check">
-      <created>1616971398470</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1616971398470</updated>
+      <workItem from="1617883560793" duration="6735000" />
+      <workItem from="1618088896366" duration="881000" />
     </task>
     <task id="LOCAL-00013" summary="add price check">
       <created>1616971444671</created>
@@ -407,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617918998375</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="simplified await">
+      <created>1617920405958</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1617920405958</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,7 +440,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added connection close command to index" />
     <MESSAGE value="small changes to sellquote to get it to work" />
     <MESSAGE value="remove await from buyquote and sellquote" />
     <MESSAGE value="add mongoose connection to sellquote and buyquote" />
@@ -463,6 +464,7 @@
     <MESSAGE value="added brackets to await" />
     <MESSAGE value="loop then message then send attempt" />
     <MESSAGE value="renamed message to message1" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed message to message1" />
+    <MESSAGE value="simplified await" />
+    <option name="LAST_COMMIT_MESSAGE" value="simplified await" />
   </component>
 </project>

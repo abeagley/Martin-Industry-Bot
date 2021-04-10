@@ -10,13 +10,12 @@ function formatMoney(number) {
 }
 
 module.exports = async (message, args) => {
-	let sellPrices = await require('../prices/pilotSellPrices');
-	console.log(sellPrices);
+	const getSell = async () => {
+		let sellPrices = await require('../prices/pilotSellPrices');
+		console.log(sellPrices);
+		await sellPrices();
 
-	if (args.length < 2) {
-		return message.reply('No Values Input :pensive: Try \'!quote veldspar 1000 scordite 1000...\'');
-		}
-	else {
+		try {
 			console.log("Starting Calc")
 			let loop = async function() {
 				for (let i = 0; i < args.length; i++) {
@@ -31,6 +30,7 @@ module.exports = async (message, args) => {
 					}
 				}
 			}
+			await loop();
 
 
 			let message1 = async function() {
@@ -47,10 +47,14 @@ module.exports = async (message, args) => {
 					.setTimestamp()
 					.setFooter('Oh look it worked')
 				;
+				return sellquote;
 			}
-
-			await loop().then(await message1().then(message.channel.send(sellquote)))
+			await loop().then( await message1() )
+		}
+		catch {}
 	}
+	await getSell().then(message.channel.send(sellquote))
+
 }
 
 quoteTotal = [];
