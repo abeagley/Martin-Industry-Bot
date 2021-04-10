@@ -31,7 +31,7 @@ module.exports = async (message, args) => {
 				}
 			}
 
-			let message1 = function() {
+			let message1 = async function() {
 				const quoteOutput = quoteTotal.reduce((a, b) => a + b, 0);
 
 				sellquote = new Discord.MessageEmbed()
@@ -46,10 +46,9 @@ module.exports = async (message, args) => {
 					.setFooter('Oh look it worked')
 				;
 
-				message.channel.send(sellquote)
 			}
 			await loop()
-			await message1()
+			message1().then(message.channel.send(sellquote))
 		}
 		catch {}
 	}
