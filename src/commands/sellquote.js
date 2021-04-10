@@ -12,7 +12,6 @@ function formatMoney(number) {
 module.exports = async (message, args) => {
 	const getSell = async () => {
 		let sellPrices = require('../prices/pilotSellPrices');
-
 		await console.log(sellPrices);
 
 		try {
@@ -29,12 +28,16 @@ module.exports = async (message, args) => {
 						//console.log(argTotal);
 					}
 				}
-				return quoteTotal
 			}
+			await loop();
+		}
+		catch {}
+	}
 
-			await loop().then( async (quoteTotal) => {
-
-				let message1 = async function() {
+	await getSell().then( async () => {
+		const getLoop = async () => {
+			try {
+				let message1 = async function () {
 					const quoteOutput = await quoteTotal.reduce((a, b) => a + b, 0);
 
 					sellquote = new Discord.MessageEmbed()
@@ -48,18 +51,17 @@ module.exports = async (message, args) => {
 						.setTimestamp()
 						.setFooter('Oh look it worked')
 					;
-					return sellquote
 				}
+				await message1();
+			} catch {
 
-				await message1().then( async (sellquote) => {
-					await console.log(sellquote)
-				})
-			})
-
+			}
 		}
-		catch {}
-	}
-	await getSell()
+
+		await getLoop().then( async () => {
+			await console.log(sellquote)
+		})
+	})
 
 }
 
