@@ -47,12 +47,12 @@ module.exports = async (message, args) => {
 				;
 
 			}
-			await loop()
-			await message1()
+			await loop().then(await message1().then(console.log(sellquote)))
+
 		}
 		catch {}
 	}
-	await getSell().then(console.log(sellquote))
+	await getSell()
 
 }
 
