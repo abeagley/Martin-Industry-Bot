@@ -11,7 +11,7 @@ function formatMoney(number) {
 
 module.exports = async (message, args) => {
 	const getSell = async () => {
-		let sellPrices = await require('../prices/pilotSellPrices');
+		let sellPrices = require('../prices/pilotSellPrices');
 
 		await console.log(sellPrices);
 
