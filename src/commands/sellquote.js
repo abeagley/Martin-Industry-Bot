@@ -9,12 +9,13 @@ function formatMoney(number) {
 	return number.toLocaleString('en-US', { style: 'decimal', currency: 'USD' });
 }
 
+const getP = async () => {
+	let sellPrices = require('../prices/pilotSellPrices');
+	await console.log(sellPrices);
+	return sellPrices
+}
+
 module.exports = async (message, args) => {
-	const getP = async () => {
-		let sellPrices = require('../prices/pilotSellPrices');
-		await console.log(sellPrices);
-		return sellPrices
-	}
 	await getP()
 		.then( async (sellPrices,err) => {
 			if (err) {
