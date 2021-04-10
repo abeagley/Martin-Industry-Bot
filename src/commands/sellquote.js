@@ -10,6 +10,12 @@ function formatMoney(number) {
 }
 
 module.exports = async (message, args) => {
+	let sellPrices = require('../prices/pilotSellPrices');
+	const getP = async () => {
+		await console.log(sellPrices);
+	}
+	await getP().then( async () => {
+
 	const getSell = async () => {
 		let sellPrices = require('../prices/pilotSellPrices');
 		await console.log(sellPrices);
@@ -62,7 +68,7 @@ module.exports = async (message, args) => {
 			await console.log(sellquote)
 		})
 	})
-
+	})
 }
 
 quoteTotal = [];

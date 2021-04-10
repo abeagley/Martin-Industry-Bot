@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/sellquote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/sellquote.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,21 +63,7 @@
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
       <workItem from="1617883560793" duration="6735000" />
-      <workItem from="1618088896366" duration="4183000" />
-    </task>
-    <task id="LOCAL-00022" summary="check split in sellprices isnt empty">
-      <created>1617574027881</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1617574027881</updated>
-    </task>
-    <task id="LOCAL-00023" summary="try print sell prices array">
-      <created>1617575187944</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1617575187944</updated>
+      <workItem from="1618088896366" duration="4780000" />
     </task>
     <task id="LOCAL-00024" summary="try print sell prices array, add .prices">
       <created>1617575320335</created>
@@ -409,7 +394,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618093710166</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="restructure sellquote">
+      <created>1618094522196</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1618094522196</updated>
+    </task>
+    <task id="LOCAL-00072" summary="added more layers to restructure">
+      <created>1618095003297</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1618095003297</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,8 +439,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="try timeout on runOnce in buyquote.js" />
-    <MESSAGE value="turn sellquote into embed" />
     <MESSAGE value="add require discord" />
     <MESSAGE value="remove brackets try again in sellquote" />
     <MESSAGE value="remove attempt to push args in sellquote" />
@@ -465,6 +462,8 @@
     <MESSAGE value="removed message send for now" />
     <MESSAGE value="moved console.log inide .then after it ran after calc" />
     <MESSAGE value="moved message send in function again" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved message send in function again" />
+    <MESSAGE value="restructure sellquote" />
+    <MESSAGE value="added more layers to restructure" />
+    <option name="LAST_COMMIT_MESSAGE" value="added more layers to restructure" />
   </component>
 </project>
