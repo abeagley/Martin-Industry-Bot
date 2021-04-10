@@ -8,10 +8,10 @@ let sellquote = new Discord.MessageEmbed()
 function formatMoney(number) {
 	return number.toLocaleString('en-US', { style: 'decimal', currency: 'USD' });
 }
+let sellPrices = require('../prices/pilotSellPrices');
 
 module.exports = async (message, args) => {
 	const getP = async () => {
-		let sellPrices = require('../prices/pilotSellPrices');
 		await console.log(sellPrices);
 		return sellPrices
 	}
@@ -51,9 +51,9 @@ module.exports = async (message, args) => {
 						return sellquote
 					}
 					await message1()
-						.then(async (sellquote) => {
+						.then((sellquote) => {
 							console.log(sellquote)
-							await message.channel.send(sellquote)
+							message.channel.send(sellquote)
 						})
 				})
 		})

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="" />
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/sellquote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/sellquote.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,14 +64,7 @@
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
       <workItem from="1617883560793" duration="6735000" />
-      <workItem from="1618088896366" duration="5115000" />
-    </task>
-    <task id="LOCAL-00025" summary="put sell prices in string for reply">
-      <created>1617575680251</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1617575680251</updated>
+      <workItem from="1618088896366" duration="6083000" />
     </task>
     <task id="LOCAL-00026" summary=".prices did not work. reverting">
       <created>1617576016139</created>
@@ -406,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618095247043</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="restructre with callbacks">
+      <created>1618095949759</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1618095949759</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +440,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove brackets try again in sellquote" />
     <MESSAGE value="remove attempt to push args in sellquote" />
     <MESSAGE value="remove further argoutputs in sellquote" />
     <MESSAGE value="remove async" />
@@ -462,6 +464,7 @@
     <MESSAGE value="restructure sellquote" />
     <MESSAGE value="added more layers to restructure" />
     <MESSAGE value="trying to await first line" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to await first line" />
+    <MESSAGE value="restructre with callbacks" />
+    <option name="LAST_COMMIT_MESSAGE" value="restructre with callbacks" />
   </component>
 </project>
