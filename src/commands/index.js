@@ -9,10 +9,12 @@ const topore = require('./topore.js');
 const priceupdate1 = require('./priceupdate1.js');
 const priceupdate2 = require('./priceupdate2.js');
 const priceupdate3 = require('./priceupdate3.js');
+const priceupdate4 = require('./priceupdate4.js');
+const priceupdate5 = require('./priceupdate5.js');
 const sellprices = require('./sellprices');
 const buyprices = require('./buyprices');
 const closeconnection = require('./closeconnection');
-const sellquote2 = require('./sellquote2')
+
 
 // Channel IDs
 const guildID = '612667368744812563';
@@ -33,10 +35,11 @@ const commands = {
 	priceupdate1,
 	priceupdate2,
 	priceupdate3,
+	priceupdate4,
+	priceupdate5,
 	sellprices,
 	buyprices,
 	closeconnection,
-	sellquote2
 };
  
 // Command Handler

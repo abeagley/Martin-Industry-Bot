@@ -8,7 +8,7 @@ module.exports = async (message) => {
             if (message.channel.id === orderChannelID && message.author.id === econID) {
 
                 await require('../database/getPiPrices');
-                await message.reply("Pi prices Updated, All prices should be updated");
+                await message.reply("Pi prices Updated, please run !priceupdate4");
             } else {
                 await message.reply("Incorrect ID or Channel");
             }
