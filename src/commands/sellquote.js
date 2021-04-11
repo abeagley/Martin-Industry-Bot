@@ -4,16 +4,17 @@ let quoteTotal = [];
 let sellquote = new Discord.MessageEmbed()
 //let argTotal = [];
 
+
 function formatMoney(number) {
 	return number.toLocaleString('en-US', { style: 'decimal', currency: 'USD' });
 }
 
-
 module.exports = async (message, args) => {
 
 	function loop() {
-		return new Promise( resolve => {
-			const sellPrices = require('../prices/pilotSellPrices')
+		return new Promise(async resolve  =>  {
+			const sellPrices = await require('../prices/pilotSellPrices')
+
 			for (let i = 0; i < args.length; i++) {
 				for (let j = 0; j < sellPrices.length; j++) {
 					if (args[i].toLowerCase() === sellPrices[j][0]) {
@@ -31,38 +32,33 @@ module.exports = async (message, args) => {
 		})
 	}
 
-
-	function message1() {
-		return new Promise(resolve => {
-			console.log(quoteTotal)
-			const quoteOutput = quoteTotal.reduce((a, b) => a + b, 0);
-			if (Number.isInteger(quoteOutput)) {
-
-				sellquote = new Discord.MessageEmbed()
-					.setTitle('Quote')
-					.setAuthor(message.member.nickname, message.author.avatarURL())
-					.setColor(15105570)
-					.addFields(
-						//{name: 'Items:', value: argTotal},
-						{name: 'Total isk', value: formatMoney(quoteOutput)}
-					)
-					.setTimestamp()
-					.setFooter('Oh look it worked')
-				;
-				console.log("Done2")
-				resolve();
-			}
-		})
-	}
-
 	function messageSend() {
-		return new Promise(resolve => {
-				message.channel.send(sellquote)
-				resolve();
-		})
+		let quoteOutput = quoteTotal.reduce((a, b) => a + b, 0);
+		sellquote = new Discord.MessageEmbed()
+				.setTitle('Quote')
+				.setAuthor(message.member.nickname, message.author.avatarURL())
+				.setColor(15105570)
+				.addFields(
+					//{name: 'Items:', value: argTotal},
+					{name: 'Total isk', value: formatMoney(quoteOutput)}
+				)
+				.setTimestamp()
+				.setFooter('Oh look it worked')
+			;
+		message.channel.send(sellquote)
 	}
 
-	await loop().then(await message1().then(messageSend()))
+	async function callback1(result) {
+		try {
+			await loop(result)
+			console.log(result)
+		}
+		catch (error) {
+			console.log(error)
+		}
+	}
+
+	await callback1().then(messageSend());
 
 }
 quoteTotal = [];
