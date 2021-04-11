@@ -29,6 +29,8 @@ module.exports = async (message, args) => {
 			return quoteTotal
 	}
 
+	await loop()
+
 	async function message1(quoteTotal) {
 		console.log(quoteTotal)
 		const quoteOutput = await quoteTotal.reduce((a, b) => a + b, 0);
@@ -45,14 +47,16 @@ module.exports = async (message, args) => {
 			.setFooter('Oh look it worked')
 		;
 		console.log("Done2")
+		return sellquote
+	}
+
+	await message1()
+
+	async function sendM(sellquote) {
 		await message.channel.send(sellquote)
 	}
 
-	await loop()
-			.then(
-				message1(quoteTotal)
-			);
-
+	await sendM();
 }
 
 quoteTotal = [];
