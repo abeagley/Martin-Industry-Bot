@@ -29,6 +29,7 @@ module.exports = async (message, args) => {
 			try {
 				await run()
 				console.log("1")
+				await sendM()
 				resolve();
 			}
 			catch (error1) {
@@ -77,7 +78,7 @@ module.exports = async (message, args) => {
 		}
 	}
 
-	await callback1().then(sendM());
+	await callback1()
 
 }
 quoteTotal = [];
