@@ -57,10 +57,8 @@ module.exports = async (message, args) => {
 
 	function messageSend() {
 		return new Promise(resolve => {
-			Promise.all([loop(),message1()]).then(() => {
 				message.channel.send(sellquote)
 				resolve();
-			})
 		})
 	}
 
