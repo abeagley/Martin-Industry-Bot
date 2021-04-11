@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const sellPrices = require('../prices/pilotSellPrices')
 //Set Prices
 let quoteTotal = [];
 let sellquote = new Discord.MessageEmbed()
@@ -13,6 +12,7 @@ function formatMoney(number) {
 module.exports = async (message, args) => {
 	function loop() {
 		return new Promise((resolve, reject) => {
+			const sellPrices = require('../prices/pilotSellPrices')
 			const error = false;
 			for (let i = 0; i < args.length; i++) {
 				for (let j = 0; j < sellPrices.length; j++) {
