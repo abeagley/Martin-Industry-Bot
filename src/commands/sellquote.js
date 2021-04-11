@@ -12,14 +12,8 @@ function formatMoney(number) {
 
 module.exports = async (message, args) => {
 
-	async function getP() {
+	async function loop() {
 		let sellPrices = await require('../prices/pilotSellPrices')
-		console.log("done 0")
-		return sellPrices
-	}
-
-	async function loop(sellPrices) {
-		await getP()
 		console.log("Starting Calc")
 		for (let i = 0; i < args.length; i++) {
 			for (let j = 0; j < sellPrices.length; j++) {
@@ -32,36 +26,30 @@ module.exports = async (message, args) => {
 				}
 			}
 			console.log("Done1")
-			return quoteTotal
-	}
 
-	async function message1(quoteTotal) {
-		await loop()
-		console.log(quoteTotal)
-		const quoteOutput = await quoteTotal.reduce((a, b) => a + b, 0);
+		try {
+			console.log(quoteTotal)
+			const quoteOutput = await quoteTotal.reduce((a, b) => a + b, 0);
 
-		sellquote = new Discord.MessageEmbed()
-			.setTitle('Quote')
-			.setAuthor(message.member.nickname, message.author.avatarURL())
-			.setColor(15105570)
-			.addFields(
-				//{name: 'Items:', value: argTotal},
-				{name: 'Total isk', value: formatMoney(quoteOutput)}
+			sellquote = new Discord.MessageEmbed()
+				.setTitle('Quote')
+				.setAuthor(message.member.nickname, message.author.avatarURL())
+				.setColor(15105570)
+				.addFields(
+					//{name: 'Items:', value: argTotal},
+					{name: 'Total isk', value: formatMoney(quoteOutput)}
 				)
-			.setTimestamp()
-			.setFooter('Oh look it worked')
-		;
-		console.log("Done2")
-		return sellquote
+				.setTimestamp()
+				.setFooter('Oh look it worked')
+			;
+			console.log("Done2")
+			message.channel.send(sellquote);
+		}
+		catch {
+
+		}
 	}
-
-
-	async function sendM(sellquote) {
-		await message1()
-		await message.channel.send(sellquote)
-	}
-
-	await sendM();
+	await loop()
 }
 
 quoteTotal = [];
