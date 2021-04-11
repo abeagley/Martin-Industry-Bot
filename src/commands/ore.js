@@ -3,7 +3,7 @@ const oreChannelID = '756565959073857679';
 const mongoose = require('mongoose');
 const Report = require('../models/report.js');
 const mongo = require('../mongo');
-const sellReport = require('../models/pilotSellPricesPrices');
+const sellReport = require('../models/pilotSellPrices');
 
 // Set Sell Prices
 
