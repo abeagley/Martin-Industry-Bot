@@ -61,21 +61,7 @@
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
       <workItem from="1617883560793" duration="6735000" />
-      <workItem from="1618088896366" duration="10559000" />
-    </task>
-    <task id="LOCAL-00038" summary="add mongoose connection to sellquote and buyquote">
-      <created>1617643985418</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1617643985418</updated>
-    </task>
-    <task id="LOCAL-00039" summary="removed mongoose connection from buy and sellquote">
-      <created>1617646114125</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1617646114125</updated>
+      <workItem from="1618088896366" duration="10983000" />
     </task>
     <task id="LOCAL-00040" summary="add mongo to sell and buyquote">
       <created>1617646494319</created>
@@ -406,7 +392,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618100917059</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="seperated getP">
+      <created>1618101151830</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1618101151830</updated>
+    </task>
+    <task id="LOCAL-00088" summary="changed sellPrices to sellprices">
+      <created>1618101416390</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1618101416390</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,8 +437,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="simplified await" />
-    <MESSAGE value="removed and seperated await and added return sellquote to sellquote" />
     <MESSAGE value="removed brackets from await sellprices and await the console log" />
     <MESSAGE value="Attempt to rebuild in heroku without await require" />
     <MESSAGE value="move message send into function and await both" />
@@ -462,6 +460,8 @@
     <MESSAGE value="remove 1 callback" />
     <MESSAGE value="add loggs for debug" />
     <MESSAGE value="added message to function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added message to function" />
+    <MESSAGE value="seperated getP" />
+    <MESSAGE value="changed sellPrices to sellprices" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed sellPrices to sellprices" />
   </component>
 </project>
