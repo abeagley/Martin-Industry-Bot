@@ -11,13 +11,8 @@ function formatMoney(number) {
 
 module.exports = async (message, args) => {
 	function getP(callback) {
-		const err = false
 		let sellPrices = require('../prices/pilotSellPrices');
-		if (err) {
-			callback(err, null)
-		} else {
-			callback(sellPrices)
-		}
+		callback(sellPrices);
 	}
 
 	await getP(function (err, sellPrices2) {
