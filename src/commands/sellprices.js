@@ -6,7 +6,7 @@ const mongo = require('../mongo');
 const Report = require('../models/pilotSellPrices');
 
 module.exports = async (message) =>  {
-    if (message.channel.id === orderChannelID && message.author.id === econID ) {
+    if (message.channel.id === orderChannelID) {
         await mongo().then(async function () {
             function getSPrices(callback) {
                 Report.findOne().sort({createdAt: -1}).limit(1).exec((err, getPrice) => {
