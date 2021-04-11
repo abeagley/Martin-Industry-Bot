@@ -25,6 +25,8 @@ module.exports = async (message, args) => {
 		for (let i = 0; i < args.length; i++) {
 		await asyncForEach(sellPrices, async (num) => {
 			await waitFor(50)
+			console.log(num)
+			console.log(num[j])
 				if (args[i].toLowerCase() === num[j][0]) {
 					//argTotal.push(args[i],args[i]* sellPrices[j][1]);
 					quoteTotal.push(args[i + 1] * num[j][1]);
