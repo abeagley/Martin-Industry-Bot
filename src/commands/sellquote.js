@@ -15,7 +15,7 @@ module.exports = async (message, args) => {
 		return new Promise((resolve, reject) => {
 			const error0 = false;
 			let sellPrices = require('../prices/pilotSellPrices')
-			if (!error) {
+			if (!error0) {
 				console.log("Done0")
 				console.log(sellPrices);
 				resolve();
