@@ -12,6 +12,7 @@ const priceupdate3 = require('./priceupdate3.js');
 const sellprices = require('./sellprices');
 const buyprices = require('./buyprices');
 const closeconnection = require('./closeconnection');
+const sellquote2 = require('./sellquote2')
 
 // Channel IDs
 const guildID = '612667368744812563';
@@ -34,7 +35,8 @@ const commands = {
 	priceupdate3,
 	sellprices,
 	buyprices,
-	closeconnection
+	closeconnection,
+	sellquote2
 };
  
 // Command Handler
