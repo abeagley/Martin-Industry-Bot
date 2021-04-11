@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/sellquote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/sellquote.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,21 +71,7 @@
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
       <workItem from="1617883560793" duration="6735000" />
-      <workItem from="1618088896366" duration="17095000" />
-    </task>
-    <task id="LOCAL-00051" summary="remove async">
-      <created>1617653597898</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1617653597898</updated>
-    </task>
-    <task id="LOCAL-00052" summary="attempt sellquote">
-      <created>1617656734324</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1617656734325</updated>
+      <workItem from="1618088896366" duration="17476000" />
     </task>
     <task id="LOCAL-00053" summary="attempt sellquote with await">
       <created>1617657032244</created>
@@ -417,7 +402,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618145395546</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="attempt if check">
+      <created>1618149884337</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1618149884337</updated>
+    </task>
+    <task id="LOCAL-00101" summary="set does not equal 0 in check">
+      <created>1618150106447</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1618150106447</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,8 +447,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="restructre with callbacks" />
-    <MESSAGE value="remove await from final line, put require sell prices outside modeule exports" />
     <MESSAGE value="throw some else ifs in" />
     <MESSAGE value="add err to functions" />
     <MESSAGE value="add await to loop" />
@@ -473,6 +470,8 @@
     <MESSAGE value="fetch instead of require" />
     <MESSAGE value="promise.all attempt" />
     <MESSAGE value="move sellprices inside first function" />
-    <option name="LAST_COMMIT_MESSAGE" value="move sellprices inside first function" />
+    <MESSAGE value="attempt if check" />
+    <MESSAGE value="set does not equal 0 in check" />
+    <option name="LAST_COMMIT_MESSAGE" value="set does not equal 0 in check" />
   </component>
 </project>

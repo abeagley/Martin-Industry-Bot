@@ -55,7 +55,16 @@ module.exports = async (message, args) => {
 		})
 	}
 
-	await loop().then(await message1().then(message.channel.send(sellquote)))
+	function messageSend() {
+		return new Promise(resolve => {
+			Promise.all([loop(),message1()]).then(() => {
+				message.channel.send(sellquote)
+				resolve();
+			})
+		})
+	}
+
+	await loop().then(await message1().then(messageSend()))
 
 }
 quoteTotal = [];
