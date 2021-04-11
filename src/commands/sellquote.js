@@ -32,7 +32,7 @@ module.exports = async (message, args) => {
 	function loop() {
 		return new Promise((resolve, reject) => {
 			const error = false;
-				let sellPrices = require('../prices/pilotSellPrices')
+				let sellPrices = fetch('../prices/pilotSellPrices')
 				for (let i = 0; i < args.length; i++) {
 					for (let j = 0; j < sellPrices.length; j++) {
 						if (args[i].toLowerCase() === sellPrices[j][0]) {
