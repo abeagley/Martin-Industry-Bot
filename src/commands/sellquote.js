@@ -19,7 +19,6 @@ module.exports = async (message, args) => {
 	}
 
 	async function loop(sellPrices) {
-		await getPrices()
 		console.log("Starting Calc")
 		for (let i = 0; i < args.length; i++) {
 			for (let j = 0; j < sellPrices.length; j++) {
@@ -35,7 +34,6 @@ module.exports = async (message, args) => {
 	}
 
 	async function message1(quoteTotal) {
-		await loop();
 		const quoteOutput = await quoteTotal.reduce((a, b) => a + b, 0);
 
 		sellquote = new Discord.MessageEmbed()
@@ -52,8 +50,10 @@ module.exports = async (message, args) => {
 		return sellquote
 	}
 
-	await message1()
-				.then(message.channel.send(sellquote))
+	await getPrices()
+		.then(await loop()
+			.then(await message1()
+				.then (message.channel.send(sellquote))))
 
 }
 
