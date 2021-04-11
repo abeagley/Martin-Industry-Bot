@@ -24,7 +24,7 @@ module.exports = async (message, args) => {
 					//console.log(argTotal);
 				}
 			}
-			if (quoteTotal.length === (args.length / 2)) {
+			if (quoteTotal.length !== 0 && quoteTotal.length === (args.length / 2)) {
 				console.log("Done 1")
 				resolve();
 			}
