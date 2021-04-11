@@ -13,15 +13,18 @@ function formatMoney(number) {
 module.exports = async (message, args) => {
 	function getP() {
 		return new Promise((resolve, reject) => {
-			const error0 = false;
-			let sellPrices = require('../prices/pilotSellPrices')
-			if (!error0) {
-				console.log("Done0")
-				console.log(sellPrices);
-				resolve();
-			} else {
-				reject();
-			}
+			setTimeout(() => {
+				const error0 = false;
+				let sellPrices = require('../prices/pilotSellPrices')
+				if (!error0) {
+					console.log("Done0")
+					console.log(sellPrices);
+					resolve();
+				} else {
+					reject();
+				}
+			},2000)
+
 
 		})
 	}
