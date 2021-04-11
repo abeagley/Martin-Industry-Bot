@@ -15,7 +15,6 @@ module.exports = async (message, args) => {
 	function loop() {
 		return new Promise((resolve, reject) => {
 			const error = false;
-			if (!error) {
 				let sellPrices = require('../prices/pilotSellPrices')
 				for (let i = 0; i < args.length; i++) {
 					for (let j = 0; j < sellPrices.length; j++) {
@@ -27,6 +26,7 @@ module.exports = async (message, args) => {
 						//console.log(argTotal);
 					}
 				}
+			if (!error) {
 				console.log("Done1")
 				resolve();
 			} else {
@@ -38,7 +38,6 @@ module.exports = async (message, args) => {
 	function message1() {
 		return new Promise((resolve, reject) => {
 			const error2 = false;
-			if (!error2) {
 				console.log(quoteTotal)
 				const quoteOutput = quoteTotal.reduce((a, b) => a + b, 0);
 
@@ -53,6 +52,7 @@ module.exports = async (message, args) => {
 					.setTimestamp()
 					.setFooter('Oh look it worked')
 				;
+			if (!error2) {
 				console.log("Done2")
 				resolve();
 			} else {
