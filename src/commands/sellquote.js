@@ -12,19 +12,14 @@ function formatMoney(number) {
 
 module.exports = async (message, args) => {
 
-	async function getPrices() {
-		let sellPrices = require('../prices/pilotSellPrices');
-		await console.log(sellPrices);
-		return sellPrices
-	}
-
-	async function loop(sellPrices) {
+	async function loop() {
+		let sellPrices = await require('../prices/pilotSellPrices')
 		console.log("Starting Calc")
 		for (let i = 0; i < args.length; i++) {
 			for (let j = 0; j < sellPrices.length; j++) {
 				if (args[i].toLowerCase() === sellPrices[j][0]) {
 					//argTotal.push(args[i],args[i]* sellPrices[j][1]);
-					await quoteTotal.push(args[i + 1] * sellPrices[j][1]);
+					quoteTotal.push(args[i + 1] * sellPrices[j][1]);
 					}
 					console.log(quoteTotal);
 					//console.log(argTotal);
@@ -50,10 +45,9 @@ module.exports = async (message, args) => {
 		return sellquote
 	}
 
-	await getPrices()
-		.then(await loop()
-			.then(await message1()
-				.then (message.channel.send(sellquote))))
+	await loop()
+			.then(await message1(quoteTotal)
+				.then (message.channel.send(sellquote)))
 
 }
 
