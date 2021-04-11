@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="" />
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/sellquote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/sellquote.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,14 +72,7 @@
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
       <workItem from="1617883560793" duration="6735000" />
-      <workItem from="1618088896366" duration="15321000" />
-    </task>
-    <task id="LOCAL-00050" summary="remove further argoutputs in sellquote">
-      <created>1617653426548</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1617653426553</updated>
+      <workItem from="1618088896366" duration="17095000" />
     </task>
     <task id="LOCAL-00051" summary="remove async">
       <created>1617653597898</created>
@@ -414,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618145229783</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="move sellprices inside first function">
+      <created>1618145395546</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1618145395546</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,7 +448,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="trying to await first line" />
     <MESSAGE value="restructre with callbacks" />
     <MESSAGE value="remove await from final line, put require sell prices outside modeule exports" />
     <MESSAGE value="throw some else ifs in" />
@@ -470,6 +472,7 @@
     <MESSAGE value="attempt timeout" />
     <MESSAGE value="fetch instead of require" />
     <MESSAGE value="promise.all attempt" />
-    <option name="LAST_COMMIT_MESSAGE" value="promise.all attempt" />
+    <MESSAGE value="move sellprices inside first function" />
+    <option name="LAST_COMMIT_MESSAGE" value="move sellprices inside first function" />
   </component>
 </project>
