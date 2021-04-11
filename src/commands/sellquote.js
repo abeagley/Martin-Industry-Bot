@@ -18,7 +18,7 @@ module.exports = async (message, args) => {
 		return sellPrices
 	}
 
-	async function loop() {
+	async function loop(sellPrices) {
 		await getP()
 		console.log("Starting Calc")
 		for (let i = 0; i < args.length; i++) {
@@ -35,7 +35,7 @@ module.exports = async (message, args) => {
 			return quoteTotal
 	}
 
-	async function message1() {
+	async function message1(quoteTotal) {
 		await loop()
 		console.log(quoteTotal)
 		const quoteOutput = await quoteTotal.reduce((a, b) => a + b, 0);
@@ -56,7 +56,7 @@ module.exports = async (message, args) => {
 	}
 
 
-	async function sendM() {
+	async function sendM(sellquote) {
 		await message1()
 		await message.channel.send(sellquote)
 	}
