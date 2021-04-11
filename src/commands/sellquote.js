@@ -1,7 +1,9 @@
 const Discord = require('discord.js');
+const mongo = require('../mongo');
 //Set Prices
 let quoteTotal = [];
 let sellquote = new Discord.MessageEmbed()
+const Report = require('../models/pilotSellPrices');
 //let argTotal = [];
 
 
@@ -10,40 +12,19 @@ function formatMoney(number) {
 }
 
 module.exports = async (message, args) => {
-	const sellPrices = require('../prices/pilotSellPrices')
+	await mongo().then(async function () {
+		function getSPrices(callback) {
+			Report.findOne().sort({createdAt: -1}).limit(1).exec((err, getPrice) => {
+				if (err) callback(err, null);
+				else callback(null, getPrice);
+			})
+		}
 
-	function loop() {
-		return new Promise(async (resolve)  =>  {
-			async function run() {
-				for (let i = 0; i < args.length; i++) {
-					for (let j = 0; j < sellPrices.length; j++) {
-						if (args[i].toLowerCase() === sellPrices[j][0]) {
-							//argTotal.push(args[i],args[i]* sellPrices[j][1]);
-							quoteTotal.push(args[i + 1] * sellPrices[j][1]);
-						}
-						console.log(quoteTotal);
-						//console.log(argTotal);
-					}
-				}
-			}
-			try {
-				await run()
-				console.log("1")
-				await sendM()
-				resolve();
-			}
-			catch (error1) {
-				console.log(error1)
-			}
-
-		})
-	}
-
-	function messageSend() {
-		let quoteOutput = quoteTotal.reduce((a, b) => a + b, 0);
-		console.log(quoteOutput)
-		console.log("3")
-		sellquote = new Discord.MessageEmbed()
+		function messageSend() {
+			let quoteOutput = quoteTotal.reduce((a, b) => a + b, 0);
+			console.log(quoteOutput)
+			console.log("3")
+			sellquote = new Discord.MessageEmbed()
 				.setTitle('Quote')
 				.setAuthor(message.member.nickname, message.author.avatarURL())
 				.setColor(15105570)
@@ -54,31 +35,33 @@ module.exports = async (message, args) => {
 				.setTimestamp()
 				.setFooter('Oh look it worked')
 			;
-		console.log("4")
-		message.channel.send(sellquote)
-	}
-
-	async function callback1() {
-		try {
-			await loop()
-			console.log("2")
+			console.log("4")
+			message.channel.send(sellquote)
 		}
-		catch (error) {
-			console.log(error)
-		}
-	}
 
-	async function sendM() {
-		try {
+		let sPrices = [];
+		await getSPrices(async function (err, priceResult) {
+			if (err) {
+				console.log(err);
+			} else {
+				console.log(priceResult);
+				sPrices = priceResult.prices;
+				console.log(sPrices);
+				for (let i = 0; i < args.length; i++) {
+					for (let j = 0; j < sPrices.length; j++) {
+						if (args[i].toLowerCase() === sPrices[j][0]) {
+							//argTotal.push(args[i],args[i]* sellPrices[j][1]);
+							quoteTotal.push(args[i + 1] * sPrices[j][1]);
+						}
+						console.log(quoteTotal);
+						//console.log(argTotal);
+					}
+				}
+			}
 			await messageSend()
-			console.log("5")
-		}
-		catch (err) {
-			console.log(err)
-		}
-	}
+		})
 
-	await callback1()
+	})
 
 }
 quoteTotal = [];

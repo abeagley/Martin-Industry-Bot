@@ -8,7 +8,7 @@ module.exports = async (message) => {
         if (message.channel.id === orderChannelID && message.author.id === econID) {
 
             await require('../database/getPilotSellPrices');
-            await message.reply("Buy Prices Updated, please run !priceupdate5");
+            await message.reply("Buy Prices Updated, All prices should be updated now");
         } else {
             await message.reply("Incorrect ID or Channel");
         }
