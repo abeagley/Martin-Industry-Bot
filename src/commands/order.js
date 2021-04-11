@@ -45,9 +45,9 @@ module.exports = async (message, args) => {
 
 						// Loop through message for matching terms and add them to quoteTotal
 						for (let i = 0; i < args.length; i++) {
-							for (let j = 0; j < buyPrices.length; j++) {
-								if (args[i].toLowerCase() === buyPrices[j][0]) {
-									quoteTotalThree.push(args[i + 1] * buyPrices[j][1]);
+							for (let j = 0; j < bPrices.length; j++) {
+								if (args[i].toLowerCase() === bPrices[j][0]) {
+									quoteTotalThree.push(args[i + 1] * bPrices[j][1]);
 								}
 								console.log(quoteTotalThree);
 							}
@@ -103,7 +103,8 @@ module.exports = async (message, args) => {
 														{name: 'Total isk', value: formatMoney(quoteOutputThree)}
 													)
 													.setTimestamp()
-													.setFooter('Order didn\'t match discord');
+													.setFooter('Order didn\'t match discord')
+												;
 												msg.edit(orderInvoice);
 												msg.reactions.removeAll();
 												message.reply('Looks like you entered the incorrect type or amount of minerals. Please check your contract and submit again.');
