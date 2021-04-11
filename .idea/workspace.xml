@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="" />
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/priceupdate5.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/priceupdate5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/sellquote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/sellquote.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,14 +73,7 @@
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
       <workItem from="1617883560793" duration="6735000" />
-      <workItem from="1618088896366" duration="31829000" />
-    </task>
-    <task id="LOCAL-00071" summary="restructure sellquote">
-      <created>1618094522196</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1618094522196</updated>
+      <workItem from="1618088896366" duration="32963000" />
     </task>
     <task id="LOCAL-00072" summary="added more layers to restructure">
       <created>1618095003297</created>
@@ -414,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618179023093</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="Simplify sellquote">
+      <created>1618180209837</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1618180209837</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,7 +449,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="moved if else statement out of function" />
     <MESSAGE value="added get prices first" />
     <MESSAGE value="attempt timeout" />
     <MESSAGE value="fetch instead of require" />
@@ -470,6 +473,7 @@
     <MESSAGE value="add get price command" />
     <MESSAGE value="commit all files including new price commands" />
     <MESSAGE value="added mongoose" />
-    <option name="LAST_COMMIT_MESSAGE" value="added mongoose" />
+    <MESSAGE value="Simplify sellquote" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplify sellquote" />
   </component>
 </project>
