@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/commands/sellquote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/sellquote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,14 +71,7 @@
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
       <workItem from="1617883560793" duration="6735000" />
-      <workItem from="1618088896366" duration="17476000" />
-    </task>
-    <task id="LOCAL-00053" summary="attempt sellquote with await">
-      <created>1617657032244</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1617657032244</updated>
+      <workItem from="1618088896366" duration="18172000" />
     </task>
     <task id="LOCAL-00054" summary="fix sellquote">
       <created>1617657126081</created>
@@ -416,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618150106447</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="add send inside promise">
+      <created>1618150462778</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1618150462778</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,7 +447,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="throw some else ifs in" />
     <MESSAGE value="add err to functions" />
     <MESSAGE value="add await to loop" />
     <MESSAGE value="moved getP outside of exports" />
@@ -472,6 +471,7 @@
     <MESSAGE value="move sellprices inside first function" />
     <MESSAGE value="attempt if check" />
     <MESSAGE value="set does not equal 0 in check" />
-    <option name="LAST_COMMIT_MESSAGE" value="set does not equal 0 in check" />
+    <MESSAGE value="add send inside promise" />
+    <option name="LAST_COMMIT_MESSAGE" value="add send inside promise" />
   </component>
 </project>
