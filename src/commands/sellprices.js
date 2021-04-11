@@ -15,15 +15,12 @@ module.exports = async (message) =>  {
                 })
             }
 
-            let sPrices = [];
             await getSPrices(async function (err, priceResult) {
                 if (err) {
                     console.log(err);
                 } else {
                     console.log(priceResult);
-                    sPrices = priceResult.prices;
-                    console.log(sPrices);
-                    message.reply("`​`​`" + sPrices + "`​`​`");
+                    message.reply("`​`​`" + priceResult + "`​`​`");
                 }
             })
         })
