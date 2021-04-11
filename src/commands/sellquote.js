@@ -25,10 +25,12 @@ module.exports = async (message, args) => {
 					//console.log(argTotal);
 				}
 			}
+			console.log("Done1")
 			return quoteTotal
 	}
 
 	async function message1(quoteTotal) {
+		console.log(quoteTotal)
 		const quoteOutput = await quoteTotal.reduce((a, b) => a + b, 0);
 
 		sellquote = new Discord.MessageEmbed()
@@ -42,12 +44,14 @@ module.exports = async (message, args) => {
 			.setTimestamp()
 			.setFooter('Oh look it worked')
 		;
-		return sellquote
+		console.log("Done2")
+		await message.channel.send(sellquote)
 	}
 
 	await loop()
-			.then(await message1()
-				.then (message.channel.send(sellquote)))
+			.then(
+				message1(quoteTotal)
+			);
 
 }
 
