@@ -46,7 +46,7 @@ module.exports = async (message, args) => {
 	}
 
 	await loop()
-			.then(await message1(quoteTotal)
+			.then(await message1()
 				.then (message.channel.send(sellquote)))
 
 }
