@@ -4,7 +4,7 @@ const PiReport = require('../models/piPilotSellPrice')
 const mongo = require('../mongo');
 
 async function getOrePrice() {
-    await mongo().then(async function () {
+    await mongo().then(async mongoose => {
 
         function getOreValues(callback) {
             OreReport.findOne().sort({createdAt: -1}).limit(1).exec((err, getOreResult) => {
