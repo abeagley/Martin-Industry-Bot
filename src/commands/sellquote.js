@@ -11,6 +11,20 @@ function formatMoney(number) {
 
 
 module.exports = async (message, args) => {
+	function getP() {
+		return new Promise((resolve, reject) => {
+			const error0 = false;
+			let sellPrices = require('../prices/pilotSellPrices')
+			if (!error) {
+				console.log("Done0")
+				console.log(sellPrices);
+				resolve();
+			} else {
+				reject();
+			}
+
+		})
+	}
 
 	function loop() {
 		return new Promise((resolve, reject) => {
@@ -61,7 +75,10 @@ module.exports = async (message, args) => {
 		})
 	}
 
-	await loop().then(await message1().then(message.channel.send(sellquote)))
+	await getP().then(
+		await loop().then(
+			await message1().then(
+				message.channel.send(sellquote))))
 }
 
 quoteTotal = [];
