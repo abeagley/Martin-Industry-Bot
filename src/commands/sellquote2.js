@@ -10,9 +10,14 @@ function formatMoney(number) {
 }
 
 module.exports = async (message, args) => {
-	function getP(callback) {
-		let sellPrices = require('../prices/pilotSellPrices');
-		callback(sellPrices);
+	async function getP(callback) {
+		const err = false
+		let sellPrices = await require('../prices/pilotSellPrices');
+		if (err) {
+			callback(err, null)
+		} else {
+			callback(null, sellPrices)
+		}
 	}
 
 	await getP(function (err, sellPrices2) {
