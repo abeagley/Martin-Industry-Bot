@@ -12,44 +12,56 @@ function formatMoney(number) {
 
 module.exports = async (message, args) => {
 
-	async function loop() {
-		let sellPrices = await require('../prices/pilotSellPrices')
-		console.log("Starting Calc")
-		for (let i = 0; i < args.length; i++) {
-			for (let j = 0; j < sellPrices.length; j++) {
-				if (args[i].toLowerCase() === sellPrices[j][0]) {
-					//argTotal.push(args[i],args[i]* sellPrices[j][1]);
-					quoteTotal.push(args[i + 1] * sellPrices[j][1]);
+	function loop() {
+		return new Promise((resolve, reject) => {
+			const error = false;
+			if (!error) {
+				let sellPrices = require('../prices/pilotSellPrices')
+				for (let i = 0; i < args.length; i++) {
+					for (let j = 0; j < sellPrices.length; j++) {
+						if (args[i].toLowerCase() === sellPrices[j][0]) {
+							//argTotal.push(args[i],args[i]* sellPrices[j][1]);
+							quoteTotal.push(args[i + 1] * sellPrices[j][1]);
+						}
+						console.log(quoteTotal);
+						//console.log(argTotal);
 					}
-					console.log(quoteTotal);
-					//console.log(argTotal);
 				}
+				console.log("Done1")
+				resolve();
+			} else {
+				reject();
 			}
-			console.log("Done1")
-
-		try {
-			console.log(quoteTotal)
-			const quoteOutput = await quoteTotal.reduce((a, b) => a + b, 0);
-
-			sellquote = new Discord.MessageEmbed()
-				.setTitle('Quote')
-				.setAuthor(message.member.nickname, message.author.avatarURL())
-				.setColor(15105570)
-				.addFields(
-					//{name: 'Items:', value: argTotal},
-					{name: 'Total isk', value: formatMoney(quoteOutput)}
-				)
-				.setTimestamp()
-				.setFooter('Oh look it worked')
-			;
-			console.log("Done2")
-			message.channel.send(sellquote);
-		}
-		catch {
-
-		}
+		})
 	}
-	await loop()
+
+	function message1() {
+		return new Promise((resolve, reject) => {
+			const error2 = false;
+			if (!error2) {
+				console.log(quoteTotal)
+				const quoteOutput = quoteTotal.reduce((a, b) => a + b, 0);
+
+				sellquote = new Discord.MessageEmbed()
+					.setTitle('Quote')
+					.setAuthor(message.member.nickname, message.author.avatarURL())
+					.setColor(15105570)
+					.addFields(
+						//{name: 'Items:', value: argTotal},
+						{name: 'Total isk', value: formatMoney(quoteOutput)}
+					)
+					.setTimestamp()
+					.setFooter('Oh look it worked')
+				;
+				console.log("Done2")
+				resolve();
+			} else {
+				reject();
+			}
+		})
+	}
+
+	await loop().then(await message1().then(message.channel.send(sellquote)))
 }
 
 quoteTotal = [];
