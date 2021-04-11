@@ -16,7 +16,7 @@ module.exports = async (message, args) => {
 		if (err) {
 			callback(err, null)
 		} else {
-			callback(null, sellPrices)
+			callback(sellPrices)
 		}
 	}
 
