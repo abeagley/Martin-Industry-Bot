@@ -13,20 +13,20 @@ function formatMoney(number) {
 module.exports = async (message, args) => {
 
 	async function getP() {
-		let sellPrices = await require('../prices/pilotSellPrices')
+		let sellprices = await require('../prices/pilotSellPrices')
 		console.log("done 0")
-		return sellPrices
+		return sellprices
 	}
 
 	await getP()
 
-	async function loop(sellPrices) {
+	async function loop(sellprices) {
 		console.log("Starting Calc")
 		for (let i = 0; i < args.length; i++) {
-			for (let j = 0; j < sellPrices.length; j++) {
-				if (args[i].toLowerCase() === sellPrices[j][0]) {
+			for (let j = 0; j < sellprices.length; j++) {
+				if (args[i].toLowerCase() === sellprices[j][0]) {
 					//argTotal.push(args[i],args[i]* sellPrices[j][1]);
-					quoteTotal.push(args[i + 1] * sellPrices[j][1]);
+					quoteTotal.push(args[i + 1] * sellprices[j][1]);
 					}
 					console.log(quoteTotal);
 					//console.log(argTotal);
@@ -36,7 +36,7 @@ module.exports = async (message, args) => {
 			return quoteTotal
 	}
 
-	await loop()
+	await loop(sellprices)
 
 	async function message1(quoteTotal) {
 		console.log(quoteTotal)
@@ -57,13 +57,13 @@ module.exports = async (message, args) => {
 		return sellquote
 	}
 
-	await message1()
+	await message1(quoteTotal)
 
 	async function sendM(sellquote) {
 		await message.channel.send(sellquote)
 	}
 
-	await sendM();
+	await sendM(sellquote);
 }
 
 quoteTotal = [];
