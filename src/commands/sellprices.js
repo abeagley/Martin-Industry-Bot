@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const orderChannelID = '756565959073857679';
-const econID = '722877594709524501'
 const mongoose = require('mongoose');
 const mongo = require('../mongo');
 const Report = require('../models/pilotSellPrices');

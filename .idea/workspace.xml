@@ -72,28 +72,8 @@
       <workItem from="1616855244518" duration="2778000" />
       <workItem from="1617456393037" duration="1215000" />
       <workItem from="1617883560793" duration="6735000" />
-      <workItem from="1618088896366" duration="36669000" />
-    </task>
-    <task id="LOCAL-00079" summary="moved getP outside of exports">
-      <created>1618098672814</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1618098672814</updated>
-    </task>
-    <task id="LOCAL-00080" summary="restructure into functions + await">
-      <created>1618099572270</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1618099572270</updated>
-    </task>
-    <task id="LOCAL-00081" summary="added functions within functions">
-      <created>1618099777887</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1618099777887</updated>
+      <workItem from="1618088896366" duration="37880000" />
+      <workItem from="1618333740857" duration="1980000" />
     </task>
     <task id="LOCAL-00082" summary="run without callbacks">
       <created>1618099936164</created>
@@ -417,7 +397,28 @@
       <option name="project" value="LOCAL" />
       <updated>1618183441610</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="rework to sellPrices">
+      <created>1618183960509</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1618183960509</updated>
+    </task>
+    <task id="LOCAL-00129" summary="print priceResult instead of prices">
+      <created>1618184069462</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1618184069462</updated>
+    </task>
+    <task id="LOCAL-00130" summary="set buyprice and sell price to everyone">
+      <created>1618184317176</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1618184317176</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,9 +449,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add send inside promise" />
-    <MESSAGE value="remove promise all" />
-    <MESSAGE value="attempt double callback" />
     <MESSAGE value="log check" />
     <MESSAGE value="move sell prices out again" />
     <MESSAGE value="seperate loop" />
@@ -473,6 +471,9 @@
     <MESSAGE value="rework ore test 2" />
     <MESSAGE value="fix typo to pilotsellprices" />
     <MESSAGE value="rework to pi.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="rework to pi.js" />
+    <MESSAGE value="rework to sellPrices" />
+    <MESSAGE value="print priceResult instead of prices" />
+    <MESSAGE value="set buyprice and sell price to everyone" />
+    <option name="LAST_COMMIT_MESSAGE" value="set buyprice and sell price to everyone" />
   </component>
 </project>

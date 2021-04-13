@@ -37,6 +37,7 @@ module.exports = async (message, args) => {
 			;
 			console.log("4")
 			message.channel.send(buyquote)
+			quoteTotal = [];
 		}
 
 		let bPrices = [];
