@@ -23,7 +23,7 @@ let pi = [
     ['toxicmetals',42001000024],
     ['reactivegas',42001000018],
     ['noblegas',42001000019],
-    ['industrialfibres',42001000025],
+    ['industrialfibers',42001000025],
     ['supertensileplastics',42001000026],
     ['polyaramids',42001000027],
     ['coolant',42001000028],
