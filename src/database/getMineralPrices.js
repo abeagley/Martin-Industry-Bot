@@ -10,7 +10,7 @@ let minerals = [
     ['nocxium',41000000005],
     ['zydrine',41000000006],
     ['megacyte',41000000007],
-    //['morphite',41000000008],
+    ['morphite',41000000008],
 ]
 
 let mineralPrices = [];
