@@ -47,10 +47,11 @@ module.exports.getCoins = async(guildId,userId) => {
                 userId
             })
 
-            console.log('RESULT:', result)
+            console.log('RESULT:',result)
 
             let coins = 0
             if (result) {
+                console.log(result.coins)
                 coins = result.coins
             } else {
                 console.log('Inserting a document')

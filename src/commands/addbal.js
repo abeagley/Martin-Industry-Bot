@@ -22,6 +22,6 @@ module.exports = async (message, arguments) => {
 
             const newCoins = await economy.addCoins(guildId, userId, coins)
 
-            message.reply(`You have given <@${userId}> ${coins} coins}. They now have ${newCoins} coins!`)
+            message.reply(`You have given <@${userId}> ${coins} coins. They now have ${newCoins} coins!`)
         }
 }
