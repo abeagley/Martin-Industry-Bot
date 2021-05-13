@@ -1,9 +1,7 @@
 const economy = require('../economy')
 const econID = '722877594709524501'
 
-module.exports = {
-
-    callback: async (message, arguments) => {
+module.exports = async (message, arguments) => {
         if (message.author.id === econID) {
             const mention = message.mentions.users.first()
 
@@ -26,5 +24,4 @@ module.exports = {
 
             message.reply(`You have given <@${userId}> ${coins} coins}. They now have ${newCoins} coins!`)
         }
-    }
 }

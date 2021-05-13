@@ -1,8 +1,6 @@
 const economy = require('../economy')
 
-module.exports = {
-    callback: async (message) =>
-    {
+module.exports = async (message) => {
         const target = message.mentions.users.first()  ||  message.author
         const targetId = target.id
 
@@ -11,5 +9,4 @@ module.exports = {
 
         const coins = await economy.getCoins(guildId, userId)
         message.reply(`That user has ${coins} coins`)
-    }
 }

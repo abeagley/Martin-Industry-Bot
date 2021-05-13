@@ -14,6 +14,8 @@ const priceupdate5 = require('./priceupdate5.js');
 const sellprices = require('./sellprices');
 const buyprices = require('./buyprices');
 const closeconnection = require('./closeconnection');
+const bal = require('./bal.js');
+const addbal = require('./addbal');
 
 
 // Channel IDs
@@ -40,6 +42,8 @@ const commands = {
 	sellprices,
 	buyprices,
 	closeconnection,
+	bal,
+	addbal,
 };
  
 // Command Handler
