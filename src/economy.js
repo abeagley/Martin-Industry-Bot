@@ -60,7 +60,6 @@ module.exports.getCoins = async(guildId,userId) => {
                     userId,
                     coins
                 }).save()
-
                 coinsCache[`${guildId}-${userId}`] = coins
             }
         } finally {

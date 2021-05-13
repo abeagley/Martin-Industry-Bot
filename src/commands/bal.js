@@ -8,5 +8,6 @@ module.exports = async (message) => {
         const userId = target.id
 
         const coins = await economy.getCoins(guildId, userId)
+        console.log(${coins})
         message.reply(`That user has ${coins} coins`)
 }
