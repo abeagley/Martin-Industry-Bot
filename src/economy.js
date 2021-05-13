@@ -37,7 +37,7 @@ module.exports.addCoins = async (guildId, userId, coins) => {
     })
 }
 
-module.exports.getCoins = async(guildID,userID) => {
+module.exports.getCoins = async(guildId,userId) => {
     return await mongo().then(async mongoose => {
         try {
             console.log('Running findOne()')
