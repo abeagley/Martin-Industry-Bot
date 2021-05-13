@@ -5,10 +5,8 @@ const coinsCache = {}
 module.exports = (client) => {}
 
 module.exports.addCoins = async (guildId, userId, coins) => {
-    const cachedValue = coinsCache[`${guildId}-${userId}`]
-    if (cachedValue) {
-        return cachedValue
-    }
+
+
     return await mongo().then(async (mongoose) => {
         try {
             console.log('Running findOneAndUpdate()')
@@ -38,6 +36,10 @@ module.exports.addCoins = async (guildId, userId, coins) => {
 }
 
 module.exports.getCoins = async(guildId,userId) => {
+    const cachedValue = coinsCache[`${guildId}-${userId}`]
+    if (cachedValue) {
+        return cachedValue
+    }
     return await mongo().then(async mongoose => {
         try {
             console.log('Running findOne()')
