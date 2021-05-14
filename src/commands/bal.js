@@ -9,5 +9,5 @@ module.exports = async (message) => {
 
         const ChimpCoins = await economy.getCoins(guildId, userId)
         console.log(`${ChimpCoins}`)
-        message.reply(`That user has ${ChimpCoins} 🐒ChimpCoins`)
+        message.reply(`That user has ${ChimpCoins} 🐵ChimpCoins`)
 }
