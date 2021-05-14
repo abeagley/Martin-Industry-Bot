@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/addbal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/addbal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/bal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/bal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/economy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/economy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/profileSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/profileSchema.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +88,7 @@
       <workItem from="1620589948658" duration="3357000" />
       <workItem from="1620816438743" duration="18000" />
       <workItem from="1620940928206" duration="5306000" />
+      <workItem from="1620980572587" duration="1609000" />
     </task>
     <task id="LOCAL-00093" summary="moved if else statement out of function">
       <created>1618143798638</created>

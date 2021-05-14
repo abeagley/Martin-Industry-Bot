@@ -4,29 +4,30 @@ const profileSchema = require('./models/profileSchema')
 const coinsCache = {}
 module.exports = (client) => {}
 
-module.exports.addCoins = async (guildId, userId, coins) => {
+module.exports.addCoins = async (guildId, userId, ChimpCoins) => {
 
 
     return await mongo().then(async (mongoose) => {
         try {
             console.log('Running findOneAndUpdate()')
 
+
             const result = await profileSchema.findOneAndUpdate({
                 guildId,
-                userId
+                userId,
             }, {
                 guildId,
                 userId,
                 $inc: {
-                    coins
+                    ChimpCoins
                 }
             }, {
                 upsert: true,
                 new: true
             })
             console.log('RESULT:', result)
-            coinsCache[`${guildId}-${userId}`] = result.coins
-            return result.coins
+            coinsCache[`${guildId}-${userId}`] = result.ChimpCoins
+            return result.ChimpCoins
         }
 
         finally {
@@ -51,18 +52,18 @@ module.exports.getCoins = async(guildId,userId) => {
 
             console.log('RESULT:',result)
 
-            let coins = 0
+            let ChimpCoins = 0
             if (result) {
-                console.log(result.coins)
-                coins = result.coins
+                console.log(result.ChimpCoins)
+                ChimpCoins = result.ChimpCoins
             } else {
                 console.log('Inserting a document')
                 await new profileSchema({
                     guildId,
                     userId,
-                    coins
+                    ChimpCoins
                 }).save()
-                coinsCache[`${guildId}-${userId}`] = coins
+                coinsCache[`${guildId}-${userId}`] = ChimpCoins
             }
         } finally {
             mongoose.connection.close()

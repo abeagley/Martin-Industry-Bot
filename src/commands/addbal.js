@@ -6,22 +6,22 @@ module.exports = async (message, arguments) => {
             const mention = message.mentions.users.first()
 
             if (!mention) {
-                message.reply('Please tag a user to add coins to.')
+                message.reply('Please tag a user to add ChimpCoins to.')
                 return
             }
 
             //!addbal @username 50
-            const coins = arguments[1]
-            if (isNaN(coins)) {
-                message.reply('Please provide a valid number of coins.')
+            const ChimpCoins = arguments[1]
+            if (isNaN(ChimpCoins)) {
+                message.reply('Please provide a valid number of ChimpCoins.')
                 return
             }
 
             const guildId = message.guild.id
             const userId = mention.id
 
-            const newCoins = await economy.addCoins(guildId, userId, coins)
+            const newCoins = await economy.addCoins(guildId, userId, ChimpCoins)
 
-            message.reply(`You have given <@${userId}> ${coins} coins. They now have ${newCoins} coins!`)
+            message.reply(`You have given <@${userId}> ${ChimpCoins} 🐒ChimpCoins. They now have ${newCoins} 🐒ChimpCoins!`)
         }
 }

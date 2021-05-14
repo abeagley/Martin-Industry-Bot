@@ -7,7 +7,7 @@ const reqString = {
 const profileSchema = new mongoose.Schema({
     userId: reqString,
     guildId: reqString,
-    coins: { type: Number, default: 0, required: true},
+    ChimpCoins: { type: Number, default: 0, required: true},
     bank: { type: Number}
 })
 

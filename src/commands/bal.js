@@ -7,7 +7,7 @@ module.exports = async (message) => {
         const guildId = message.guild.id
         const userId = target.id
 
-        const coins = await economy.getCoins(guildId, userId)
-        console.log(`${coins}`)
-        message.reply(`That user has ${coins} coins`)
+        const ChimpCoins = await economy.getCoins(guildId, userId)
+        console.log(`${ChimpCoins}`)
+        message.reply(`That user has ${ChimpCoins} 🐒ChimpCoins`)
 }
