@@ -52,7 +52,7 @@ module.exports.getCoins = async(guildId,userId) => {
 
             console.log('RESULT:',result)
 
-            let ChimpCoins = 0
+            let ChimpCoins = 1
             if (result) {
                 console.log(result.ChimpCoins)
                 ChimpCoins = result.ChimpCoins

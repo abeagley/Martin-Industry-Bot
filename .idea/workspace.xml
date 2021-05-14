@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,14 +82,7 @@
       <workItem from="1620589948658" duration="3357000" />
       <workItem from="1620816438743" duration="18000" />
       <workItem from="1620940928206" duration="5306000" />
-      <workItem from="1620980572587" duration="3173000" />
-    </task>
-    <task id="LOCAL-00095" summary="added get prices first">
-      <created>1618144175411</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1618144175411</updated>
+      <workItem from="1620980572587" duration="3429000" />
     </task>
     <task id="LOCAL-00096" summary="attempt timeout">
       <created>1618144391237</created>
@@ -429,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621023203483</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="default 1">
+      <created>1621025326960</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1621025326960</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,7 +463,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added mongoose" />
     <MESSAGE value="Simplify sellquote" />
     <MESSAGE value="update buyquote" />
     <MESSAGE value="rework order.js" />
@@ -490,6 +487,7 @@
     <MESSAGE value="add backticks to bal coins" />
     <MESSAGE value="Add chimpcoin" />
     <MESSAGE value="Add chimpcoin emoji" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add chimpcoin emoji" />
+    <MESSAGE value="default 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="default 1" />
   </component>
 </project>
