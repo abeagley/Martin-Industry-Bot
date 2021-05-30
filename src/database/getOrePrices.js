@@ -74,7 +74,7 @@ async function getOre() {
                     crokite = (Math.round(((232.8 * tritanium) + (0.564 * nocxium) + (0.576 * zydrine)) * 0.90));
                     bistot = (Math.round(((36.72 * pyerite) + (0.216 * zydrine) + (0.474 * megacyte)) * 0.90));
                     arkonor = (Math.round(((52.8 * tritanium) + (6 * mexallon) + (0.624 * megacyte)) * 0.90));
-                    mercoxit = (Math.round((0.351 * morphite) * 0.50)); //mercoxit at 0.5 for now
+                    mercoxit = (Math.round((0.351 * morphite) * 0.70)); //mercoxit at 0.7 for now
 
                     orePricesForUpload.push(
                         ['veldspar', veldspar],
