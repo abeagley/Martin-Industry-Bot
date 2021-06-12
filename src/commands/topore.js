@@ -2,15 +2,14 @@
 const Discord = require('discord.js');
 const mongoose = require('mongoose');
 const report = require('../models/report');
-const oreChannelID = '756565959073857679';
+
 
 function formatMoney(number) {
 	return number.toLocaleString('en-US', { style: 'decimal', currency: 'USD' });
 }
 
 module.exports = async (message) =>  {
-	if (message.channel.id === oreChannelID) {
-		try{
+
 			let result = await report.aggregate([
 				{ $group: { _id: '$nickname', total: { $sum: '$isk' } } },
 				{ $sort: { total: -1 } }
@@ -20,11 +19,5 @@ module.exports = async (message) =>  {
 				resultList += `\n${result[i]._id} = ${formatMoney(result[i].total)}`;
 			}
 			message.reply('Currently our miners have contributed:' + resultList);
-        
-		}
-		catch (err) {
-			console.log(err);
-		}
-	}
-	else(console.log('Not worked'));
+
 };

@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const orderChannelID = '757717773010075649';
+
 const mongoose = require('mongoose');
 
 const mineralReport = require('../models/mineralPrice');
@@ -12,8 +12,6 @@ async function updatePrices() {
     await require('../database/getPiPrices');
 
     module.exports = async (message) =>  {
-        if (message.channel.id === oreChannelID) {
-            try{
                 let result = await report.aggregate([
                     { $group: { _id: '$nickname', total: { $sum: '$isk' } } },
                     { $sort: { total: -1 } }
@@ -23,14 +21,6 @@ async function updatePrices() {
                     resultList += `\n${result[i]._id} = ${formatMoney(result[i].total)}`;
                 }
                 message.reply('Currently our miners have contributed:' + resultList);
-
-            }
-            catch (err) {
-                console.log(err);
-            }
-        }
-        else(console.log('Not worked'));
-    };
 }
 
 function formatMoney(number) {
@@ -38,8 +28,6 @@ function formatMoney(number) {
 }
 
 module.exports = async (message) =>  {
-    if (message.channel.id === oreChannelID) {
-        try{
             let result = await report.aggregate([
                 { $group: { _id: '$nickname', total: { $sum: '$isk' } } },
                 { $sort: { total: -1 } }
@@ -49,11 +37,5 @@ module.exports = async (message) =>  {
                 resultList += `\n${result[i]._id} = ${formatMoney(result[i].total)}`;
             }
             message.reply('Currently our miners have contributed:' + resultList);
-
         }
-        catch (err) {
-            console.log(err);
-        }
-    }
-    else(console.log('Not worked'));
 };

@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/buyprices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/buyprices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/buyupdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/buyupdate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/closeconnection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/closeconnection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/order.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,14 +98,8 @@
       <workItem from="1622032621800" duration="596000" />
       <workItem from="1622400610729" duration="19000" />
       <workItem from="1622411373069" duration="1258000" />
-      <workItem from="1622648398784" duration="596000" />
-    </task>
-    <task id="LOCAL-00098" summary="promise.all attempt">
-      <created>1618145229783</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1618145229783</updated>
+      <workItem from="1622648398784" duration="2404000" />
+      <workItem from="1623515276338" duration="655000" />
     </task>
     <task id="LOCAL-00099" summary="move sellprices inside first function">
       <created>1618145395546</created>
@@ -438,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622411435698</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="mercoxit to 0.8">
+      <created>1623014205008</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1623014205008</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +480,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update buyquote" />
     <MESSAGE value="rework order.js" />
     <MESSAGE value="fix buyprices to bprices" />
     <MESSAGE value="rework ore test" />
@@ -499,6 +504,7 @@
     <MESSAGE value="Add chimpcoin emoji" />
     <MESSAGE value="default 1" />
     <MESSAGE value="Update morphite calc to 70%" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update morphite calc to 70%" />
+    <MESSAGE value="mercoxit to 0.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="mercoxit to 0.8" />
   </component>
 </project>

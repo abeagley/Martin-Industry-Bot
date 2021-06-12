@@ -1,7 +1,6 @@
 
 // Set requirements
 const Discord = require('discord.js');
-const orderChannelID = '757717773010075649';
 const mongo = require('../mongo');
 const Report = require('../models/pilotBuyPrices');
 
@@ -22,8 +21,6 @@ function formatMoney(number) {
 // Ore Command
 module.exports = async (message, args) => {
 	// Check bot is in the right channel
-	if (message.channel.id === orderChannelID) {
-		// Check that they have entered values
 		if (args.length < 2) {return message.reply('No Values Input :pensive: Try \'!order tritanium 1000 pyerite 1000...\'');}
 		else {
 			await mongo().then(async function () {
@@ -133,7 +130,6 @@ module.exports = async (message, args) => {
 				})
 			})
 		}
-	}
 
 quoteTotalThree = [];
 }

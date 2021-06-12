@@ -1,11 +1,10 @@
 const Discord = require('discord.js');
-const orderChannelID = '756565959073857679';
+
 const mongoose = require('mongoose');
 const mongo = require('../mongo');
 const Report = require('../models/pilotSellPrices');
 
 module.exports = async (message) =>  {
-    if (message.channel.id === orderChannelID) {
         await mongo().then(async function () {
             function getSPrices(callback) {
                 Report.findOne().sort({createdAt: -1}).limit(1).exec((err, getPrice) => {
@@ -23,8 +22,5 @@ module.exports = async (message) =>  {
                 }
             })
         })
-    }
-    else {
-        await message.reply("Incorrect ID or Channel");
-    }
+
 }

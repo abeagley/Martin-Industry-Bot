@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const piChannelID = '756565959073857679';
+
 const mongo = require('../mongo');
 const Report = require('../models/pilotSellPrices');
 
@@ -17,7 +17,6 @@ function formatMoney(number) {
 
 module.exports = async (message, args) => {
 	// Check bot is in the right channel
-	if (message.channel.id === piChannelID) {
 		// Check that they have entered values
 		if (args.length < 2) {return message.reply('No Values Input :pensive: Try \'!pis lusteringalloy 1000 plasmoids 1000...\'');}
 		else {
@@ -129,6 +128,6 @@ module.exports = async (message, args) => {
 
 	
 		}
-	}
+
 	piTotal = [];
 };
