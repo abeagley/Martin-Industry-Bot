@@ -59,22 +59,22 @@ async function getOre() {
                     morphite = getOreResult2.prices[7][1];
                     //console.log(tritanium,megacyte)
 
-                    veldspar = (Math.round((2.49 * tritanium) * 0.90));
-                    scordite = (Math.round(((0.972 * tritanium) + (0.69 * pyerite)) * 0.90));
-                    plagioclase = (Math.round(((0.306 * tritanium) + (0.39 * pyerite) + (0.582 * mexallon)) * 0.90));
-                    omber = (Math.round(((3.6 * tritanium) + (0.456 * pyerite) + (0.33 * mexallon)) * 0.90));
-                    kernite = (Math.round(((1.596 * tritanium) + (2.88 * mexallon) + (0.288 * isogen)) * 0.90));
-                    pyroxeres = (Math.round(((10.53 * tritanium) + (3.36 * pyerite) + (1.5 * mexallon) + (0.18 * nocxium)) * 0.90));
-                    darkochre = (Math.round(((5.76 * tritanium) + (0.336 * isogen) + (0.258 * nocxium)) * 0.90));
-                    gneiss = (Math.round(((5.28 * pyerite) + (5.52 * mexallon) + (1.104 * isogen)) * 0.90));
-                    spodumain = (Math.round(((118.2 * tritanium) + (22.44 * pyerite) + (2.16 * mexallon) + (0.36 * isogen)) * 0.90));
-                    hemorphite = (Math.round(((33 * tritanium) + (0.96 * isogen) + (0.078 * nocxium) + (0.3 * zydrine)) * 0.90));
-                    hedbergite = (Math.round(((16.38 * pyerite) + (2.76 * isogen) + (0.054 * nocxium) + (0.084 * zydrine)) * 0.90));
-                    jaspet = (Math.round(((14.76 * mexallon) + (0.288 * nocxium) + (0.336 * zydrine)) * 0.90));
-                    crokite = (Math.round(((232.8 * tritanium) + (0.564 * nocxium) + (0.576 * zydrine)) * 0.90));
-                    bistot = (Math.round(((36.72 * pyerite) + (0.216 * zydrine) + (0.474 * megacyte)) * 0.90));
-                    arkonor = (Math.round(((52.8 * tritanium) + (6 * mexallon) + (0.624 * megacyte)) * 0.90));
-                    mercoxit = (Math.round((0.351 * morphite) * 0.80)); //mercoxit at 0.8 for now
+                    veldspar = (Math.round((2.49 * tritanium) * 0.85));
+                    scordite = (Math.round(((0.972 * tritanium) + (0.69 * pyerite)) * 0.85));
+                    plagioclase = (Math.round(((0.306 * tritanium) + (0.39 * pyerite) + (0.582 * mexallon)) * 0.85));
+                    omber = (Math.round(((3.6 * tritanium) + (0.456 * pyerite) + (0.33 * mexallon)) * 0.85));
+                    kernite = (Math.round(((1.596 * tritanium) + (2.88 * mexallon) + (0.288 * isogen)) * 0.85));
+                    pyroxeres = (Math.round(((10.53 * tritanium) + (3.36 * pyerite) + (1.5 * mexallon) + (0.18 * nocxium)) * 0.85));
+                    darkochre = (Math.round(((5.76 * tritanium) + (0.336 * isogen) + (0.258 * nocxium)) * 0.85));
+                    gneiss = (Math.round(((5.28 * pyerite) + (5.52 * mexallon) + (1.104 * isogen)) * 0.85));
+                    spodumain = (Math.round(((118.2 * tritanium) + (22.44 * pyerite) + (2.16 * mexallon) + (0.36 * isogen)) * 0.85));
+                    hemorphite = (Math.round(((33 * tritanium) + (0.96 * isogen) + (0.078 * nocxium) + (0.3 * zydrine)) * 0.85));
+                    hedbergite = (Math.round(((16.38 * pyerite) + (2.76 * isogen) + (0.054 * nocxium) + (0.084 * zydrine)) * 0.85));
+                    jaspet = (Math.round(((14.76 * mexallon) + (0.288 * nocxium) + (0.336 * zydrine)) * 0.85));
+                    crokite = (Math.round(((232.8 * tritanium) + (0.564 * nocxium) + (0.576 * zydrine)) * 0.85));
+                    bistot = (Math.round(((36.72 * pyerite) + (0.216 * zydrine) + (0.474 * megacyte)) * 0.85));
+                    arkonor = (Math.round(((52.8 * tritanium) + (6 * mexallon) + (0.624 * megacyte)) * 0.85));
+                    mercoxit = (Math.round((0.351 * morphite) * 0.85));
 
                     orePricesForUpload.push(
                         ['veldspar', veldspar],
