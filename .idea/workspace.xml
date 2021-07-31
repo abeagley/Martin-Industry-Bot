@@ -12,8 +12,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -45,12 +45,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/commands" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -96,13 +97,17 @@
       <workItem from="1622648398784" duration="2404000" />
       <workItem from="1623515276338" duration="2600000" />
       <workItem from="1623748725483" duration="649000" />
-    </task>
-    <task id="LOCAL-00100" summary="attempt if check">
-      <created>1618149884337</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1618149884337</updated>
+      <workItem from="1624005643070" duration="1451000" />
+      <workItem from="1624525071814" duration="1486000" />
+      <workItem from="1625141003380" duration="227000" />
+      <workItem from="1625142554896" duration="9000" />
+      <workItem from="1626024685950" duration="416000" />
+      <workItem from="1626025115527" duration="111000" />
+      <workItem from="1626041221523" duration="3300000" />
+      <workItem from="1626638844503" duration="709000" />
+      <workItem from="1627296058740" duration="597000" />
+      <workItem from="1627471865924" duration="1286000" />
+      <workItem from="1627595823058" duration="1239000" />
     </task>
     <task id="LOCAL-00101" summary="set does not equal 0 in check">
       <created>1618150106447</created>
@@ -440,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623516656302</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="update price calculation for ore">
+      <created>1624181139599</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1624181139600</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +488,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix buyprices to bprices" />
     <MESSAGE value="rework ore test" />
     <MESSAGE value="rework ore test 2" />
     <MESSAGE value="fix typo to pilotsellprices" />
@@ -501,6 +512,7 @@
     <MESSAGE value="Update morphite calc to 70%" />
     <MESSAGE value="mercoxit to 0.8" />
     <MESSAGE value="Removed channel requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed channel requirements" />
+    <MESSAGE value="update price calculation for ore" />
+    <option name="LAST_COMMIT_MESSAGE" value="update price calculation for ore" />
   </component>
 </project>

@@ -71,13 +71,13 @@ module.exports = async (message, args) =>  {
 								{name: 'Total isk', value: formatMoney(quoteOutputTwo)}
 							)
 							.setTimestamp()
-							.setFooter('Send contract with ore to Ecomartin requesting isk amount below')
+							.setFooter('Please ping a director asking where contract should go to request')
 						;
 
 						message.channel.send(oreInvoice).then(msg => {
 							msg.react(agree1);
 							msg.react(disagree1);
-							message.reply(`Please send contract with ore to Econmartin requesting ${formatMoney(quoteOutputTwo)} isk`);
+							message.reply(`Please ping a director asking where contract should go to request ${formatMoney(quoteOutputTwo)} isk`);
 
 							let rUser = message.member;
 							let rAuthor = message.author;

@@ -70,13 +70,13 @@ module.exports = async (message, args) => {
 								{name: 'Total isk', value: formatMoney(piOutput)}
 							)
 							.setTimestamp()
-							.setFooter('Send contract with PI to Ecomartin requesting isk amount below')
+							.setFooter('Please ping a director asking where contract should go to request')
 						;
 
 						message.channel.send(oreInvoice).then(msg => {
 							msg.react(agree1);
 							msg.react(disagree1);
-							message.reply(`Please send contract with PI to Econmartin requesting ${formatMoney(piOutput)} isk`);
+							message.reply(`Please ping a director asking where contract should go to request ${formatMoney(piOutput)} isk`);
 
 							const agreeDisagree = (reaction, user) => reaction.message.guild.member(user).roles.cache.has('773244425291300896');
 							const agreeOrDisagree = msg.createReactionCollector(agreeDisagree);
