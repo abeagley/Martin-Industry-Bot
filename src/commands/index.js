@@ -16,6 +16,7 @@ const buyprices = require('./buyprices');
 const closeconnection = require('./closeconnection');
 const bal = require('./bal.js');
 const addbal = require('./addbal');
+const alert = require('./alert');
 
 
 // Channel IDs
@@ -40,6 +41,7 @@ const commands = {
 	closeconnection,
 	bal,
 	addbal,
+	alert,
 };
  
 // Command Handler
