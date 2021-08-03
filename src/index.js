@@ -11,6 +11,7 @@
 const Discord = require('discord.js');
 // mongoose for database handling
 const mongoose = require('mongoose');
+const ffmpeg = require('ffmpeg');
 
 // token and mongoDB_URI passwords are hosted on heroku
 // see Procfile for heroku worker startup
