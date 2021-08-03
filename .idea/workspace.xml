@@ -45,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Discord Bots" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -107,14 +107,8 @@
       <workItem from="1626638844503" duration="709000" />
       <workItem from="1627296058740" duration="597000" />
       <workItem from="1627471865924" duration="1286000" />
-      <workItem from="1627595823058" duration="1239000" />
-    </task>
-    <task id="LOCAL-00101" summary="set does not equal 0 in check">
-      <created>1618150106447</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1618150106447</updated>
+      <workItem from="1627595823058" duration="4115000" />
+      <workItem from="1628022128113" duration="986000" />
     </task>
     <task id="LOCAL-00102" summary="add send inside promise">
       <created>1618150462778</created>
@@ -452,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624181139600</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="change bot message">
+      <created>1627726634898</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1627726634906</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,7 +489,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="rework ore test" />
     <MESSAGE value="rework ore test 2" />
     <MESSAGE value="fix typo to pilotsellprices" />
     <MESSAGE value="rework to pi.js" />
@@ -513,6 +513,7 @@
     <MESSAGE value="mercoxit to 0.8" />
     <MESSAGE value="Removed channel requirements" />
     <MESSAGE value="update price calculation for ore" />
-    <option name="LAST_COMMIT_MESSAGE" value="update price calculation for ore" />
+    <MESSAGE value="change bot message" />
+    <option name="LAST_COMMIT_MESSAGE" value="change bot message" />
   </component>
 </project>
