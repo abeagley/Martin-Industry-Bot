@@ -4,7 +4,7 @@ module.exports = (message, args) => {
     const VCchannelID = ('770358282752884776');
     const VCchannel = message.guild.channels.cache.get(VCchannelID);
     VCchannel.join();
-    message.channel.send(`<@&${770332037763825664}> ${args}`, {
+    message.channel.send(`<@&770332037763825664> ${args}`, {
         tts: true
     });
 }

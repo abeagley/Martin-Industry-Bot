@@ -109,14 +109,7 @@
       <workItem from="1627296058740" duration="597000" />
       <workItem from="1627471865924" duration="1286000" />
       <workItem from="1627595823058" duration="4115000" />
-      <workItem from="1628022128113" duration="3686000" />
-    </task>
-    <task id="LOCAL-00108" summary="seperate loop">
-      <created>1618154025928</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1618154025928</updated>
+      <workItem from="1628022128113" duration="4340000" />
     </task>
     <task id="LOCAL-00109" summary="put send m inside top function">
       <created>1618154162653</created>
@@ -454,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628025202338</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="add tts with tag">
+      <created>1628026252175</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1628026252175</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +490,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bug fix for clearing quotetotal" />
     <MESSAGE value="fibres to fibers" />
     <MESSAGE value="Update ore to may" />
     <MESSAGE value="Add mercoxit to the corp purchase" />
@@ -515,6 +514,7 @@
     <MESSAGE value="rename to warnadd discord.js to warn" />
     <MESSAGE value="add discord.js to warn" />
     <MESSAGE value="replace discord with message" />
-    <option name="LAST_COMMIT_MESSAGE" value="replace discord with message" />
+    <MESSAGE value="add tts with tag" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tts with tag" />
   </component>
 </project>
