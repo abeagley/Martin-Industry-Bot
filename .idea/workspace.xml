@@ -60,6 +60,7 @@
       <recent name="C:\Users\Marti\Desktop\Programming Projects\ee-industry-bot\src\commands" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Marti\Desktop\Programming Projects\ee-industry-bot\src\assets" />
       <recent name="C:\Users\Marti\Desktop\Programming Projects\ee-industry-bot\src" />
     </key>
   </component>
@@ -109,28 +110,7 @@
       <workItem from="1627296058740" duration="597000" />
       <workItem from="1627471865924" duration="1286000" />
       <workItem from="1627595823058" duration="4115000" />
-      <workItem from="1628022128113" duration="5472000" />
-    </task>
-    <task id="LOCAL-00110" summary="create test sendquote2">
-      <created>1618155010807</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1618155010807</updated>
-    </task>
-    <task id="LOCAL-00111" summary="creates async loop">
-      <created>1618164003005</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1618164003005</updated>
-    </task>
-    <task id="LOCAL-00112" summary="log async loop">
-      <created>1618164161648</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1618164161648</updated>
+      <workItem from="1628022128113" duration="6116000" />
     </task>
     <task id="LOCAL-00113" summary="attempt smaller function will callbacks">
       <created>1618173530431</created>
@@ -454,7 +434,28 @@
       <option name="project" value="LOCAL" />
       <updated>1628026621752</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="add voice">
+      <created>1628027930604</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1628027930604</updated>
+    </task>
+    <task id="LOCAL-00160" summary="add voice sound">
+      <created>1628027940344</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1628027940344</updated>
+    </task>
+    <task id="LOCAL-00161" summary="add client to broadcast">
+      <created>1628028155922</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1628028155922</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,9 +491,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update ore to may" />
-    <MESSAGE value="Add mercoxit to the corp purchase" />
-    <MESSAGE value="Add Morphite" />
     <MESSAGE value="Trying Economy" />
     <MESSAGE value="added bal and add bal commands to command handler, removed callback" />
     <MESSAGE value="corrected spelling mistake" />
@@ -515,6 +513,9 @@
     <MESSAGE value="replace discord with message" />
     <MESSAGE value="add tts with tag" />
     <MESSAGE value="fix tagging" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix tagging" />
+    <MESSAGE value="add voice" />
+    <MESSAGE value="add voice sound" />
+    <MESSAGE value="add client to broadcast" />
+    <option name="LAST_COMMIT_MESSAGE" value="add client to broadcast" />
   </component>
 </project>
