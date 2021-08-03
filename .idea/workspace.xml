@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="" />
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,14 +108,7 @@
       <workItem from="1627296058740" duration="597000" />
       <workItem from="1627471865924" duration="1286000" />
       <workItem from="1627595823058" duration="4115000" />
-      <workItem from="1628022128113" duration="1826000" />
-    </task>
-    <task id="LOCAL-00104" summary="remove promise all">
-      <created>1618150992802</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1618150992802</updated>
+      <workItem from="1628022128113" duration="2729000" />
     </task>
     <task id="LOCAL-00105" summary="attempt double callback">
       <created>1618151730911</created>
@@ -451,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628023955629</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="rename to warn">
+      <created>1628024424936</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1628024424936</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +489,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="rework to pi.js" />
     <MESSAGE value="rework to sellPrices" />
     <MESSAGE value="print priceResult instead of prices" />
     <MESSAGE value="set buyprice and sell price to everyone" />
@@ -512,6 +513,7 @@
     <MESSAGE value="change bot message" />
     <MESSAGE value="Adding alert function. Testing join" />
     <MESSAGE value="add alert to index" />
-    <option name="LAST_COMMIT_MESSAGE" value="add alert to index" />
+    <MESSAGE value="rename to warn" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename to warn" />
   </component>
 </project>
