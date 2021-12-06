@@ -7,7 +7,7 @@ const buyquote = require('./buyquote.js'), sellquote = require('./sellquote.js')
 	priceupdate2 = require('./priceupdate2.js'), priceupdate3 = require('./priceupdate3.js'),
 	priceupdate4 = require('./priceupdate4.js'), priceupdate5 = require('./priceupdate5.js'),
 	sellprices = require('./sellprices'), buyprices = require('./buyprices'),
-	closeconnection = require('./closeconnection'), bal = require('./bal.js'), addbal = require('./addbal'),
+	closeconnection = require('./closeconnection'), bal = require('./bal.js'), addbal = require('./addbal'), pricelist = require('./pricelist'),
 	warn = require('./warn'), guildID = '612667368744812563', commands = {
 		buyquote,
 		ore,
@@ -27,6 +27,7 @@ const buyquote = require('./buyquote.js'), sellquote = require('./sellquote.js')
 		bal,
 		addbal,
 		warn,
+		pricelist,
 	};
 
 // Command Handler
