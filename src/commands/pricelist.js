@@ -1,6 +1,3 @@
-const Discord = require('discord.js');
-
-const mongoose = require('mongoose');
 const mongo = require('../mongo');
 const priceList = require('../models/priceListSchema');
 
@@ -10,6 +7,7 @@ module.exports = async (message) => {
             priceList.find({}).exec((err, getPrice) => {
                 if (err) callback(err, null);
                 else callback(null, getPrice);
+                console.log(getPrice);
             })
         }
 

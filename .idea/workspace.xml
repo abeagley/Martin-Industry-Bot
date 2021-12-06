@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="removed node" />
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="add console log to identify error in pricelist">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/pricelist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/pricelist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/priceListSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/priceListSchema.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,6 +65,16 @@
       <recent name="C:\Users\Marti\Desktop\Programming Projects\ee-industry-bot\src" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="pricelist.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/commands/pricelist.js" working-dir="$PROJECT_DIR$/src/commands">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.pricelist.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -112,14 +126,7 @@
       <workItem from="1628782271050" duration="598000" />
       <workItem from="1630359563596" duration="596000" />
       <workItem from="1634250590491" duration="9000" />
-      <workItem from="1638729047197" duration="6406000" />
-    </task>
-    <task id="LOCAL-00128" summary="rework to sellPrices">
-      <created>1618183960509</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1618183960509</updated>
+      <workItem from="1638729047197" duration="7461000" />
     </task>
     <task id="LOCAL-00129" summary="print priceResult instead of prices">
       <created>1618184069462</created>
@@ -457,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638791725672</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary="add mongoose to pricelistschema to fix error">
+      <created>1638791849754</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1638791849754</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,8 +507,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add alert to index" />
-    <MESSAGE value="rename to warn" />
     <MESSAGE value="rename to warnadd discord.js to warn" />
     <MESSAGE value="add discord.js to warn" />
     <MESSAGE value="replace discord with message" />
@@ -518,6 +530,8 @@
     <MESSAGE value="Trying to recover build" />
     <MESSAGE value="npm update ran" />
     <MESSAGE value="removed node" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed node" />
+    <MESSAGE value="add mongoose to pricelistschema to fix error" />
+    <MESSAGE value="add console log to identify error in pricelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="add console log to identify error in pricelist" />
   </component>
 </project>
