@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="add console log to identify error in pricelist">
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="removed schema detail, expecting array">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/pricelist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/pricelist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/priceListSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/priceListSchema.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,21 +124,7 @@
       <workItem from="1628782271050" duration="598000" />
       <workItem from="1630359563596" duration="596000" />
       <workItem from="1634250590491" duration="9000" />
-      <workItem from="1638729047197" duration="7461000" />
-    </task>
-    <task id="LOCAL-00129" summary="print priceResult instead of prices">
-      <created>1618184069462</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1618184069462</updated>
-    </task>
-    <task id="LOCAL-00130" summary="set buyprice and sell price to everyone">
-      <created>1618184317176</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1618184317176</updated>
+      <workItem from="1638729047197" duration="8474000" />
     </task>
     <task id="LOCAL-00131" summary="bug fix for clearing quotetotal">
       <created>1618341056698</created>
@@ -471,7 +455,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638791849754</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="add console log to identify error in pricelist">
+      <created>1638792803419</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1638792803420</updated>
+    </task>
+    <task id="LOCAL-00179" summary="removed schema detail, expecting array">
+      <created>1638793035155</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1638793035155</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,7 +505,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="rename to warnadd discord.js to warn" />
     <MESSAGE value="add discord.js to warn" />
     <MESSAGE value="replace discord with message" />
     <MESSAGE value="add tts with tag" />
@@ -532,6 +529,7 @@
     <MESSAGE value="removed node" />
     <MESSAGE value="add mongoose to pricelistschema to fix error" />
     <MESSAGE value="add console log to identify error in pricelist" />
-    <option name="LAST_COMMIT_MESSAGE" value="add console log to identify error in pricelist" />
+    <MESSAGE value="removed schema detail, expecting array" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed schema detail, expecting array" />
   </component>
 </project>
