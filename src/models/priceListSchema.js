@@ -7,8 +7,8 @@ const reqString = {
 const priceListSchema = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
     name: String,
-    sell_price: {type: Number},
-    buy_price: {type: Number}
+    sell_price: String,
+    buy_price: String
 },{
     timestamps: true
 });

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="removed schema detail, expecting array">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="revert schema to find one to check eroor of mongo end" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,14 +122,7 @@
       <workItem from="1628782271050" duration="598000" />
       <workItem from="1630359563596" duration="596000" />
       <workItem from="1634250590491" duration="9000" />
-      <workItem from="1638729047197" duration="8474000" />
-    </task>
-    <task id="LOCAL-00131" summary="bug fix for clearing quotetotal">
-      <created>1618341056698</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1618341056699</updated>
+      <workItem from="1638729047197" duration="9339000" />
     </task>
     <task id="LOCAL-00132" summary="fibres to fibers">
       <created>1618341632993</created>
@@ -469,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638793035155</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="revert schema to find one to check eroor of mongo end">
+      <created>1638794095184</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1638794095184</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +503,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add discord.js to warn" />
     <MESSAGE value="replace discord with message" />
     <MESSAGE value="add tts with tag" />
     <MESSAGE value="fix tagging" />
@@ -530,6 +527,7 @@
     <MESSAGE value="add mongoose to pricelistschema to fix error" />
     <MESSAGE value="add console log to identify error in pricelist" />
     <MESSAGE value="removed schema detail, expecting array" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed schema detail, expecting array" />
+    <MESSAGE value="revert schema to find one to check eroor of mongo end" />
+    <option name="LAST_COMMIT_MESSAGE" value="revert schema to find one to check eroor of mongo end" />
   </component>
 </project>
