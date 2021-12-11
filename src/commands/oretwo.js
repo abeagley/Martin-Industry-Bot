@@ -1,9 +1,11 @@
+
+/*
 const Discord = require('discord.js');
 
 const mongoose = require('mongoose');
 const Report = require('../models/report.js');
 const mongo = require('../mongo');
-const sellReport = require('../models/priceListSchema');
+const sellReport = require('../models/pilotSellPrices');
 
 // Set Sell Prices
 
@@ -22,7 +24,7 @@ module.exports = async (message, args) =>  {
     } else {
         await mongo().then(async function () {
             function getSPrices(callback) {
-                sellReport.find({}).exec((err, getPrice) => {
+                sellReport.findOne().sort({createdAt: -1}).limit(1).exec((err, getPrice) => {
                     if (err) callback(err, null);
                     else callback(null, getPrice);
                 })
@@ -34,16 +36,14 @@ module.exports = async (message, args) =>  {
                     console.log(err);
                 } else {
                     console.log(priceResult);
-                    sPrices = priceResult;
+                    sPrices = priceResult.prices;
                     console.log(sPrices);
 
                     // Loop through message for matching terms and add them to quoteTotal
                     for (let i = 0; i < args.length; i++) {
                         for (let j = 0; j < sPrices.length; j++) {
-                            if (args[i].toLowerCase() === sPrices[j].item) {
-                                let buyPrice = parseFloat(sPrices[j].sell_price)
-                                console.log(sPrices[j].sell_price)
-                                quoteTotalTwo.push(args[i + 1] * buyPrice);
+                            if (args[i].toLowerCase() === sPrices[j][0]) {
+                                quoteTotalTwo.push(args[i + 1] * sPrices[j][1]);
                             }
                             console.log(quoteTotalTwo);
                         }
@@ -59,8 +59,7 @@ module.exports = async (message, args) =>  {
                     }
                     console.log(oreNumber);
 
-                    let quoteOutputTwo = quoteTotalTwo.reduce((a, b) => a + b, 0);
-                    quoteOutputTwo = Math.round(quoteOutputTwo)
+                    const quoteOutputTwo = quoteTotalTwo.reduce((a, b) => a + b, 0);
 
                     const disagree1 = '❌';
                     const agree1 = '☑️';
@@ -148,3 +147,5 @@ module.exports = async (message, args) =>  {
 
     quoteTotalTwo = [];
 }
+
+ */

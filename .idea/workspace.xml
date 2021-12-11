@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="Change buy_price to sell price">
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="Add price rounding">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/oretwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/oretwo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,14 +124,7 @@
       <workItem from="1628782271050" duration="598000" />
       <workItem from="1630359563596" duration="596000" />
       <workItem from="1634250590491" duration="9000" />
-      <workItem from="1638729047197" duration="16163000" />
-    </task>
-    <task id="LOCAL-00141" summary="add backticks to bal coins">
-      <created>1620945933687</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1620945933687</updated>
+      <workItem from="1638729047197" duration="16838000" />
     </task>
     <task id="LOCAL-00142" summary="Add chimpcoin">
       <created>1621022955967</created>
@@ -470,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639219189037</updated>
     </task>
-    <option name="localTasksCounter" value="190" />
+    <task id="LOCAL-00190" summary="Add price rounding">
+      <created>1639220005081</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1639220005081</updated>
+    </task>
+    <option name="localTasksCounter" value="191" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +505,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="require ffmpeg" />
     <MESSAGE value="npm update" />
     <MESSAGE value="add node-pre-gyp" />
     <MESSAGE value="add node-pre-gyp again" />
@@ -531,6 +529,7 @@
     <MESSAGE value="add parsefloat to see if string needs to be a number" />
     <MESSAGE value="try parse float early in buytwo" />
     <MESSAGE value="Change buy_price to sell price" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change buy_price to sell price" />
+    <MESSAGE value="Add price rounding" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add price rounding" />
   </component>
 </project>
