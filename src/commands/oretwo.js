@@ -34,15 +34,17 @@ module.exports = async (message, args) =>  {
                     console.log(err);
                 } else {
                     console.log(priceResult);
-                    sPrices = priceResult.item;
+                    sPrices = priceResult;
                     console.log(sPrices);
 
                     // Loop through message for matching terms and add them to quoteTotal
                     for (let i = 0; i < args.length; i++) {
-                            if (args[i].toLowerCase() === sPrices.item) {
-                                quoteTotalTwo.push(args[i + 1] * sPrices.buy_price);
+                        for (let j = 0; j < sPrices.length; j++) {
+                            if (args[i].toLowerCase() === sPrices[j].item) {
+                                quoteTotalTwo.push(args[i + 1] * sPrices[j].buy_price);
                             }
                             console.log(quoteTotalTwo);
+                        }
                     }
 
                     for (let l = 0; l < args.length; l += 2) {
