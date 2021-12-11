@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="revert to array target in ore two">
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="try parse float early in buytwo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,21 +124,7 @@
       <workItem from="1628782271050" duration="598000" />
       <workItem from="1630359563596" duration="596000" />
       <workItem from="1634250590491" duration="9000" />
-      <workItem from="1638729047197" duration="14223000" />
-    </task>
-    <task id="LOCAL-00138" summary="corrected spelling mistake">
-      <created>1620945072011</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1620945072011</updated>
-    </task>
-    <task id="LOCAL-00139" summary="bug testing result.coins">
-      <created>1620945610285</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1620945610285</updated>
+      <workItem from="1638729047197" duration="14816000" />
     </task>
     <task id="LOCAL-00140" summary="bug testing resultcoins in bal">
       <created>1620945849673</created>
@@ -469,7 +455,21 @@
       <option name="project" value="LOCAL" />
       <updated>1639217018242</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="add parsefloat to see if string needs to be a number">
+      <created>1639218162128</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1639218162128</updated>
+    </task>
+    <task id="LOCAL-00188" summary="try parse float early in buytwo">
+      <created>1639218443549</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1639218443550</updated>
+    </task>
+    <option name="localTasksCounter" value="189" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,8 +505,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add ffmpeg" />
-    <MESSAGE value="add opus" />
     <MESSAGE value="add opus?" />
     <MESSAGE value="require ffmpeg" />
     <MESSAGE value="npm update" />
@@ -530,6 +528,8 @@
     <MESSAGE value="change find one to find all in pricelist.js" />
     <MESSAGE value="create oretwo to test new pricelist schema" />
     <MESSAGE value="revert to array target in ore two" />
-    <option name="LAST_COMMIT_MESSAGE" value="revert to array target in ore two" />
+    <MESSAGE value="add parsefloat to see if string needs to be a number" />
+    <MESSAGE value="try parse float early in buytwo" />
+    <option name="LAST_COMMIT_MESSAGE" value="try parse float early in buytwo" />
   </component>
 </project>
