@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 const mongo = require('../mongo');
-const Report = require('../models/pilotSellPrices');
+const Report = require('../models/priceListSchema');
 
 //Set sell prices
 
@@ -22,7 +22,7 @@ module.exports = async (message, args) => {
 		else {
 			await mongo().then(async function () {
 				function getSPrices(callback) {
-					Report.findOne().sort({createdAt: -1}).limit(1).exec((err, getPrice) => {
+					Report.find({}).exec((err, getPrice) => {
 						if (err) callback(err, null);
 						else callback(null, getPrice);
 					})
@@ -34,13 +34,16 @@ module.exports = async (message, args) => {
 						console.log(err);
 					} else {
 						console.log(priceResult);
-						sPrices = priceResult.prices;
+						sPrices = priceResult;
 						console.log(sPrices);
 
 						for (let i = 0; i < args.length; i++) {
 							for (let j = 0; j < sPrices.length; j++) {
-								if (args[i].toLowerCase() === sPrices[j][0]) {
-									piTotal.push(args[i + 1] * sPrices[j][1]);
+								if (args[i].toLowerCase() === sPrices[j].item) {
+									let sellPi = parseFloat(sPrices[j].sell_price)
+									console.log(sPrices[j].sell_price)
+									piTotal.push(args[i + 1] * sellPi);
+
 								}
 								console.log(piTotal);
 							}
@@ -56,7 +59,8 @@ module.exports = async (message, args) => {
 						}
 						console.log(piNumber);
 
-						const piOutput = piTotal.reduce((a, b) => a + b, 0);
+						let piOutput = piTotal.reduce((a, b) => a + b, 0);
+						piOutput = Math.round(piOutput);
 
 						const disagree1 = '❌';
 						const agree1 = '☑️';
