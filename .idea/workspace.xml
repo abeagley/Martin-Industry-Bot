@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="change schema to strings">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="name in scheme to item" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,14 +122,7 @@
       <workItem from="1628782271050" duration="598000" />
       <workItem from="1630359563596" duration="596000" />
       <workItem from="1634250590491" duration="9000" />
-      <workItem from="1638729047197" duration="10884000" />
-    </task>
-    <task id="LOCAL-00133" summary="Update ore to may">
-      <created>1619947103337</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1619947103337</updated>
+      <workItem from="1638729047197" duration="11239000" />
     </task>
     <task id="LOCAL-00134" summary="Add mercoxit to the corp purchase">
       <created>1620590216065</created>
@@ -469,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638796868657</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="name in scheme to item">
+      <created>1639214636969</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1639214636969</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +503,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add tts with tag" />
     <MESSAGE value="fix tagging" />
     <MESSAGE value="add voice" />
     <MESSAGE value="add voice sound" />
@@ -530,6 +527,7 @@
     <MESSAGE value="removed schema detail, expecting array" />
     <MESSAGE value="revert schema to find one to check eroor of mongo end" />
     <MESSAGE value="change schema to strings" />
-    <option name="LAST_COMMIT_MESSAGE" value="change schema to strings" />
+    <MESSAGE value="name in scheme to item" />
+    <option name="LAST_COMMIT_MESSAGE" value="name in scheme to item" />
   </component>
 </project>

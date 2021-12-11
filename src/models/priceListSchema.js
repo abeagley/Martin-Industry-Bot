@@ -13,4 +13,4 @@ const priceListSchema = mongoose.Schema({
     timestamps: true
 });
 
-module.exports = mongoose.model('priceListSchema', priceListSchema);
+module.exports = mongoose.model('newprices', priceListSchema);
