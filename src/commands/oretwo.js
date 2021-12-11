@@ -59,7 +59,8 @@ module.exports = async (message, args) =>  {
                     }
                     console.log(oreNumber);
 
-                    const quoteOutputTwo = quoteTotalTwo.reduce((a, b) => a + b, 0);
+                    let quoteOutputTwo = quoteTotalTwo.reduce((a, b) => a + b, 0);
+                    quoteOutputTwo = Math.round(quoteOutputTwo)
 
                     const disagree1 = '❌';
                     const agree1 = '☑️';

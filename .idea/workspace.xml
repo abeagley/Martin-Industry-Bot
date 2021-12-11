@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="try parse float early in buytwo">
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="Change buy_price to sell price">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/oretwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/oretwo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,14 +125,7 @@
       <workItem from="1628782271050" duration="598000" />
       <workItem from="1630359563596" duration="596000" />
       <workItem from="1634250590491" duration="9000" />
-      <workItem from="1638729047197" duration="14816000" />
-    </task>
-    <task id="LOCAL-00140" summary="bug testing resultcoins in bal">
-      <created>1620945849673</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1620945849673</updated>
+      <workItem from="1638729047197" duration="16163000" />
     </task>
     <task id="LOCAL-00141" summary="add backticks to bal coins">
       <created>1620945933687</created>
@@ -469,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639218443550</updated>
     </task>
-    <option name="localTasksCounter" value="189" />
+    <task id="LOCAL-00189" summary="Change buy_price to sell price">
+      <created>1639219189037</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1639219189037</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +506,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add opus?" />
     <MESSAGE value="require ffmpeg" />
     <MESSAGE value="npm update" />
     <MESSAGE value="add node-pre-gyp" />
@@ -530,6 +530,7 @@
     <MESSAGE value="revert to array target in ore two" />
     <MESSAGE value="add parsefloat to see if string needs to be a number" />
     <MESSAGE value="try parse float early in buytwo" />
-    <option name="LAST_COMMIT_MESSAGE" value="try parse float early in buytwo" />
+    <MESSAGE value="Change buy_price to sell price" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change buy_price to sell price" />
   </component>
 </project>
