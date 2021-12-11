@@ -4,7 +4,7 @@ const priceList = require('../models/priceListSchema');
 module.exports = async (message) => {
     await mongo().then(async function () {
         function getPrices(callback) {
-            priceList.findOne().sort({createdAt: -1}).limit(1).exec((err, getPrice) => {
+            priceList.find({}).exec((err, getPrice) => {
                 if (err) callback(err, null);
                 else callback(null, getPrice);
                 console.log(getPrice);
