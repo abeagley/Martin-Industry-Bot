@@ -6,7 +6,7 @@ const reqString = {
 
 const priceListSchema = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
-    name: String,
+    item: String,
     sell_price: String,
     buy_price: String
 },{
