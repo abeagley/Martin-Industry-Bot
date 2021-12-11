@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="create oretwo to test new pricelist schema">
-      <change beforePath="$PROJECT_DIR$/src/commands/oretwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/oretwo.js" afterDir="false" />
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="revert to array target in ore two">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,14 +124,7 @@
       <workItem from="1628782271050" duration="598000" />
       <workItem from="1630359563596" duration="596000" />
       <workItem from="1634250590491" duration="9000" />
-      <workItem from="1638729047197" duration="13151000" />
-    </task>
-    <task id="LOCAL-00137" summary="added bal and add bal commands to command handler, removed callback">
-      <created>1620944909642</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1620944909642</updated>
+      <workItem from="1638729047197" duration="14223000" />
     </task>
     <task id="LOCAL-00138" summary="corrected spelling mistake">
       <created>1620945072011</created>
@@ -469,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639216673209</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="revert to array target in ore two">
+      <created>1639217018242</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1639217018242</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +505,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add client to broadcast" />
     <MESSAGE value="add ffmpeg" />
     <MESSAGE value="add opus" />
     <MESSAGE value="add opus?" />
@@ -530,6 +529,7 @@
     <MESSAGE value="change schema fetch file name to newprices" />
     <MESSAGE value="change find one to find all in pricelist.js" />
     <MESSAGE value="create oretwo to test new pricelist schema" />
-    <option name="LAST_COMMIT_MESSAGE" value="create oretwo to test new pricelist schema" />
+    <MESSAGE value="revert to array target in ore two" />
+    <option name="LAST_COMMIT_MESSAGE" value="revert to array target in ore two" />
   </component>
 </project>

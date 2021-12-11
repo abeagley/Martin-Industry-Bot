@@ -41,7 +41,7 @@ module.exports = async (message, args) =>  {
                     for (let i = 0; i < args.length; i++) {
                         for (let j = 0; j < sPrices.length; j++) {
                             if (args[i].toLowerCase() === sPrices[j].item) {
-                                quoteTotalTwo.push(args[i + 1] * sPrices[j].buy_price);
+                                quoteTotalTwo.push(args[i + 1] * parseFloat(sPrices[j].buy_price));
                             }
                             console.log(quoteTotalTwo);
                         }
