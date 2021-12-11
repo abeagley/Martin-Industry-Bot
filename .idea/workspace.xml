@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="Ore Prices now direct from googels heets" />
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="update pi" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,14 +122,7 @@
       <workItem from="1628782271050" duration="598000" />
       <workItem from="1630359563596" duration="596000" />
       <workItem from="1634250590491" duration="9000" />
-      <workItem from="1638729047197" duration="17455000" />
-    </task>
-    <task id="LOCAL-00143" summary="Add chimpcoin emoji">
-      <created>1621023203483</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1621023203483</updated>
+      <workItem from="1638729047197" duration="17905000" />
     </task>
     <task id="LOCAL-00144" summary="default 1">
       <created>1621025326960</created>
@@ -467,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639221982877</updated>
     </task>
-    <option name="localTasksCounter" value="192" />
+    <task id="LOCAL-00192" summary="update pi">
+      <created>1639222899482</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1639222899482</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +503,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add node-pre-gyp" />
     <MESSAGE value="add node-pre-gyp again" />
     <MESSAGE value="add lipsodium" />
     <MESSAGE value="remove node modules" />
@@ -528,6 +527,7 @@
     <MESSAGE value="Change buy_price to sell price" />
     <MESSAGE value="Add price rounding" />
     <MESSAGE value="Ore Prices now direct from googels heets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ore Prices now direct from googels heets" />
+    <MESSAGE value="update pi" />
+    <option name="LAST_COMMIT_MESSAGE" value="update pi" />
   </component>
 </project>

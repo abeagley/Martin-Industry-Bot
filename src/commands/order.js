@@ -2,7 +2,7 @@
 // Set requirements
 const Discord = require('discord.js');
 const mongo = require('../mongo');
-const Report = require('../models/pilotBuyPrices');
+const Report = require('../models/priceListSchema');
 
 // Set Buy Prices
 
@@ -25,7 +25,7 @@ module.exports = async (message, args) => {
 		else {
 			await mongo().then(async function () {
 				function getBPrices(callback) {
-					Report.findOne().sort({createdAt: -1}).limit(1).exec((err, getPrice) => {
+					Report.find({}).exec((err, getPrice) => {
 						if (err) callback(err, null);
 						else callback(null, getPrice);
 					})
@@ -37,14 +37,16 @@ module.exports = async (message, args) => {
 						console.log(err);
 					} else {
 						console.log(priceResult);
-						bPrices = priceResult.prices;
+						bPrices = priceResult;
 						console.log(bPrices);
 
 						// Loop through message for matching terms and add them to quoteTotal
 						for (let i = 0; i < args.length; i++) {
 							for (let j = 0; j < bPrices.length; j++) {
-								if (args[i].toLowerCase() === bPrices[j][0]) {
-									quoteTotalThree.push(args[i + 1] * bPrices[j][1]);
+								if (args[i].toLowerCase() === bPrices[j].item){
+									let buyPrice = parseFloat(bPrices[j].buy_price)
+									console.log(bPrices[j].buy_price)
+									quoteTotalThree.push(args[i + 1] * buyPrice);
 								}
 								console.log(quoteTotalThree);
 							}
@@ -60,7 +62,9 @@ module.exports = async (message, args) => {
 						}
 						console.log(orderNumber);
 
-						const quoteOutputThree = quoteTotalThree.reduce((a, b) => a + b, 0);
+						let quoteOutputThree = quoteTotalThree.reduce((a, b) => a + b, 0);
+						quoteOutputThree = Math.round(quoteOutputThree);
+
 
 						const disagree1 = '❌';
 						const agree1 = '☑️';
