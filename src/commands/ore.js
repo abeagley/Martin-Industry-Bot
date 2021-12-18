@@ -36,9 +36,9 @@ module.exports = async (message, args) =>  {
 				if (err) {
 					console.log(err);
 				} else {
-					console.log(priceResult);
+					//console.log(priceResult);
 					sPrices = priceResult;
-					console.log(sPrices);
+					//console.log(sPrices);
 
 					// Loop through message for matching terms and add them to quoteTotal
 					for (let i = 0; i < args.length; i++) {
