@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="Full math in pi.js">
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="add commas to money numbers">
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -125,21 +125,7 @@
       <workItem from="1628782271050" duration="598000" />
       <workItem from="1630359563596" duration="596000" />
       <workItem from="1634250590491" duration="9000" />
-      <workItem from="1638729047197" duration="28569000" />
-    </task>
-    <task id="LOCAL-00149" summary="update price calculation for ore">
-      <created>1624181139599</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1624181139600</updated>
-    </task>
-    <task id="LOCAL-00150" summary="change bot message">
-      <created>1627726634898</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1627726634906</updated>
+      <workItem from="1638729047197" duration="29312000" />
     </task>
     <task id="LOCAL-00151" summary="Adding alert function. Testing join">
       <created>1628023830637</created>
@@ -470,7 +456,21 @@
       <option name="project" value="LOCAL" />
       <updated>1639826504459</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="clear array at end">
+      <created>1639826764870</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1639826764870</updated>
+    </task>
+    <task id="LOCAL-00199" summary="add commas to money numbers">
+      <created>1639827249947</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1639827249947</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,8 +506,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Moved all unversioned to default changelist" />
-    <MESSAGE value="Trying to recover build" />
     <MESSAGE value="npm update ran" />
     <MESSAGE value="removed node" />
     <MESSAGE value="add mongoose to pricelistschema to fix error" />
@@ -531,6 +529,8 @@
     <MESSAGE value="simply pi form" />
     <MESSAGE value="Add notes to pi.js" />
     <MESSAGE value="Full math in pi.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Full math in pi.js" />
+    <MESSAGE value="clear array at end" />
+    <MESSAGE value="add commas to money numbers" />
+    <option name="LAST_COMMIT_MESSAGE" value="add commas to money numbers" />
   </component>
 </project>

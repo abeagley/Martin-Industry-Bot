@@ -82,15 +82,15 @@ module.exports = async (message, args) => {
 							.setColor(15105570)
 							.addFields(
 								{name: reportArray[2] + " " + reportArray[0] + " @ " + reportArray[1] , value: reportArray[3], inline: true},
-								{name: reportArray[6] + " " + reportArray[4] + " @ " + reportArray[5] , value: formatMoney(reportArray[7]), inline: true},
-								{name: reportArray[10] + " " + reportArray[8] + " @ " + reportArray[9] , value: formatMoney(reportArray[11]), inline: true},
-								{name: reportArray[14] + " " + reportArray[12] + " @ " + reportArray[13] , value: formatMoney(reportArray[15]), inline: true},
-								{name: reportArray[18] + " " + reportArray[16] + " @ " + reportArray[17] , value: formatMoney(reportArray[19]), inline: true},
-								{name: reportArray[22] + " " + reportArray[20] + " @ " + reportArray[21] , value: formatMoney(reportArray[23]), inline: true},
-								{name: reportArray[26] + " " + reportArray[24] + " @ " + reportArray[25] , value: formatMoney(reportArray[27]), inline: true},
-								{name: reportArray[30] + " " + reportArray[28] + " @ " + reportArray[29] , value: formatMoney(reportArray[31]), inline: true},
-								{name: reportArray[34] + " " + reportArray[32] + " @ " + reportArray[33] , value: formatMoney(reportArray[35]), inline: true},
-								{name: reportArray[38] + " " + reportArray[36] + " @ " + reportArray[37] , value: formatMoney(reportArray[39]), inline: true},
+								{name: reportArray[6] + " " + reportArray[4] + " @ " + reportArray[5] , value: reportArray[7], inline: true},
+								{name: reportArray[10] + " " + reportArray[8] + " @ " + reportArray[9] , value: reportArray[11], inline: true},
+								{name: reportArray[14] + " " + reportArray[12] + " @ " + reportArray[13] , value: reportArray[15], inline: true},
+								{name: reportArray[18] + " " + reportArray[16] + " @ " + reportArray[17] , value: reportArray[19], inline: true},
+								{name: reportArray[22] + " " + reportArray[20] + " @ " + reportArray[21] , value: reportArray[23], inline: true},
+								{name: reportArray[26] + " " + reportArray[24] + " @ " + reportArray[25] , value: reportArray[27], inline: true},
+								{name: reportArray[30] + " " + reportArray[28] + " @ " + reportArray[29] , value: reportArray[31], inline: true},
+								{name: reportArray[34] + " " + reportArray[32] + " @ " + reportArray[33] , value: reportArray[35], inline: true},
+								{name: reportArray[38] + " " + reportArray[36] + " @ " + reportArray[37] , value: reportArray[39], inline: true},
 								{name: 'Total isk', value: formatMoney(piOutput)}
 							)
 							.setTimestamp()
