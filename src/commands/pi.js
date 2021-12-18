@@ -46,6 +46,7 @@ module.exports = async (message, args) => {
 									reportArray.push(args[i])
 									let sellPi = parseFloat(sPrices[j].sell_price)
 									console.log(sPrices[j].sell_price)
+									reportArray.push(sellPi)
 									reportArray.push(args[i+1])
 									piTotal.push(args[i + 1] * sellPi)
 									reportArray.push(args[i + 1] * sellPi);
@@ -76,7 +77,7 @@ module.exports = async (message, args) => {
 							.setTitle('Status: Sell PI Request')
 							.setAuthor(message.member.nickname, message.author.avatarURL())
 							.setColor(15105570)
-							.addFields({name: args, value: '----------', inline: true},
+							.addFields(
 								{name: reportArray[0] + " " + reportArray[1] , value: reportArray[3], inline: true},
 								{name: reportArray[4] + " " + reportArray[5] , value: reportArray[6], inline: true},
 								{name: reportArray[7] + " " + reportArray[8] , value: reportArray[9], inline: true},
