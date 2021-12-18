@@ -38,7 +38,6 @@ module.exports = async (message, args) => {
 						console.log(priceResult);
 						sPrices = priceResult;
 						console.log(sPrices);
-						argArray = args;
 
 						for (let i = 0; i < args.length; i++) {
 							for (let j = 0; j < sPrices.length; j++) {
@@ -156,4 +155,6 @@ module.exports = async (message, args) => {
 		}
 
 	piTotal = [];
+	reportArray = [];
+
 };

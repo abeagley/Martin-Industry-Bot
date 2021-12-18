@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="Add notes to pi.js">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="Full math in pi.js">
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/pi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/pi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,14 +125,7 @@
       <workItem from="1628782271050" duration="598000" />
       <workItem from="1630359563596" duration="596000" />
       <workItem from="1634250590491" duration="9000" />
-      <workItem from="1638729047197" duration="28252000" />
-    </task>
-    <task id="LOCAL-00148" summary="Removed channel requirements">
-      <created>1623516656302</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1623516656302</updated>
+      <workItem from="1638729047197" duration="28569000" />
     </task>
     <task id="LOCAL-00149" summary="update price calculation for ore">
       <created>1624181139599</created>
@@ -472,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639825624167</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="Full math in pi.js">
+      <created>1639826504459</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1639826504459</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +506,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add slash command via vpm. Add pricelist test command attempt 2" />
     <MESSAGE value="Moved all unversioned to default changelist" />
     <MESSAGE value="Trying to recover build" />
     <MESSAGE value="npm update ran" />
@@ -533,6 +530,7 @@
     <MESSAGE value="new pi form" />
     <MESSAGE value="simply pi form" />
     <MESSAGE value="Add notes to pi.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add notes to pi.js" />
+    <MESSAGE value="Full math in pi.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Full math in pi.js" />
   </component>
 </project>
