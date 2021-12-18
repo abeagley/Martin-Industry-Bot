@@ -102,7 +102,7 @@ module.exports = async (message, args) =>  {
 							{name: reportArray[30] + " " + reportArray[28] + " @ " + reportArray[29] , value: reportArray[31], inline: true},
 							{name: reportArray[34] + " " + reportArray[32] + " @ " + reportArray[33] , value: reportArray[35], inline: true},
 							{name: reportArray[38] + " " + reportArray[36] + " @ " + reportArray[37] , value: reportArray[39], inline: true},
-							{name: 'Total isk', value: formatMoney(quoteOutputTwoTwo)}, {name: "Errors?", value: errorName }
+							{name: 'Total isk', value: formatMoney(quoteOutputTwo)}, {name: "Errors?", value: errorName }
 						)
 						.setTimestamp()
 						.setFooter('Please ping a director asking where contract should go to request')
