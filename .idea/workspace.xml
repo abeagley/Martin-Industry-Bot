@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="Error check attempt">
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="Add pi changes to ore">
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -125,14 +125,7 @@
       <workItem from="1628782271050" duration="598000" />
       <workItem from="1630359563596" duration="596000" />
       <workItem from="1634250590491" duration="9000" />
-      <workItem from="1638729047197" duration="29917000" />
-    </task>
-    <task id="LOCAL-00153" summary="rename to warn">
-      <created>1628024424936</created>
-      <option name="number" value="00153" />
-      <option name="presentableId" value="LOCAL-00153" />
-      <option name="project" value="LOCAL" />
-      <updated>1628024424936</updated>
+      <workItem from="1638729047197" duration="30362000" />
     </task>
     <task id="LOCAL-00154" summary="rename to warnadd discord.js to warn">
       <created>1628024964051</created>
@@ -470,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639827861369</updated>
     </task>
-    <option name="localTasksCounter" value="202" />
+    <task id="LOCAL-00202" summary="Add pi changes to ore">
+      <created>1639828307808</created>
+      <option name="number" value="00202" />
+      <option name="presentableId" value="LOCAL-00202" />
+      <option name="project" value="LOCAL" />
+      <updated>1639828307808</updated>
+    </task>
+    <option name="localTasksCounter" value="203" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +506,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add mongoose to pricelistschema to fix error" />
     <MESSAGE value="add console log to identify error in pricelist" />
     <MESSAGE value="removed schema detail, expecting array" />
     <MESSAGE value="revert schema to find one to check eroor of mongo end" />
@@ -531,6 +530,7 @@
     <MESSAGE value="add commas to money numbers" />
     <MESSAGE value="remove commas to money numbers" />
     <MESSAGE value="Error check attempt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Error check attempt" />
+    <MESSAGE value="Add pi changes to ore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add pi changes to ore" />
   </component>
 </project>

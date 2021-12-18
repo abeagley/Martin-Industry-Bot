@@ -4,8 +4,6 @@ const mongo = require('../mongo');
 const Report = require('../models/priceListSchema');
 
 //Set sell prices
-
-let argArray =[];
 let piTotal = [];
 let piArray = [];
 let piNumber = [];

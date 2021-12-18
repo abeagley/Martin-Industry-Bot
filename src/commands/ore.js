@@ -53,7 +53,7 @@ module.exports = async (message, args) =>  {
 								reportArray.push(args[i+1])
 								console.log(reportArray)
 								quoteTotalTwo.push(args[i + 1] * sellPrice);
-								reportArray.push(args[i + 1] * sellPi)
+								reportArray.push(args[i + 1] * sellPrice)
 								console.log(reportArray);
 							}
 							console.log(quoteTotalTwo);
