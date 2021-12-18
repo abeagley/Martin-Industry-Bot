@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="fix spelling mistake in code">
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="fix quote total">
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -125,21 +125,7 @@
       <workItem from="1628782271050" duration="598000" />
       <workItem from="1630359563596" duration="596000" />
       <workItem from="1634250590491" duration="9000" />
-      <workItem from="1638729047197" duration="30660000" />
-    </task>
-    <task id="LOCAL-00155" summary="add discord.js to warn">
-      <created>1628024988468</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1628024988468</updated>
-    </task>
-    <task id="LOCAL-00156" summary="replace discord with message">
-      <created>1628025202338</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1628025202338</updated>
+      <workItem from="1638729047197" duration="30998000" />
     </task>
     <task id="LOCAL-00157" summary="add tts with tag">
       <created>1628026252175</created>
@@ -470,7 +456,21 @@
       <option name="project" value="LOCAL" />
       <updated>1639828538089</updated>
     </task>
-    <option name="localTasksCounter" value="204" />
+    <task id="LOCAL-00204" summary="remove some console logs to clear log backlog">
+      <created>1639828817814</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1639828817814</updated>
+    </task>
+    <task id="LOCAL-00205" summary="fix quote total">
+      <created>1639828958749</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1639828958749</updated>
+    </task>
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,8 +506,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed schema detail, expecting array" />
-    <MESSAGE value="revert schema to find one to check eroor of mongo end" />
     <MESSAGE value="change schema to strings" />
     <MESSAGE value="name in scheme to item" />
     <MESSAGE value="change schema fetch file name to newprices" />
@@ -531,6 +529,8 @@
     <MESSAGE value="Error check attempt" />
     <MESSAGE value="Add pi changes to ore" />
     <MESSAGE value="fix spelling mistake in code" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix spelling mistake in code" />
+    <MESSAGE value="remove some console logs to clear log backlog" />
+    <MESSAGE value="fix quote total" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix quote total" />
   </component>
 </project>
