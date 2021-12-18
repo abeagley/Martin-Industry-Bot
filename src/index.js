@@ -42,6 +42,22 @@ client.once('ready', async () => {
 });
 
 client.on('message', commandHandler);
+/*
+const guildID = '612667368744812563';
+const guild = client.guilds.cache.get(guildID);
+let commands
+
+if (guild) {
+	commands = guild.commands
+} else {
+	commands = client.application?.commands
+}
+
+commands?.create({
+	name: 'ping',
+	description: 'Replies with pong.',
+	})
+*/
 
 // login to discord bot
 client.login(process.env.token);

@@ -5,10 +5,11 @@ const Report = require('../models/priceListSchema');
 
 //Set sell prices
 
-
+let argArray =[];
 let piTotal = [];
 let piArray = [];
 let piNumber = [];
+let reportArray = [];
 
 function formatMoney(number) {
 	return number.toLocaleString('en-US', { style: 'decimal', currency: 'USD' });
@@ -19,6 +20,7 @@ module.exports = async (message, args) => {
 	// Check bot is in the right channel
 		// Check that they have entered values
 		if (args.length < 2) {return message.reply('No Values Input :pensive: Try \'!pis lusteringalloy 1000 plasmoids 1000...\'');}
+		else if (args.length > 21) {return message.reply('Too many values :pensive: Keep it to 10 or less ')}
 		else {
 			await mongo().then(async function () {
 				function getSPrices(callback) {
@@ -36,13 +38,17 @@ module.exports = async (message, args) => {
 						console.log(priceResult);
 						sPrices = priceResult;
 						console.log(sPrices);
+						argArray = args;
 
 						for (let i = 0; i < args.length; i++) {
 							for (let j = 0; j < sPrices.length; j++) {
 								if (args[i].toLowerCase() === sPrices[j].item) {
+									reportArray.push(args[i])
 									let sellPi = parseFloat(sPrices[j].sell_price)
 									console.log(sPrices[j].sell_price)
-									piTotal.push(args[i + 1] * sellPi);
+									reportArray.push(args[i+1])
+									piTotal.push(args[i + 1] * sellPi)
+									reportArray.push(args[i + 1] * sellPi);
 
 								}
 								console.log(piTotal);
@@ -71,6 +77,16 @@ module.exports = async (message, args) => {
 							.setAuthor(message.member.nickname, message.author.avatarURL())
 							.setColor(15105570)
 							.addFields({name: args, value: '----------', inline: true},
+								{name: reportArray[0] + " " + reportArray[1] , value: reportArray[3], inline: true},
+								{name: reportArray[4] + " " + reportArray[5] , value: reportArray[6], inline: true},
+								{name: reportArray[7] + " " + reportArray[8] , value: reportArray[9], inline: true},
+								{name: reportArray[10] + " " + reportArray[11] , value: reportArray[12], inline: true},
+								{name: reportArray[13] + " " + reportArray[14] , value: reportArray[15], inline: true},
+								{name: reportArray[16] + " " + reportArray[17] , value: reportArray[18], inline: true},
+								{name: reportArray[19] + " " + reportArray[20] , value: reportArray[21], inline: true},
+								{name: reportArray[22] + " " + reportArray[23] , value: reportArray[24], inline: true},
+								{name: reportArray[25] + " " + reportArray[26] , value: reportArray[27], inline: true},
+								{name: reportArray[28] + " " + reportArray[29] , value: reportArray[30], inline: true},
 								{name: 'Total isk', value: formatMoney(piOutput)}
 							)
 							.setTimestamp()
@@ -114,7 +130,8 @@ module.exports = async (message, args) => {
 													.setDescription('PI Accepted ☑️')
 													.setAuthor(message.member.nickname, message.author.avatarURL())
 													.setColor(3066993)
-													.addFields({name: args, value: '----------', inline: true},
+													.addFields(
+														{name: args, value: '----------', inline: true},
 														{name: 'Total isk', value: formatMoney(piOutput)}
 													)
 													.setTimestamp()
