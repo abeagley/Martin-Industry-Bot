@@ -44,12 +44,16 @@ module.exports = async (message, args) => {
 							for (let j = 0; j < sPrices.length; j++) {
 								if (args[i].toLowerCase() === sPrices[j].item) {
 									reportArray.push(args[i])
+									console.log(reportArray)
 									let sellPi = parseFloat(sPrices[j].sell_price)
 									console.log(sPrices[j].sell_price)
 									reportArray.push(sellPi)
+									console.log(reportArray)
 									reportArray.push(args[i+1])
+									console.log(reportArray)
 									piTotal.push(args[i + 1] * sellPi)
-									reportArray.push(args[i + 1] * sellPi);
+									reportArray.push(args[i + 1] * sellPi)
+									console.log(reportArray);
 
 								}
 								console.log(piTotal);
@@ -59,12 +63,12 @@ module.exports = async (message, args) => {
 						for (let l = 0; l < args.length; l += 2) {
 							piArray.push(args[l]);
 						}
-						console.log(piArray);
+						console.log("piArray = " + piArray);
 
 						for (let m = 1; m < args.length; m += 2) {
 							piNumber.push(args[m]);
 						}
-						console.log(piNumber);
+						console.log("piNumber = " + piNumber);
 
 						let piOutput = piTotal.reduce((a, b) => a + b, 0);
 						piOutput = Math.round(piOutput);
