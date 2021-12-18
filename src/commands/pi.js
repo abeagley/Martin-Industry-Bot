@@ -72,6 +72,17 @@ module.exports = async (message, args) => {
 						let piOutput = piTotal.reduce((a, b) => a + b, 0);
 						piOutput = Math.round(piOutput);
 
+						let errorVal = (args.length / 2);
+						let reportVal = (reportArray.length / 4)
+						let errorName = "";
+
+						if (errorVal === reportVal){
+							errorName = "No"
+						}
+						else {
+							errorName = "Yes"
+						}
+
 						const disagree1 = '❌';
 						const agree1 = '☑️';
 
@@ -91,7 +102,7 @@ module.exports = async (message, args) => {
 								{name: reportArray[30] + " " + reportArray[28] + " @ " + reportArray[29] , value: reportArray[31], inline: true},
 								{name: reportArray[34] + " " + reportArray[32] + " @ " + reportArray[33] , value: reportArray[35], inline: true},
 								{name: reportArray[38] + " " + reportArray[36] + " @ " + reportArray[37] , value: reportArray[39], inline: true},
-								{name: 'Total isk', value: formatMoney(piOutput)}
+								{name: 'Total isk', value: formatMoney(piOutput)}, {name: "Errors?", value: errorName }
 							)
 							.setTimestamp()
 							.setFooter('Please ping a director asking where contract should go to request')
