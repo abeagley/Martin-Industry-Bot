@@ -102,6 +102,10 @@ module.exports = async (message, args) =>  {
 							{name: reportArray[30] + " " + reportArray[28] + " @ " + reportArray[29] , value: reportArray[31], inline: true},
 							{name: reportArray[34] + " " + reportArray[32] + " @ " + reportArray[33] , value: reportArray[35], inline: true},
 							{name: reportArray[38] + " " + reportArray[36] + " @ " + reportArray[37] , value: reportArray[39], inline: true},
+							{name: reportArray[42] + " " + reportArray[40] + " @ " + reportArray[41] , value: reportArray[43], inline: true},
+							{name: reportArray[46] + " " + reportArray[44] + " @ " + reportArray[45] , value: reportArray[47], inline: true},
+							{name: reportArray[50] + " " + reportArray[48] + " @ " + reportArray[49] , value: reportArray[51], inline: true},
+							{name: reportArray[54] + " " + reportArray[52] + " @ " + reportArray[53] , value: reportArray[55], inline: true},
 							{name: 'Total isk', value: formatMoney(quoteOutputTwo)}, {name: "Errors?", value: errorName }
 						)
 						.setTimestamp()

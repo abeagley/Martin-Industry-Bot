@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="updates to order reflecting new rules">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -47,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Discord Bots" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -127,13 +126,7 @@
       <workItem from="1630359563596" duration="596000" />
       <workItem from="1634250590491" duration="9000" />
       <workItem from="1638729047197" duration="32934000" />
-    </task>
-    <task id="LOCAL-00160" summary="add voice sound">
-      <created>1628027940344</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1628027940344</updated>
+      <workItem from="1641824418603" duration="176000" />
     </task>
     <task id="LOCAL-00161" summary="add client to broadcast">
       <created>1628028155922</created>
@@ -471,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639829631141</updated>
     </task>
-    <option name="localTasksCounter" value="209" />
+    <task id="LOCAL-00209" summary="change ore length to 29 values">
+      <created>1641824475531</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1641824475532</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,7 +507,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change schema fetch file name to newprices" />
     <MESSAGE value="change find one to find all in pricelist.js" />
     <MESSAGE value="create oretwo to test new pricelist schema" />
     <MESSAGE value="revert to array target in ore two" />
@@ -532,6 +531,7 @@
     <MESSAGE value="fix quote total" />
     <MESSAGE value="change ore quote to qoute output" />
     <MESSAGE value="updates to order reflecting new rules" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates to order reflecting new rules" />
+    <MESSAGE value="change ore length to 29 values" />
+    <option name="LAST_COMMIT_MESSAGE" value="change ore length to 29 values" />
   </component>
 </project>
