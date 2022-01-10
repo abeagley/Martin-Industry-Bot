@@ -21,7 +21,7 @@ module.exports = async (message, args) =>  {
 	if (args.length < 2) {
 		return message.reply('No Values Input :pensive: Try \'!ore veldspar 1000 scordite 1000...\'');
 	}
-	else if (args.length > 21) {return message.reply('Too many values :pensive: Keep it to 10 or less ')}
+	else if (args.length > 29) {return message.reply('Too many values :pensive: Keep it to 14 or less ')}
 	else {
 		await mongo().then(async function () {
 			function getSPrices(callback) {

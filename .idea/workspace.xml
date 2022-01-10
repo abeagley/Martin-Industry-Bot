@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="change ore quote to qoute output">
+    <list default="true" id="096d0182-3751-4932-9093-68b676076e2e" name="Default Changelist" comment="updates to order reflecting new rules">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -125,14 +126,7 @@
       <workItem from="1628782271050" duration="598000" />
       <workItem from="1630359563596" duration="596000" />
       <workItem from="1634250590491" duration="9000" />
-      <workItem from="1638729047197" duration="31412000" />
-    </task>
-    <task id="LOCAL-00159" summary="add voice">
-      <created>1628027930604</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1628027930604</updated>
+      <workItem from="1638729047197" duration="32934000" />
     </task>
     <task id="LOCAL-00160" summary="add voice sound">
       <created>1628027940344</created>
@@ -470,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639829194014</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="updates to order reflecting new rules">
+      <created>1639829631141</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1639829631141</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +507,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="name in scheme to item" />
     <MESSAGE value="change schema fetch file name to newprices" />
     <MESSAGE value="change find one to find all in pricelist.js" />
     <MESSAGE value="create oretwo to test new pricelist schema" />
@@ -531,6 +531,7 @@
     <MESSAGE value="remove some console logs to clear log backlog" />
     <MESSAGE value="fix quote total" />
     <MESSAGE value="change ore quote to qoute output" />
-    <option name="LAST_COMMIT_MESSAGE" value="change ore quote to qoute output" />
+    <MESSAGE value="updates to order reflecting new rules" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates to order reflecting new rules" />
   </component>
 </project>
